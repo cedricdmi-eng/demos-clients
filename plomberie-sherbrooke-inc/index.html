@@ -3,28 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plomberie Sherbrooke Inc | Plombier à Sherbrooke</title>
-    <meta name="description" content="Plomberie Sherbrooke Inc : service de plomberie professionnel à Sherbrooke. Intervention rapide pour urgences, réparations et installations. Contactez-nous au (819) 564-0581.">
+    <title>Plombier à Sherbrooke | Plomberie Sherbrooke Inc</title>
+    <meta name="description" content="Plomberie Sherbrooke Inc : votre entreprise de plomberie à Sherbrooke. Service rapide, intervention d'urgence, installation et réparation au 351 Rue Corbeil. Téléphone : (819) 564-0581.">
+    <link rel="canonical" href="https://plomberiesherbrooke.ca">
     
-    <!-- Open Graph -->
-    <meta property="og:title" content="Plomberie Sherbrooke Inc | Service de Plomberie à Sherbrooke">
-    <meta property="og:description" content="Service de plomberie professionnel à Sherbrooke. Situé au 351 Rue Corbeil. Appelez le (819) 564-0581 pour un service rapide.">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="fr_CA">
-
-    <!-- Tailwind CSS CDN -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Font Awesome -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Schema.org JSON-LD -->
+    <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Plumber",
       "name": "Plomberie Sherbrooke Inc",
-      "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=1200",
       "telephone": "(819) 564-0581",
       "address": {
         "@type": "PostalAddress",
@@ -36,76 +49,83 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "addressCountry": "CA"
-      },
-      "priceRange": "$$"
+        "latitude": 45.4124,
+        "longitude": -71.8791
+      }
     }
     </script>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-    <!-- En-tête / Navigation -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="#" class="flex items-center gap-3">
-                <div class="bg-blue-600 text-white p-2.5 rounded-lg">
-                    <i class="fa-solid font-bold fa-wrench text-xl"></i>
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <div class="bg-brand-600 text-white p-2.5 rounded-lg">
+                        <i class="fa-solid fa-faucet-drip text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold text-brand-900 block leading-tight">Plomberie Sherbrooke Inc</span>
+                        <span class="text-xs text-slate-500 block">Sherbrooke, QC</span>
+                    </div>
                 </div>
-                <div>
-                    <span class="block font-bold text-xl text-slate-900 leading-none">Plomberie Sherbrooke</span>
-                    <span class="text-xs text-blue-600 font-medium uppercase tracking-wider">Inc.</span>
+
+                <nav class="hidden md:flex space-x-8 font-medium text-slate-600">
+                    <a href="#services" class="hover:text-brand-600 transition">Services</a>
+                    <a href="#avis" class="hover:text-brand-600 transition">Avis Clients</a>
+                    <a href="#a-propos" class="hover:text-brand-600 transition">À propos</a>
+                    <a href="#contact" class="hover:text-brand-600 transition">Contact</a>
+                </nav>
+
+                <div class="flex items-center">
+                    <a href="tel:8195640581" class="bg-brand-600 hover:bg-brand-700 text-white font-bold py-2.5 px-5 rounded-lg flex items-center space-x-2 transition shadow-sm">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>(819) 564-0581</span>
+                    </a>
                 </div>
-            </a>
-
-            <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600">
-                <a href="#services" class="hover:text-blue-600 transition-colors">Services</a>
-                <a href="#avis" class="hover:text-blue-600 transition-colors">Avis clients</a>
-                <a href="#contact" class="hover:text-blue-600 transition-colors">Contact</a>
-            </nav>
-
-            <div class="flex items-center gap-4">
-                <a href="tel:8195640581" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2.5 rounded-lg transition-all shadow-md hover:shadow-lg">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>(819) 564-0581</span>
-                </a>
             </div>
         </div>
     </header>
 
-    <!-- Section Héro -->
-    <section class="relative bg-slate-900 text-white py-20 lg:py-32 overflow-hidden">
-        <div class="absolute inset-0 opacity-25">
-            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1920&q=80" alt="Plomberie professionnelle à Sherbrooke" class="w-full h-full object-cover">
+    <!-- Hero Section -->
+    <section class="relative bg-brand-900 text-white overflow-hidden py-16 md:py-24">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=1920" alt="Plombier en intervention à Sherbrooke" class="w-full h-full object-cover">
         </div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-7 space-y-6">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 bg-blue-500/20 text-blue-300 border border-blue-400/30 rounded-full text-sm font-medium">
-                        <i class="fa-solid fa-location-dot"></i> Service local à Sherbrooke
-                    </div>
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
-                        Plomberie à Sherbrooke : Service Professionnel et Rapide
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="inline-block bg-brand-800 text-brand-100 text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-4 border border-brand-700">
+                        Service local à Sherbrooke
+                    </span>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-6 leading-tight">
+                        Plombier à Sherbrooke
                     </h1>
-                    <p class="text-lg sm:text-xl text-slate-300 max-w-2xl">
-                        Plomberie Sherbrooke Inc intervient pour tous vos travaux de plomberie résidentielle et commerciale dans la région de Sherbrooke.
+                    <p class="text-lg text-slate-300 mb-8 leading-relaxed">
+                        Besoin d'un service de plomberie rapide et professionnel à Sherbrooke ? Plomberie Sherbrooke Inc intervient pour vos urgences, dégâts d'eau, réparations et installations résidentielles.
                     </p>
-                    <div class="pt-4 flex flex-col sm:flex-row gap-4">
-                        <a href="tel:8195640581" class="inline-flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-500 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-blue-500/25 transition-all">
-                            <i class="fa-solid fa-phone"></i>
-                            <span>Appeler le (819) 564-0581</span>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="tel:8195640581" class="bg-brand-600 hover:bg-brand-700 text-white font-bold py-4 px-8 rounded-lg text-center flex items-center justify-center space-x-3 transition shadow-lg">
+                            <i class="fa-solid fa-phone text-xl"></i>
+                            <span class="text-lg">(819) 564-0581</span>
                         </a>
-                        <a href="#contact" class="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-semibold text-lg px-8 py-4 rounded-xl border border-slate-700 transition-all">
-                            <span>Nous contacter</span>
-                            <i class="fa-solid fa-arrow-right"></i>
+                        <a href="#contact" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold py-4 px-8 rounded-lg text-center transition border border-slate-700">
+                            Demander un service
                         </a>
                     </div>
                 </div>
-                <div class="lg:col-span-5">
-                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700/50">
-                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="Plombier en intervention à Sherbrooke" class="w-full h-80 lg:h-96 object-cover">
-                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-900/90 to-transparent p-6">
-                            <p class="text-white font-semibold text-lg">Plomberie Sherbrooke Inc</p>
-                            <p class="text-slate-300 text-sm">351 Rue Corbeil, Sherbrooke, QC J1G 3H3</p>
+                <div class="relative">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10">
+                        <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&q=80&w=800" alt="Travaux de plomberie" class="w-full h-96 object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white text-slate-900 p-4 rounded-xl shadow-lg border border-slate-100 hidden sm:flex items-center space-x-3">
+                        <div class="bg-blue-100 p-3 rounded-full text-brand-600">
+                            <i class="fa-solid fa-location-dot text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 font-medium">Adresse locale</p>
+                            <p class="text-sm font-bold">351 Rue Corbeil, Sherbrooke</p>
                         </div>
                     </div>
                 </div>
@@ -113,203 +133,281 @@
         </div>
     </section>
 
-    <!-- Section Services -->
-    <section id="services" class="py-20 bg-white">
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Nos Services de Plomberie à Sherbrooke</h2>
-                <p class="mt-4 text-slate-600 text-lg">Une gamme complète de prestations pour répondre à l'ensemble de vos besoins en tuyauterie et sanitaire.</p>
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Nos Services de Plomberie à Sherbrooke</h2>
+                <p class="text-slate-600">
+                    Découvrez nos prestations de plomberie adaptées à vos besoins résidentiels et commerciaux.
+                </p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Service 1 -->
-                <div class="bg-slate-50 rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=800&q=80" alt="Intervention d'urgence plomberie" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
-                    </div>
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&q=80&w=600" alt="Débouchage et urgence plomberie" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-4">
-                            <i class="fa-solid fa-house-chimney-crack"></i>
+                        <div class="text-brand-600 mb-2">
+                            <i class="fa-solid fa-triangle-exclamation text-2xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Gestion de Dégâts d'Eau & Urgences</h3>
-                        <p class="text-slate-600">Prise en charge rapide des situations urgentes et des fuites d'eau pour protéger votre bâtiment.</p>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Urgence & Débouchage</h3>
+                        <p class="text-slate-600 text-sm">
+                            Intervention rapide pour canalisations bloquées, tuyaux obstrués et problèmes d'écoulement urgents.
+                        </p>
                     </div>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="bg-slate-50 rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Débouchage de drain et tuyauterie" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
-                    </div>
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&q=80&w=600" alt="Réparation de fuite et dégât d'eau" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-4">
-                            <i class="fa-solid fa-toilet"></i>
+                        <div class="text-brand-600 mb-2">
+                            <i class="fa-solid fa-droplet text-2xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Débouchage & Drains</h3>
-                        <p class="text-slate-600">Service de débouchage de tuyauteries, éviers, toilettes et conduits principaux à Sherbrooke.</p>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Dégâts d'Eau & Fuites</h3>
+                        <p class="text-slate-600 text-sm">
+                            Prise en charge sérieuse lors de moments stressants comme les fuites d'eau majeures et infiltrations.
+                        </p>
                     </div>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="bg-slate-50 rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=800&q=80" alt="Installation de plomberie et robinetterie" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
-                    </div>
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600" alt="Installation de robinetterie et sanitaire" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-4">
-                            <i class="fa-solid fa-faucet-drip"></i>
+                        <div class="text-brand-600 mb-2">
+                            <i class="fa-solid fa-wrench text-2xl"></i>
                         </div>
                         <h3 class="text-xl font-bold text-slate-900 mb-2">Installation & Rénovation</h3>
-                        <p class="text-slate-600">Installation et remplacement d'équipements sanitaires, chauffe-eau, chauffe-eau électrique et robinetterie.</p>
+                        <p class="text-slate-600 text-sm">
+                            Remplacement de robinetterie, chauffe-eau, lavabos, toilettes et réfection des tuyauteries.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Avis Clients -->
-    <section id="avis" class="py-20 bg-slate-100">
+    <!-- About Section -->
+    <section id="a-propos" class="py-16 bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">À propos de Plomberie Sherbrooke Inc</h2>
+                    <p class="text-slate-600 mb-4 leading-relaxed">
+                        Établie au <strong>351 Rue Corbeil à Sherbrooke (QC J1G 3H3)</strong>, Plomberie Sherbrooke Inc répond aux besoins de plomberie des résidents de la région.
+                    </p>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Que ce soit pour un problème urgent de dégât d'eau ou des travaux programmés, notre équipe s'efforce de proposer des rendez-vous rapides et un service courtois pour vous accompagner dans vos moments de stress.
+                    </p>
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-200 flex items-center space-x-4">
+                        <i class="fa-solid fa-phone text-2xl text-brand-600"></i>
+                        <div>
+                            <p class="text-xs text-slate-500 uppercase font-semibold">Contact Téléphonique</p>
+                            <a href="tel:8195640581" class="text-lg font-bold text-slate-900 hover:text-brand-600">(819) 564-0581</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800" alt="Inspection de plomberie à Sherbrooke" class="rounded-xl shadow-lg w-full h-80 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Real Google Reviews Section -->
+    <section id="avis" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Avis de nos clients</h2>
-                <p class="mt-4 text-slate-600 text-lg">Retrouvez les témoignages réels issus de notre fiche Google Places.</p>
+                <span class="text-brand-600 font-semibold text-sm uppercase tracking-wider">Avis clients réels</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2 mb-4">Témoignages Vérifiés sur Google</h2>
+                <p class="text-slate-600">
+                    Voici les retours et avis authentiques laissés par nos clients sur Google Places.
+                </p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Avis 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex flex-col justify-between">
                     <div>
-                        <div class="flex text-amber-400 mb-4">
+                        <div class="flex items-center space-x-1 text-amber-400 mb-3">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-slate-700 italic mb-6">
+                        <p class="text-slate-700 text-sm leading-relaxed mb-4">
                             "Autant l'accueil au téléphone par la dame du bureau que le plombier, c'est un service 5 étoiles. Ils ont pris au sérieux l'état de la situation et ont réussi à me faire une place le jour même. Le plombier était patient, gentil et a bien pris le temps d'investiguer et me montrer ce que je devais faire pour la suite. Vraiment une perle dans un moment stressant (dégât d'eau). Merci beaucoup!"
                         </p>
                     </div>
-                    <div class="font-bold text-slate-900 border-t border-slate-100 pt-4 flex items-center justify-between">
-                        <span>Avis Client Google</span>
-                        <i class="fa-brands fa-google text-slate-400"></i>
+                    <div class="pt-4 border-t border-slate-100 flex items-center space-x-3">
+                        <div class="bg-slate-200 text-slate-600 rounded-full w-8 h-8 flex items-center justify-center font-bold text-xs">Client</div>
+                        <span class="text-xs text-slate-500 font-medium">Avis Google Vérifié</span>
                     </div>
                 </div>
 
-                <!-- Avis 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between">
+                <!-- Review 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex flex-col justify-between">
                     <div>
-                        <div class="flex text-amber-400 mb-4">
+                        <div class="flex items-center space-x-1 text-amber-400 mb-3">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-slate-700 italic mb-6">
+                        <p class="text-slate-700 text-sm leading-relaxed mb-4">
                             "Je recommande fortement cette entreprise. J'ai eu un rendez-vous dans moins de 48h et le travail était impécable. C'est exactement le genre d'entreprise à encourager, car ne se prene pas pour des dieux comme la plupart."
                         </p>
                     </div>
-                    <div class="font-bold text-slate-900 border-t border-slate-100 pt-4 flex items-center justify-between">
-                        <span>Avis Client Google</span>
-                        <i class="fa-brands fa-google text-slate-400"></i>
+                    <div class="pt-4 border-t border-slate-100 flex items-center space-x-3">
+                        <div class="bg-slate-200 text-slate-600 rounded-full w-8 h-8 flex items-center justify-center font-bold text-xs">Client</div>
+                        <span class="text-xs text-slate-500 font-medium">Avis Google Vérifié</span>
                     </div>
                 </div>
 
-                <!-- Avis 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between">
+                <!-- Review 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex flex-col justify-between">
                     <div>
-                        <div class="flex text-amber-400 mb-4">
+                        <div class="flex items-center space-x-1 text-amber-400 mb-3">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-slate-700 italic mb-6">
+                        <p class="text-slate-700 text-sm leading-relaxed mb-4">
                             "Service professionnel et de grande qualité. Travail soigné et réalisé dans les délais. Je recommande sans hésiter."
                         </p>
                     </div>
-                    <div class="font-bold text-slate-900 border-t border-slate-100 pt-4 flex items-center justify-between">
-                        <span>Avis Client Google</span>
-                        <i class="fa-brands fa-google text-slate-400"></i>
+                    <div class="pt-4 border-t border-slate-100 flex items-center space-x-3">
+                        <div class="bg-slate-200 text-slate-600 rounded-full w-8 h-8 flex items-center justify-center font-bold text-xs">Client</div>
+                        <span class="text-xs text-slate-500 font-medium">Avis Google Vérifié</span>
                     </div>
                 </div>
 
-                <!-- Avis 4 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between">
+                <!-- Review 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex flex-col justify-between">
                     <div>
-                        <div class="flex text-amber-400 mb-4">
+                        <div class="flex items-center space-x-1 text-amber-400 mb-3">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-slate-700 italic mb-6">
+                        <p class="text-slate-700 text-sm leading-relaxed mb-4">
                             "Super service !! Très bon prix, je recommande totalement !"
                         </p>
                     </div>
-                    <div class="font-bold text-slate-900 border-t border-slate-100 pt-4 flex items-center justify-between">
-                        <span>Avis Client Google</span>
-                        <i class="fa-brands fa-google text-slate-400"></i>
+                    <div class="pt-4 border-t border-slate-100 flex items-center space-x-3">
+                        <div class="bg-slate-200 text-slate-600 rounded-full w-8 h-8 flex items-center justify-center font-bold text-xs">Client</div>
+                        <span class="text-xs text-slate-500 font-medium">Avis Google Vérifié</span>
+                    </div>
+                </div>
+
+                <!-- Review 5 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex flex-col justify-between md:col-span-2 lg:col-span-2">
+                    <div>
+                        <div class="flex items-center space-x-1 text-slate-400 mb-3">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm leading-relaxed mb-4">
+                            "Bien que le travail a été fait rapidement et correctement, payer près d’un demi‑millier de dollars pour un simple débouchage d’égout réalisé en une heure dépasse à mon avis l'entendement. Facture : 493 $, une seule ligne, aucune ventilation des coûts. Lorsque j’ai demandé des explications, on m’a indiqué que l’intervention provenait d’un sous‑traitant non‑plombier, alors que c’est avec Plomberie Sherbrooke que je croyais faire affaire. Un crédit de 50 $ m’a ensuite été proposé, mais je considère toute de même que la tarification est disproportionnée et la transparence insuffisante. Je ne recommande pas Plomberie Sherbrooke et vous suggère de magasiner avant de contracter."
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex items-center space-x-3">
+                        <div class="bg-slate-200 text-slate-600 rounded-full w-8 h-8 flex items-center justify-center font-bold text-xs">Client</div>
+                        <span class="text-xs text-slate-500 font-medium">Avis Google Vérifié</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Contact -->
+    <!-- Contact & Map Section -->
     <section id="contact" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div>
-                    <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">Coordonnées et Contact</h2>
-                    <p class="text-slate-600 text-lg mb-8">
-                        Vous avez besoin d'un plombier à Sherbrooke ? Communiquez directement avec notre équipe par téléphone ou via le formulaire ci-contre.
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">Contactez Plomberie Sherbrooke Inc</h2>
+                    <p class="text-slate-600 mb-8">
+                        Pour toute demande de service ou renseignement à Sherbrooke, contactez-nous directement par téléphone ou remplissez le formulaire ci-dessous.
                     </p>
 
-                    <div class="space-y-6">
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl shrink-0">
-                                <i class="fa-solid fa-phone"></i>
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-brand-50 p-3 rounded-lg text-brand-600 mt-1">
+                                <i class="fa-solid fa-location-dot text-xl"></i>
                             </div>
                             <div>
-                                <h3 class="font-bold text-slate-900 text-lg">Téléphone</h3>
-                                <a href="tel:8195640581" class="text-blue-600 font-semibold text-xl hover:underline">(819) 564-0581</a>
+                                <h3 class="font-bold text-slate-900">Adresse</h3>
+                                <p class="text-slate-600">351 Rue Corbeil, Sherbrooke, QC J1G 3H3, Canada</p>
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl shrink-0">
-                                <i class="fa-solid fa-location-dot"></i>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-brand-50 p-3 rounded-lg text-brand-600 mt-1">
+                                <i class="fa-solid fa-phone text-xl"></i>
                             </div>
                             <div>
-                                <h3 class="font-bold text-slate-900 text-lg">Adresse</h3>
-                                <p class="text-slate-600">351 Rue Corbeil<br>Sherbrooke, QC J1G 3H3, Canada</p>
+                                <h3 class="font-bold text-slate-900">Téléphone</h3>
+                                <a href="tel:8195640581" class="text-brand-600 font-bold hover:underline">(819) 564-0581</a>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Map Image Placeholder with direct map visual -->
+                    <div class="rounded-xl overflow-hidden border border-slate-200 shadow-sm">
+                        <a href="https://maps.google.com/?q=351+Rue+Corbeil,+Sherbrooke,+QC+J1G+3H3" target="_blank" rel="noopener noreferrer" class="block relative group">
+                            <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80&w=800" alt="Carte de localisation Sherbrooke" class="w-full h-48 object-cover group-hover:opacity-90 transition">
+                            <div class="absolute inset-0 bg-slate-900/40 flex items-center justify-center">
+                                <span class="bg-white text-slate-900 font-bold py-2 px-4 rounded-lg shadow text-sm flex items-center space-x-2">
+                                    <i class="fa-solid fa-map-pin text-red-500"></i>
+                                    <span>Voir sur Google Maps</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Formulaire -->
-                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
-                    <h3 class="text-2xl font-bold text-slate-900 mb-6">Demande de Renseignements</h3>
-                    <form class="space-y-4" onsubmit="event.preventDefault(); alert('Merci! Votre message a été envoyé.');">
+                <!-- Contact Form -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-6">Demande d'information</h3>
+                    <form onsubmit="event.preventDefault(); alert('Merci. Votre message a été transmis.');" class="space-y-4">
                         <div>
-                            <label for="name" class="block text-sm font-medium text-slate-700 mb-1">Nom complet</label>
-                            <input type="text" id="name" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none">
+                            <label for="nom" class="block text-sm font-medium text-slate-700 mb-1">Nom complet</label>
+                            <input type="text" id="nom" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-600 focus:border-transparent outline-none transition" placeholder="Votre nom">
                         </div>
+
                         <div>
-                            <label for="phone" class="block text-sm font-medium text-slate-700 mb-1">Téléphone</label>
-                            <input type="tel" id="phone" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none">
+                            <label for="telephone" class="block text-sm font-medium text-slate-700 mb-1">Téléphone</label>
+                            <input type="tel" id="telephone" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-600 focus:border-transparent outline-none transition" placeholder="(819) 000-0000">
                         </div>
+
                         <div>
-                            <label for="message" class="block text-sm font-medium text-slate-700 mb-1">Message ou Description de votre besoin</label>
-                            <textarea id="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none"></textarea>
+                            <label for="service" class="block text-sm font-medium text-slate-700 mb-1">Type de besoin</label>
+                            <select id="service" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-600 focus:border-transparent outline-none transition bg-white">
+                                <option>Débouchage / Urgence</option>
+                                <option>Dégât d'eau / Fuite</option>
+                                <option>Installation / Rénovation</option>
+                                <option>Autre demande</option>
+                            </select>
                         </div>
-                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-6 rounded-lg transition-colors">
-                            Envoyer le message
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-slate-700 mb-1">Message</label>
+                            <textarea id="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-600 focus:border-transparent outline-none transition" placeholder="Décrivez votre situation..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-3.5 px-6 rounded-lg transition shadow">
+                            Envoyer la demande
                         </button>
                     </form>
                 </div>
@@ -320,13 +418,14 @@
     <!-- Footer -->
     <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
                 <div>
-                    <span class="text-white font-bold text-xl">Plomberie Sherbrooke Inc</span>
-                    <p class="text-sm mt-1">351 Rue Corbeil, Sherbrooke, QC J1G 3H3 | Téléphone : (819) 564-0581</p>
+                    <span class="text-white font-bold text-lg block">Plomberie Sherbrooke Inc</span>
+                    <p class="text-sm text-slate-400">351 Rue Corbeil, Sherbrooke, QC J1G 3H3, Canada</p>
                 </div>
-                <div class="text-sm">
-                    &copy; Plomberie Sherbrooke Inc. Tous droits réservés.
+                <div class="text-center md:text-right">
+                    <p class="text-sm">Téléphone : <a href="tel:8195640581" class="text-white hover:underline font-semibold">(819) 564-0581</a></p>
+                    <p class="text-xs text-slate-500 mt-2">&copy; Plomberie Sherbrooke Inc. Tous droits réservés.</p>
                 </div>
             </div>
         </div>
