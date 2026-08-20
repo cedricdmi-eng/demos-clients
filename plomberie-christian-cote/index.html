@@ -3,16 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plombier à Sherbrooke | Plomberie Christian Coté</title>
-    <meta name="description" content="Plomberie Christian Coté à Sherbrooke : services de plomberie résidentielle et commerciale, réparation de coups de bélier, entretien et urgences. Contactez-nous au (819) 864-1357.">
+    <title>Plombier à Sherbrooke | Plomberie Christian Coté - Service Professionnel</title>
+    <meta name="description" content="Besoin d'un plombier qualifié à Sherbrooke? Plomberie Christian Coté offre un service rapide, minutieux et efficace pour tous vos travaux de plomberie. Appelez au (819) 864-1357.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Schema.org LocalBusiness -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Plumber",
       "name": "Plomberie Christian Coté",
-      "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80",
-      "telephone": "(819) 864-1357",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "6195 Rue Bertrand-Fabi",
@@ -21,97 +45,102 @@
         "postalCode": "J1N 2P3",
         "addressCountry": "CA"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 45.3789,
-        "longitude": -71.9702
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Sherbrooke"
-      }
+      "telephone": "(819) 864-1357",
+      "priceRange": "$$",
+      "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=80"
     }
     </script>
 </head>
-<body class="font-sans antialiased text-slate-800 bg-slate-50">
+<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-brand-600 selection:text-white">
 
-    <!-- En-tête / Navigation -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <div class="flex items-center space-x-3">
-                    <div class="bg-blue-600 text-white p-2.5 rounded-xl shadow-md">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
-                        </svg>
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 bg-brand-600 rounded-lg flex items-center justify-center text-white text-2xl group-hover:bg-brand-700 transition">
+                        <i class="fa-solid fa-wrench"></i>
                     </div>
                     <div>
-                        <span class="text-xl font-bold tracking-tight text-slate-900 block leading-tight">Plomberie Christian Coté</span>
-                        <span class="text-xs text-slate-500 font-medium">Sherbrooke, QC</span>
+                        <span class="block text-xl font-bold tracking-tight text-slate-900 leading-none">Plomberie Christian Coté</span>
+                        <span class="text-xs text-brand-600 font-medium">Sherbrooke, QC</span>
                     </div>
-                </div>
-                
-                <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
-                    <a href="#services" class="hover:text-blue-600 transition">Services</a>
-                    <a href="#a-propos" class="hover:text-blue-600 transition">À propos</a>
-                    <a href="#temoignages" class="hover:text-blue-600 transition">Avis clients</a>
-                    <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+                </a>
+
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="font-medium text-slate-600 hover:text-brand-600 transition">Services</a>
+                    <a href="#avis" class="font-medium text-slate-600 hover:text-brand-600 transition">Avis Clients</a>
+                    <a href="#a-propos" class="font-medium text-slate-600 hover:text-brand-600 transition">Pourquoi Nous</a>
+                    <a href="#contact" class="font-medium text-slate-600 hover:text-brand-600 transition">Contact</a>
                 </nav>
 
                 <div class="flex items-center">
-                    <a href="tel:8198641357" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl text-sm font-bold text-white bg-blue-600 hover:bg-blue-700 transition shadow-lg shadow-blue-600/20 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                        </svg>
-                        (819) 864-1357
+                    <a href="tel:8198641357" class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-bold px-5 py-3 rounded-xl shadow-md hover:shadow-lg transition transform active:scale-95">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>(819) 864-1357</span>
                     </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Section Héro -->
-    <section class="relative bg-slate-900 text-white py-24 lg:py-32 overflow-hidden">
-        <div class="absolute inset-0 z-0 opacity-25">
-            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1920&q=80" alt="Travaux de plomberie professionnelle à Sherbrooke" class="w-full h-full object-cover">
+    <!-- Hero Section -->
+    <section class="relative bg-slate-900 text-white py-20 lg:py-28 overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-30">
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1920&q=80" alt="Service de plomberie professionnel à Sherbrooke" class="w-full h-full object-cover">
         </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-transparent z-0"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-7 space-y-6">
-                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/20 text-blue-300 text-sm font-medium">
-                        <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
-                        <span>Service professionnel à Sherbrooke</span>
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-600/30 border border-brand-500/30 text-brand-100 text-sm font-semibold">
+                        <i class="fa-solid fa-location-dot text-brand-600"></i>
+                        <span>Service de plomberie à Sherbrooke</span>
                     </div>
+                    
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
-                        Plombier à Sherbrooke : Service rapide, propre et efficace
+                        Plombier à Sherbrooke : Service Rapide & Professionnel
                     </h1>
-                    <p class="text-lg text-slate-300 max-w-2xl leading-relaxed">
-                        Pour vos travaux et réparations de plomberie, bénéficiez d'un service minutieux, ponctuel et respectueux des règles de l'art. Résolution de problèmes complexes, coups de bélier et entretien général.
+                    
+                    <p class="text-lg text-slate-300 max-w-2xl">
+                        Plomberie Christian Coté vous assure un travail propre, ponctuel et exécuté selon les règles de l'art. De la réparation complexe au réglage des coups de bélier, notre équipe intervient avec minutie.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                        <a href="tel:8198641357" class="inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-bold text-white bg-blue-600 hover:bg-blue-500 transition shadow-lg shadow-blue-600/30">
-                            Appeler le (819) 864-1357
+
+                    <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                        <a href="tel:8198641357" class="inline-flex items-center justify-center gap-3 bg-brand-600 hover:bg-brand-700 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg transition">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Appeler le (819) 864-1357</span>
                         </a>
-                        <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-bold text-slate-200 bg-slate-800 hover:bg-slate-700 border border-slate-700 transition">
-                            Demander un service
+                        <a href="#contact" class="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-lg px-8 py-4 rounded-xl border border-slate-700 transition">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Nous contacter</span>
                         </a>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800">
+                        <div>
+                            <span class="block text-2xl font-bold text-white">Ponctuel</span>
+                            <span class="text-xs text-slate-400">Respect des rendez-vous</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-bold text-white">Efficace</span>
+                            <span class="text-xs text-slate-400">Diagnostic précis</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-bold text-white">Propre</span>
+                            <span class="text-xs text-slate-400">Chantier impeccable</span>
+                        </div>
                     </div>
                 </div>
-                <div class="lg:col-span-5">
-                    <div class="relative mx-auto max-w-md lg:max-w-none rounded-2xl overflow-hidden shadow-2xl border border-slate-700/50">
-                        <img src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&w=800&q=80" alt="Technicien plombier au travail à Sherbrooke" class="w-full h-80 object-cover">
-                        <div class="bg-slate-800 p-6 border-t border-slate-700">
-                            <div class="flex items-center space-x-4">
-                                <div class="bg-blue-600/20 p-3 rounded-xl text-blue-400">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <p class="text-sm text-slate-400">Atelier / Adresse :</p>
-                                    <p class="text-sm font-semibold text-white">6195 Rue Bertrand-Fabi, Sherbrooke, QC</p>
-                                </div>
+
+                <div class="lg:col-span-5 hidden lg:block">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-800">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Plombier qualifié au travail" class="w-full h-auto object-cover">
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent p-6">
+                            <div class="flex items-center gap-3 text-white">
+                                <i class="fa-solid fa-circle-check text-brand-600 text-xl"></i>
+                                <span class="font-semibold">Un service recommandé par les résidents de Sherbrooke</span>
                             </div>
                         </div>
                     </div>
@@ -120,214 +149,302 @@
         </div>
     </section>
 
-    <!-- Section Services -->
+    <!-- Services Section -->
     <section id="services" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">Nos services de plomberie à Sherbrooke</h2>
-                <p class="mt-4 text-lg text-slate-600">Un savoir-faire éprouvé pour résoudre tous vos soucis de tuyauterie et d'équipements de plomberie avec précision.</p>
+                <h2 class="text-xs uppercase tracking-widest font-bold text-brand-600 mb-2">Nos prestations</h2>
+                <p class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Services de plomberie résidentielle et commerciale</p>
+                <p class="mt-4 text-slate-600">Des solutions complètes pour résoudre tous vos soucis de tuyauterie et d'installations à Sherbrooke.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 gap-8">
                 <!-- Service 1 -->
-                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition">
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition flex flex-col">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Résolution de coups de bélier et tuyauterie" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=600&q=80" alt="Réparation et entretien de tuyauterie" class="w-full h-full object-cover hover:scale-105 transition duration-500">
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Résolution des coups de bélier</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            Diagnostic et élimination des bruits de claquement et vibrations dans vos tuyaux. Intervention rapide pour protéger l'intégrité de votre système de plomberie.
-                        </p>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Réparation & Entretien</h3>
+                            <p class="text-slate-600 text-sm">Intervention minutieuse pour réparer les fuites, remplacer les composantes défectueuses et assurer le bon fonctionnement de votre système.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-200/60">
+                            <a href="tel:8198641357" class="text-brand-600 font-semibold text-sm hover:text-brand-700 flex items-center gap-1">
+                                <span>Demander un passage</span>
+                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition">
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition flex flex-col">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Réparation et entretien de plomberie" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=600&q=80" alt="Résolution de problèmes complexes de plomberie" class="w-full h-full object-cover hover:scale-105 transition duration-500">
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Réparation & Entretien général</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            Réparation de fuites, remplacement de robinetterie, tuyaux ou raccordements. Un travail propre, expliqué étape par étape pour votre tranquillité d'esprit.
-                        </p>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Résolution de Bruits & Coups de Bélier</h3>
+                            <p class="text-slate-600 text-sm">Expertise spécialisée pour diagnostiquer et éliminer les bruits anormaux et les coups de bélier dans vos conduites d'eau.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-200/60">
+                            <a href="tel:8198641357" class="text-brand-600 font-semibold text-sm hover:text-brand-700 flex items-center gap-1">
+                                <span>Régler ce problème</span>
+                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition">
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition flex flex-col">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=800&q=80" alt="Installation d'équipements de plomberie" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Installation sanitaire et travaux de plomberie" class="w-full h-full object-cover hover:scale-105 transition duration-500">
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Installation d'équipements</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            Installation complète de chauffe-eau, lavabos, toilettes et accessoires. Des travaux réalisés dans le respect strict des normes et règles de l'art.
-                        </p>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Travaux de Plomberie Générale</h3>
+                            <p class="text-slate-600 text-sm">Installations respectant scrupuleusement les règles de l'art. Un travail propre, durable et conforme pour votre tranquillité d'esprit.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-200/60">
+                            <a href="tel:8198641357" class="text-brand-600 font-semibold text-sm hover:text-brand-700 flex items-center gap-1">
+                                <span>Obtenir une estimation</span>
+                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section À propos / Engagements -->
-    <section id="a-propos" class="py-20 bg-slate-100">
+    <!-- Why Choose Us -->
+    <section id="a-propos" class="py-16 bg-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=800&q=80" alt="Plombier qualifié au travail" class="rounded-2xl shadow-xl w-full object-cover h-[450px]">
-                </div>
-                <div class="space-y-6">
-                    <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Un service de plomberie de confiance à Sherbrooke</h2>
-                    <p class="text-slate-600 leading-relaxed">
-                        Chez Plomberie Christian Coté, nous mettons un point d'honneur à offrir une intervention humaine, honnête et professionnelle. Que ce soit pour une réparation urgente ou la résolution d'un problème persistant de tuyauterie, vous bénéficiez du savoir-faire d'un technicien expérimenté.
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl mb-6">
+                        Un service de plomberie axé sur la qualité et la courtoisie
+                    </h2>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Chez Plomberie Christian Coté, nous savons qu'un problème de plomberie doit être réglé rapidement et correctement. Notre équipe se distingue par sa ponctualité, son professionnalisme et la clarté de ses explications.
                     </p>
+                    
                     <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <div class="bg-blue-600 text-white rounded-full p-1 mr-3 mt-1">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center flex-shrink-0 text-xs">
+                                <i class="fa-solid fa-check"></i>
                             </div>
-                            <span class="text-slate-700 font-medium">Ponctualité et respect des horaires convenus.</span>
+                            <div>
+                                <strong class="text-slate-900 block">Ponctualité garantie</strong>
+                                <span class="text-slate-600 text-sm">Nous arrivons aux heures prévues pour respecter votre horaire.</span>
+                            </div>
                         </li>
-                        <li class="flex items-start">
-                            <div class="bg-blue-600 text-white rounded-full p-1 mr-3 mt-1">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center flex-shrink-0 text-xs">
+                                <i class="fa-solid fa-check"></i>
                             </div>
-                            <span class="text-slate-700 font-medium">Travail propre, soigné et explications claires des réparations.</span>
+                            <div>
+                                <strong class="text-slate-900 block">Explications claires</strong>
+                                <span class="text-slate-600 text-sm">Nous prenons le temps de vous expliquer les réparations nécessaires avant et pendant les travaux.</span>
+                            </div>
                         </li>
-                        <li class="flex items-start">
-                            <div class="bg-blue-600 text-white rounded-full p-1 mr-3 mt-1">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center flex-shrink-0 text-xs">
+                                <i class="fa-solid fa-check"></i>
                             </div>
-                            <span class="text-slate-700 font-medium">Connaissance approfondie du métier et respect des règles de l'art.</span>
+                            <div>
+                                <strong class="text-slate-900 block">Respect des lieux & propreté</strong>
+                                <span class="text-slate-600 text-sm">Un travail propre et minutieux du début à la fin de l'intervention.</span>
+                            </div>
                         </li>
                     </ul>
                 </div>
+
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80" alt="Plomberie de qualité" class="rounded-2xl shadow-xl">
+                    <div class="absolute -bottom-6 -left-6 bg-brand-600 text-white p-6 rounded-2xl shadow-lg hidden sm:block max-w-xs">
+                        <p class="font-bold text-lg mb-1">Service d'excellence</p>
+                        <p class="text-xs text-brand-100">Des techniciens expérimentés à l'écoute de vos besoins à Sherbrooke.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Témoignages -->
-    <section id="temoignages" class="py-20 bg-white">
+    <!-- Testimonials Section -->
+    <section id="avis" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">Avis de nos clients à Sherbrooke</h2>
-                <p class="mt-4 text-lg text-slate-600">Découvrez les retours d'expérience de nos clients suite à nos interventions de plomberie.</p>
+                <h2 class="text-xs uppercase tracking-widest font-bold text-brand-600 mb-2">Témoignages vérifiés</h2>
+                <p class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Ce que disent nos clients à Sherbrooke</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Avis 1 -->
-                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 flex flex-col justify-between">
-                    <p class="text-slate-700 italic leading-relaxed mb-6">
-                        "Service exceptionnel de la part de Plomberie Christian Côté ! Le technicien (Luc) est venu chez nous et il a fait une job extraordinaire. Professionnel, ponctuel, efficace et très minutieux dans son travail. Il a pris le temps d’expliquer les réparations et de s’assurer que tout était parfait avant de partir. Je recommande fortement cette entreprise, et particulièrement Luc, pour un service de plomberie fiable et de grande qualité. Merci encore !"
-                    </p>
-                    <div class="font-bold text-slate-900">— Client Google</div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 italic mb-6">
+                            "Service exceptionnel de la part de Plomberie Christian Côté ! Le technicien (Luc) est venu chez nous et il a fait une job extraordinaire. Professionnel, ponctuel, efficace et très minutieux dans son travail. Il a pris le temps d’expliquer les réparations et de s’assurer que tout était parfait avant de partir. Je recommande fortement cette entreprise, et particulièrement Luc, pour un service de plomberie fiable et de grande qualité. Merci encore !"
+                        </p>
+                    </div>
+                    <div class="font-semibold text-slate-900 border-t border-slate-200/80 pt-4 text-sm">
+                        Client vérifié Google
+                    </div>
                 </div>
 
-                <!-- Avis 2 -->
-                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 flex flex-col justify-between">
-                    <p class="text-slate-700 italic leading-relaxed mb-6">
-                        "Nous avions un gros problème de bruits dans notre plomberie, ce qui s'appelle des coups de bélier. Ce matin plomberie Christian Côté, plombier Luc, est venu résoudre notre problème. Arrivé comme prévu à 8 heures. Excellent travail, le monsieur connaît son affaire. Le problème est vite réglé, travail propre et le coût est vraiment bon. Merci plomberie Christian Côté"
-                    </p>
-                    <div class="font-bold text-slate-900">— Serge Turgeon, Sherbrooke</div>
+                <!-- Review 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 italic mb-6">
+                            "Nous avions un gros problème de bruits dans notre plomberie, ce qui s'appelle des coups de bélier. Ce matin plomberie Christian Côté, plombier Luc, est venu résoudre notre problème. Arrivé comme prévu à 8 heures. Excellent travail, le monsieur connaît son affaire. Le problème est vite réglé, travail propre et le coût est vraiment bon. Merci plomberie Christian Côté"
+                        </p>
+                    </div>
+                    <div class="font-semibold text-slate-900 border-t border-slate-200/80 pt-4 text-sm">
+                        Serge Turgeon, Sherbrooke
+                    </div>
                 </div>
 
-                <!-- Avis 3 -->
-                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 flex flex-col justify-between">
-                    <p class="text-slate-700 italic leading-relaxed mb-6">
-                        "Très belle job, plombier sympathique, ponctuel, propre et grand profesional, respectueux de règles de l’art."
-                    </p>
-                    <div class="font-bold text-slate-900">— Client Google</div>
+                <!-- Review 3 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 italic mb-6">
+                            "Très belle job, plombier sympathique, ponctuel, propre et grand profesional, respectueux de règles de l’art."
+                        </p>
+                    </div>
+                    <div class="font-semibold text-slate-900 border-t border-slate-200/80 pt-4 text-sm">
+                        Client vérifié Google
+                    </div>
                 </div>
 
-                <!-- Avis 4 -->
-                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 flex flex-col justify-between">
-                    <p class="text-slate-700 italic leading-relaxed mb-6">
-                        "Excellent service ! Rapide, professionnel et très efficace. Je recommande sans hésiter"
-                    </p>
-                    <div class="font-bold text-slate-900">— Client Google</div>
+                <!-- Review 4 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 italic mb-6">
+                            "Excellent service ! Rapide, professionnel et très efficace. Je recommande sans hésiter"
+                        </p>
+                    </div>
+                    <div class="font-semibold text-slate-900 border-t border-slate-200/80 pt-4 text-sm">
+                        Client vérifié Google
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Contact / Coordonnées -->
+    <!-- Contact & Location Section -->
     <section id="contact" class="py-20 bg-slate-900 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-                <div class="lg:col-span-5 space-y-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <div class="lg:col-span-6 space-y-8">
                     <div>
-                        <h2 class="text-3xl font-bold tracking-tight mb-4">Contactez Plomberie Christian Coté</h2>
-                        <p class="text-slate-400">Besoin d'un plombier à Sherbrooke ? Contactez-nous par téléphone ou adressez-nous une demande directement via ce formulaire.</p>
+                        <h2 class="text-xs uppercase tracking-widest font-bold text-brand-600 mb-2">Contactez-nous</h2>
+                        <p class="text-3xl font-extrabold text-white sm:text-4xl">Prise de rendez-vous & Renseignements</p>
+                        <p class="mt-4 text-slate-400">Pour toute demande de service de plomberie à Sherbrooke et les environs, communiquez directement avec nous.</p>
                     </div>
 
                     <div class="space-y-6">
-                        <div class="flex items-start space-x-4">
-                            <div class="bg-blue-600 p-3 rounded-xl text-white">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                                </svg>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-brand-600 text-xl flex-shrink-0">
+                                <i class="fa-solid fa-phone"></i>
                             </div>
                             <div>
-                                <h3 class="text-sm font-medium text-slate-400">Téléphone</h3>
-                                <a href="tel:8198641357" class="text-xl font-bold text-white hover:text-blue-400 transition">(819) 864-1357</a>
+                                <span class="block text-sm text-slate-400">Téléphone</span>
+                                <a href="tel:8198641357" class="text-2xl font-bold text-white hover:text-brand-600 transition">(819) 864-1357</a>
                             </div>
                         </div>
 
-                        <div class="flex items-start space-x-4">
-                            <div class="bg-blue-600 p-3 rounded-xl text-white">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                                </svg>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-brand-600 text-xl flex-shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <div>
-                                <h3 class="text-sm font-medium text-slate-400">Adresse</h3>
-                                <p class="text-base text-white font-medium">6195 Rue Bertrand-Fabi<br>Sherbrooke, QC J1N 2P3, Canada</p>
+                                <span class="block text-sm text-slate-400">Adresse</span>
+                                <p class="text-lg font-medium text-white">6195 Rue Bertrand-Fabi, Sherbrooke, QC J1N 2P3, Canada</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-brand-600 text-xl flex-shrink-0">
+                                <i class="fa-solid fa-map-pin"></i>
+                            </div>
+                            <div>
+                                <span class="block text-sm text-slate-400">Secteur desservi</span>
+                                <p class="text-lg font-medium text-white">Sherbrooke et ses environs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <a href="tel:8198641357" class="inline-flex items-center justify-center gap-3 bg-brand-600 hover:bg-brand-700 text-white font-bold text-lg w-full sm:w-auto px-8 py-4 rounded-xl shadow-lg transition">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Appeler maintenant : (819) 864-1357</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 shadow-xl">
+                        <h3 class="text-xl font-bold text-white mb-4">Emplacement</h3>
+                        <p class="text-slate-400 text-sm mb-6">Notre entreprise est basée au 6195 Rue Bertrand-Fabi à Sherbrooke.</p>
+                        
+                        <!-- Map Container / Image visual -->
+                        <div class="relative rounded-xl overflow-hidden border border-slate-700 h-72 bg-slate-900 flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=800&q=80" alt="Carte de localisation Sherbrooke" class="w-full h-full object-cover opacity-40">
+                            <div class="absolute inset-0 bg-slate-950/40 flex flex-col items-center justify-center p-6 text-center">
+                                <div class="w-12 h-12 bg-brand-600 rounded-full flex items-center justify-center text-white text-xl mb-3 shadow-lg">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <span class="font-bold text-white text-lg">Plomberie Christian Coté</span>
+                                <span class="text-sm text-slate-300">6195 Rue Bertrand-Fabi, Sherbrooke</span>
+                                <a href="https://maps.google.com/?q=6195+Rue+Bertrand-Fabi,+Sherbrooke,+QC+J1N+2P3" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider bg-white text-slate-900 px-4 py-2 rounded-lg hover:bg-slate-200 transition">
+                                    Voir sur Google Maps
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="lg:col-span-7 bg-slate-800 p-8 rounded-2xl border border-slate-700">
-                    <form onsubmit="event.preventDefault();" class="space-y-6">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-sm font-medium text-slate-300 mb-2">Nom complet</label>
-                                <input type="text" class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-blue-500" placeholder="Votre nom">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-slate-300 mb-2">Téléphone</label>
-                                <input type="tel" class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-blue-500" placeholder="(819) 000-0000">
-                            </div>
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-slate-300 mb-2">Adresse ou quartier à Sherbrooke</label>
-                            <input type="text" class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-blue-500" placeholder="Ex: Sherbrooke">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-slate-300 mb-2">Description du besoin</label>
-                            <textarea rows="4" class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-blue-500" placeholder="Décrivez votre problème de plomberie (fuite, coup de bélier, installation...)"></textarea>
-                        </div>
-                        <button type="submit" class="w-full py-4 px-6 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl transition shadow-lg shadow-blue-600/30">
-                            Envoyer la demande
-                        </button>
-                    </form>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Pied de page -->
-    <footer class="bg-slate-950 text-slate-500 py-8 border-t border-slate-800 text-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <div>
-                &copy; Plomberie Christian Coté. Tous droits réservés. Service de plomberie à Sherbrooke, QC.
-            </div>
-            <div>
-                6195 Rue Bertrand-Fabi, Sherbrooke, QC J1N 2P3 | (819) 864-1357
-            </div>
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:flex sm:justify-between sm:items-center">
+            <p class="text-sm">&copy; Plomberie Christian Coté. Tous droits réservés. Service de plomberie à Sherbrooke.</p>
+            <p class="text-xs text-slate-400 mt-2 sm:mt-0">6195 Rue Bertrand-Fabi, Sherbrooke, QC J1N 2P3 | (819) 864-1357</p>
         </div>
     </footer>
 
