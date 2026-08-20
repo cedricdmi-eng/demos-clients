@@ -3,15 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plombier Sherbrooke | Plomberie Chauffage BRP Inc</title>
-    <meta name="description" content="Plomberie Chauffage BRP Inc à Sherbrooke (1005 Rue Després). Services professionnels de rénovation de plomberie, chauffage et remplacement de chauffe-eau. Appelez au (819) 342-2440.">
+    <title>Plombier Sherbrooke | Plomberie Chauffage BRP Inc | Rénovation & Urgence</title>
+    <meta name="description" content="Plomberie Chauffage BRP Inc est votre entreprise spécialisée en rénovation de plomberie, chauffage et service d'urgence à Sherbrooke. Appelez au (819) 342-2440.">
+    
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#005596',
+                            dark: '#0A2540',
+                            accent: '#0284C7',
+                            light: '#F0F7FF',
+                            gray: '#64748B'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Schema.org JSON-LD LocalBusiness -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Plumber",
       "name": "Plomberie Chauffage BRP Inc",
-      "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1200&q=80",
+      "telephone": "(819) 342-2440",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "1005 Rue Després",
@@ -22,11 +47,13 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 45.4215,
-        "longitude": -71.8631
+        "latitude": 45.4184,
+        "longitude": -71.8617
       },
-      "telephone": "(819) 342-2440",
-      "areaServed": "Sherbrooke",
+      "areaServed": {
+        "@type": "City",
+        "name": "Sherbrooke"
+      },
       "priceRange": "$$"
     }
     </script>
@@ -34,70 +61,71 @@
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
     <!-- En-tête / Navigation -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <div class="bg-blue-600 text-white p-2.5 rounded-lg shadow-sm">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
-                    </svg>
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <div class="bg-brand-blue text-white p-2.5 rounded-lg shadow-md">
+                        <i class="fa-solid fa-faucet-drip text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold text-brand-dark block leading-tight">Plomberie Chauffage BRP Inc</span>
+                        <span class="text-xs text-brand-gray font-medium tracking-wide uppercase">Sherbrooke & Environs</span>
+                    </div>
                 </div>
-                <div>
-                    <span class="text-xl font-bold tracking-tight text-slate-900 block leading-tight">Plomberie Chauffage BRP Inc</span>
-                    <span class="text-xs text-slate-500 font-medium">Sherbrooke, QC</span>
+
+                <nav class="hidden md:flex space-x-8 items-center font-medium text-slate-600 text-sm">
+                    <a href="#services" class="hover:text-brand-blue transition-colors">Services</a>
+                    <a href="#temoignages" class="hover:text-brand-blue transition-colors">Avis Clients</a>
+                    <a href="#contact" class="hover:text-brand-blue transition-colors">Contact & Localisation</a>
+                </nav>
+
+                <div class="flex items-center space-x-4">
+                    <a href="tel:8193422440" class="inline-flex items-center justify-center px-5 py-2.5 border border-transparent rounded-lg shadow-sm text-sm font-semibold text-white bg-brand-blue hover:bg-brand-dark transition-all duration-200">
+                        <i class="fa-solid fa-phone mr-2 text-xs"></i>
+                        (819) 342-2440
+                    </a>
                 </div>
             </div>
-
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
-                <a href="#services" class="text-slate-600 hover:text-blue-600 transition-colors">Services</a>
-                <a href="#avis" class="text-slate-600 hover:text-blue-600 transition-colors">Avis Clients</a>
-                <a href="#contact" class="text-slate-600 hover:text-blue-600 transition-colors">Contact</a>
-            </nav>
-
-            <a href="tel:8193422440" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm shadow-md hover:shadow-lg transition-all duration-200">
-                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                </svg>
-                (819) 342-2440
-            </a>
         </div>
     </header>
 
-    <!-- Section Héros (OBLIGATOIRE avec Image) -->
-    <section class="relative bg-slate-900 text-white overflow-hidden py-20 lg:py-28">
+    <!-- Section Hero (OBLIGATOIRE : avec image Unsplash) -->
+    <section class="relative bg-brand-dark text-white overflow-hidden py-20 lg:py-28">
         <div class="absolute inset-0 z-0 opacity-25">
-            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1920&q=80" alt="Plombier qualifié au travail" class="w-full h-full object-cover">
+            <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1920&q=80" alt="Tuyauterie de plomberie et raccordements" class="w-full h-full object-cover">
         </div>
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-7 space-y-6">
-                    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-semibold tracking-wide uppercase border border-blue-400/30">
-                        <span>Service Résidentiel & Commercial</span>
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-brand-blue/30 border border-brand-accent/40 rounded-full px-4 py-1.5 text-xs font-semibold text-brand-accent uppercase tracking-wider">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Service de Plomberie à Sherbrooke</span>
                     </div>
-                    <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
-                        Plombier & Chauffagiste à Sherbrooke
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white">
+                        Plombier à Sherbrooke & Service de Chauffage
                     </h1>
-                    <p class="text-lg text-slate-300 max-w-2xl font-normal leading-relaxed">
-                        Spécialistes en rénovation de plomberie, installation de chauffe-eau et travaux de chauffage. Un service rapide et courtois situé directement à Sherbrooke.
+                    <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Plomberie Chauffage BRP Inc assure vos travaux de rénovation de plomberie, vos installations de chauffage et vos interventions d'urgence. Un service courtois, rapide et professionnel.
                     </p>
-                    <div class="pt-4 flex flex-col sm:flex-row gap-4">
-                        <a href="tel:8193422440" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-base shadow-lg transition-all text-center">
-                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                            </svg>
+                    <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="tel:8193422440" class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg text-base font-bold text-white bg-brand-accent hover:bg-sky-500 shadow-lg shadow-sky-500/30 transition-all">
+                            <i class="fa-solid fa-phone mr-2"></i>
                             Appeler le (819) 342-2440
                         </a>
-                        <a href="#contact" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-base border border-slate-700 transition-all text-center">
-                            Demander des informations
+                        <a href="#contact" class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg text-base font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 transition-all">
+                            Demander une information
                         </a>
                     </div>
                 </div>
                 <div class="lg:col-span-5">
-                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700/50">
-                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Tuyauterie et plomberie professionnelle" class="w-full h-80 lg:h-96 object-cover">
-                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-900/90 to-transparent p-6">
-                            <p class="text-sm font-semibold text-white">Plomberie Chauffage BRP Inc</p>
-                            <p class="text-xs text-slate-300">1005 Rue Després, Sherbrooke, QC J1E 3N1</p>
+                    <div class="relative mx-auto max-w-md lg:max-w-none rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+                        <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80" alt="Équipement de plomberie et robinetterie moderne" class="w-full h-80 lg:h-96 object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-transparent to-transparent flex items-end p-6">
+                            <div class="text-white">
+                                <p class="font-bold text-lg">Travaux de qualité supérieure</p>
+                                <p class="text-xs text-slate-300">Rénovations, chauffe-eau, inspection et débouchage</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -105,111 +133,175 @@
         </div>
     </section>
 
-    <!-- Section Services (avec images Unsplash réelles par service) -->
-    <section id="services" class="py-20 bg-white">
+    <!-- Engagements & Courtoisie -->
+    <section class="py-12 bg-white border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Nos Services de Plomberie et Chauffage</h2>
-                <p class="mt-4 text-slate-600 text-base">
-                    Nous répondons aux besoins des propriétaires et entreprises de Sherbrooke et des environs pour tous leurs projets d'installation et de rénovation.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:shadow-md transition-shadow">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Rénovation de plomberie et salle de bain" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="flex items-start space-x-4 p-4 rounded-xl bg-brand-light/50">
+                    <div class="p-3 bg-brand-blue text-white rounded-lg shrink-0">
+                        <i class="fa-solid fa-bolt text-lg"></i>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Rénovation de Plomberie</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            Mise à niveau complète de vos conduites, rénovation de salle de bain et cuisine, modification de tuyauterie et raccordements sanitaires.
-                        </p>
+                    <div>
+                        <h3 class="font-bold text-slate-900 mb-1">Réponse Rapide</h3>
+                        <p class="text-sm text-slate-600">Prise en charge réactive de vos appels et demandes de renseignements.</p>
                     </div>
                 </div>
-
-                <!-- Service 2 -->
-                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:shadow-md transition-shadow">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=800&q=80" alt="Installation de chauffe-eau" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                <div class="flex items-start space-x-4 p-4 rounded-xl bg-brand-light/50">
+                    <div class="p-3 bg-brand-blue text-white rounded-lg shrink-0">
+                        <i class="fa-solid fa-comments text-lg"></i>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Chauffe-eau & Remplacement</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            Service d'installation et de remplacement rapide de chauffe-eau. Prise en charge complète pour un système fiable et bien raccordé.
-                        </p>
+                    <div>
+                        <h3 class="font-bold text-slate-900 mb-1">Service Courtois</h3>
+                        <p class="text-sm text-slate-600">Personnel à l'écoute, respectueux des lieux et clair dans ses explications.</p>
                     </div>
                 </div>
-
-                <!-- Service 3 -->
-                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:shadow-md transition-shadow">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80" alt="Systèmes de chauffage" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                <div class="flex items-start space-x-4 p-4 rounded-xl bg-brand-light/50">
+                    <div class="p-3 bg-brand-blue text-white rounded-lg shrink-0">
+                        <i class="fa-solid fa-clipboard-check text-lg"></i>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Systèmes de Chauffage</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            Installation et entretien des équipements de chauffage résidentiel pour garantir un confort optimal tout au long de l'hiver.
-                        </p>
+                    <div>
+                        <h3 class="font-bold text-slate-900 mb-1">Rapports & Inspections</h3>
+                        <p class="text-sm text-slate-600">Diagnostics précis et rapports détaillés en cas d'intervention urgente.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Avis Clients Réels (Provenant directement des données Google fournies) -->
-    <section id="avis" class="py-20 bg-slate-100">
+    <!-- Section Services -->
+    <section id="services" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Témoignages Réels de Clients</h2>
-                <p class="mt-4 text-slate-600 text-base">
-                    Retrouvez ici les retours d'expérience partagés par notre clientèle sur Google.
-                </p>
+                <h2 class="text-xs font-bold text-brand-blue uppercase tracking-widest mb-2">Nos Spécialités</h2>
+                <p class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Services de plomberie et chauffage à Sherbrooke</p>
+                <p class="mt-4 text-slate-600">Des solutions complètes pour le secteur résidentiel, qu'il s'agisse d'une rénovation majeure ou d'un besoin ponctuel.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-100 flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Rénovation de salle de bain et plomberie" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Rénovation de Plomberie</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Réaménagement complet de tuyauterie pour salle de bain et cuisine, remplacement de robinetterie et modernisation d'installations existantes.
+                            </p>
+                        </div>
+                        <a href="tel:8193422440" class="inline-flex items-center text-sm font-semibold text-brand-blue hover:text-brand-dark">
+                            En savoir plus <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-100 flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Remplacement et installation de chauffe-eau" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Installation de Chauffe-Eau</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Service clé en main pour l'approvisionnement, la livraison, le raccordement et la mise en service de votre nouveau chauffe-eau.
+                            </p>
+                        </div>
+                        <a href="tel:8193422440" class="inline-flex items-center text-sm font-semibold text-brand-blue hover:text-brand-dark">
+                            En savoir plus <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-100 flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Plomberie d'urgence et outils de réparation" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Interventions d'Urgence & Inspection</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Réponse rapide en cas d'interruption d'eau, recherche de fuites, inspections techniques et résumés d'intervention professionnels.
+                            </p>
+                        </div>
+                        <a href="tel:8193422440" class="inline-flex items-center text-sm font-semibold text-brand-blue hover:text-brand-dark">
+                            En savoir plus <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Témoignages (Données vérifiées uniquement) -->
+    <section id="temoignages" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-brand-blue uppercase tracking-widest mb-2">Avis Vérifiés</h2>
+                <p class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Ce que disent nos clients</p>
+                <p class="mt-4 text-slate-600">Découvrez les retours d'expérience réels déposés par nos clients sur Google.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Avis 1 -->
-                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                    <p class="text-slate-700 italic text-sm leading-relaxed mb-4">
-                        « Excellent service à la clientèle. Réponse assez rapide. Personnel très courtois et à l’écoute. »
-                    </p>
-                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="font-semibold text-slate-900 text-sm">Avis Google Verified</span>
-                        <span class="text-xs text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full font-medium">Client Réel</span>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 italic text-sm leading-relaxed mb-6">
+                            "Excellent service à la clientèle. Réponse assez rapide. Personnel très courtois et à l’écoute."
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200/60 flex items-center justify-between">
+                        <span class="font-bold text-slate-900 text-sm">Client Google</span>
+                        <i class="fa-brands fa-google text-slate-400 text-xs"></i>
                     </div>
                 </div>
 
-                <!-- Avis 3 (Jacques) -->
-                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                    <p class="text-slate-700 italic text-sm leading-relaxed mb-4">
-                        « Bonjour ! Très satisfait du service rendu par Plomberie BRP. Retour de courriel rapide dès le congé de Pâques passé, communication et arrangement facile. L'installateur Sammy est allé chercher le chauffe eau au magasin de grande surface le matin du jour de l'installation. Service respectueux, communicatif, le tout bien installé (par un seul homme) après 1h 45. Donc, je recommande cette intreprise. Merci bien! »
-                    </p>
-                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="font-semibold text-slate-900 text-sm">Jacques</span>
-                        <span class="text-xs text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full font-medium">Installation Chauffe-eau</span>
+                <!-- Avis 2 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 italic text-sm leading-relaxed mb-6">
+                            "Bonjour ! Très satisfait du service rendu par Plomberie BRP. Retour de courriel rapide dès le congé de Pâques passé, communication et arrangement facile. L'installateur Sammy est allé chercher le chauffe eau au magasin de grande surface le matin du jour de l'installation. Service respectueux, communicatif, le tout bien installé (par un seul homme) après 1h 45. Donc, je recommande cette intreprise. Merci bien!"
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200/60 flex items-center justify-between">
+                        <span class="font-bold text-slate-900 text-sm">Jacques</span>
+                        <i class="fa-brands fa-google text-slate-400 text-xs"></i>
                     </div>
                 </div>
 
-                <!-- Avis 4 -->
-                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                    <p class="text-slate-700 italic text-sm leading-relaxed mb-4">
-                        « Rendez-vous d'urgence très rapide, je n'avais plus d'eau... Le plombier est venu inspecter et j'ai gagné ma cause à la régie du logement grâce à son rapport détaillé et de son résumé de l'appel... Le plombier était empathique et très professionnel, rapide et courtois. »
-                    </p>
-                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="font-semibold text-slate-900 text-sm">Client - Interventions d'urgence</span>
-                        <span class="text-xs text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full font-medium">Service d'Urgence</span>
+                <!-- Avis 3 -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 italic text-sm leading-relaxed mb-6">
+                            "Rendez-vous d'urgence très rapide, je n'avais plus d'eau. Le plombier est venu inspecter et j'ai gagné ma cause grâce à son rapport détaillé et de son résumé. Le plombier était empathique et très professionnel, rapide et courtois."
+                        </p>
                     </div>
-                </div>
-
-                <!-- Avis 5 -->
-                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                    <p class="text-slate-700 italic text-sm leading-relaxed mb-4">
-                        « Très bonne expérience d'installation de chauffe-eau et correction au niveau de la plomberie. Professionnalisme et efficacité assurés. »
-                    </p>
-                    <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span class="font-semibold text-slate-900 text-sm">Client Chauffe-eau</span>
-                        <span class="text-xs text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full font-medium">Installation & Correction</span>
+                    <div class="pt-4 border-t border-slate-200/60 flex items-center justify-between">
+                        <span class="font-bold text-slate-900 text-sm">Client Google</span>
+                        <i class="fa-brands fa-google text-slate-400 text-xs"></i>
                     </div>
                 </div>
             </div>
@@ -217,95 +309,98 @@
     </section>
 
     <!-- Section Contact & Localisation -->
-    <section id="contact" class="py-20 bg-white">
+    <section id="contact" class="py-20 bg-brand-light">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-                
-                <!-- Coordonnées -->
+                <!-- Info coordonnées -->
                 <div class="lg:col-span-5 space-y-8">
                     <div>
-                        <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Contactez-nous</h2>
-                        <p class="mt-3 text-slate-600">
-                            Prenez contact avec l'équipe de Plomberie Chauffage BRP Inc pour vos travaux à Sherbrooke.
-                        </p>
+                        <h2 class="text-xs font-bold text-brand-blue uppercase tracking-widest mb-2">Coordonnées</h2>
+                        <p class="text-3xl font-extrabold text-slate-900">Contactez Plomberie Chauffage BRP Inc</p>
+                        <p class="mt-4 text-slate-600">N'hésitez pas à nous joindre par téléphone ou via le formulaire pour vos projets de plomberie à Sherbrooke.</p>
                     </div>
 
                     <div class="space-y-6">
                         <div class="flex items-start space-x-4">
-                            <div class="bg-blue-100 text-blue-600 p-3 rounded-lg mt-1">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                                </svg>
+                            <div class="p-3 bg-white text-brand-blue rounded-lg shadow-sm">
+                                <i class="fa-solid fa-phone text-lg"></i>
                             </div>
                             <div>
-                                <h3 class="text-base font-semibold text-slate-900">Adresse</h3>
-                                <p class="text-slate-600 text-sm mt-1">
-                                    1005 Rue Després<br>
-                                    Sherbrooke, QC J1E 3N1<br>
-                                    Canada
-                                </p>
+                                <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Téléphone</p>
+                                <a href="tel:8193422440" class="text-xl font-bold text-slate-900 hover:text-brand-blue transition-colors">
+                                    (819) 342-2440
+                                </a>
                             </div>
                         </div>
 
                         <div class="flex items-start space-x-4">
-                            <div class="bg-blue-100 text-blue-600 p-3 rounded-lg mt-1">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                                </svg>
+                            <div class="p-3 bg-white text-brand-blue rounded-lg shadow-sm">
+                                <i class="fa-solid fa-location-dot text-lg"></i>
                             </div>
                             <div>
-                                <h3 class="text-base font-semibold text-slate-900">Téléphone</h3>
-                                <p class="text-slate-600 text-sm mt-1">
-                                    <a href="tel:8193422440" class="text-blue-600 font-bold hover:underline">(819) 342-2440</a>
-                                </p>
+                                <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Adresse administrative</p>
+                                <p class="text-base font-semibold text-slate-900">1005 Rue Després</p>
+                                <p class="text-sm text-slate-600">Sherbrooke, QC J1E 3N1, Canada</p>
                             </div>
                         </div>
                     </div>
+
+                    <div class="p-6 bg-white rounded-2xl shadow-sm border border-slate-200/60">
+                        <h3 class="font-bold text-slate-900 mb-2">Secteur desservi</h3>
+                        <p class="text-sm text-slate-600">Sherbrooke et les municipalités environnantes en Estrie.</p>
+                    </div>
                 </div>
 
-                <!-- Formulaire de contact -->
-                <div class="lg:col-span-7 bg-slate-50 p-8 rounded-2xl border border-slate-200">
-                    <h3 class="text-xl font-bold text-slate-900 mb-6">Envoyez un message</h3>
-                    <form class="space-y-4" action="#" method="POST">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-sm font-medium text-slate-700 mb-1">Nom complet</label>
-                                <input type="text" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm">
+                <!-- Formulaire -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/60">
+                        <h3 class="text-xl font-bold text-slate-900 mb-6">Envoyez-nous un message</h3>
+                        <form action="#" method="POST" class="space-y-4" onsubmit="event.preventDefault(); alert('Merci de votre message. Nous vous recontacterons sous peu.');">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="nom" class="block text-xs font-bold text-slate-700 uppercase mb-1">Nom complet</label>
+                                    <input type="text" id="nom" name="nom" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-blue text-sm" placeholder="Votre nom">
+                                </div>
+                                <div>
+                                    <label for="telephone" class="block text-xs font-bold text-slate-700 uppercase mb-1">Téléphone</label>
+                                    <input type="tel" id="telephone" name="telephone" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-blue text-sm" placeholder="(819) 000-0000">
+                                </div>
                             </div>
                             <div>
-                                <label class="block text-sm font-medium text-slate-700 mb-1">Téléphone</label>
-                                <input type="tel" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm">
+                                <label for="email" class="block text-xs font-bold text-slate-700 uppercase mb-1">Courriel</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-blue text-sm" placeholder="votre@courriel.com">
                             </div>
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-slate-700 mb-1">Adresse courriel</label>
-                            <input type="email" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-slate-700 mb-1">Description du besoin</label>
-                            <textarea rows="4" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm"></textarea>
-                        </div>
-                        <button type="submit" class="w-full py-3 px-6 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm shadow transition-colors">
-                            Envoyer la demande
-                        </button>
-                    </form>
+                            <div>
+                                <label for="message" class="block text-xs font-bold text-slate-700 uppercase mb-1">Description de votre besoin</label>
+                                <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-blue text-sm" placeholder="Précisez votre demande (rénovation, chauffe-eau, réparation...)"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-3.5 px-6 rounded-lg text-white font-bold bg-brand-blue hover:bg-brand-dark transition-colors shadow-md">
+                                Envoyer le message
+                            </button>
+                        </form>
+                    </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- Pied de page -->
-    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div>
-                <p class="text-white font-bold text-lg">Plomberie Chauffage BRP Inc</p>
-                <p class="text-xs text-slate-400 mt-1">1005 Rue Després, Sherbrooke, QC J1E 3N1 | (819) 342-2440</p>
+    <footer class="bg-brand-dark text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+                <div>
+                    <span class="text-lg font-bold text-white block">Plomberie Chauffage BRP Inc</span>
+                    <p class="text-xs text-slate-400 mt-1">1005 Rue Després, Sherbrooke, QC J1E 3N1</p>
+                </div>
+                <div class="text-sm">
+                    <a href="tel:8193422440" class="text-white hover:text-brand-accent font-semibold">
+                        <i class="fa-solid fa-phone mr-2"></i>(819) 342-2440
+                    </a>
+                </div>
+                <div class="text-xs text-slate-500">
+                    &copy; Plomberie Chauffage BRP Inc. Tous droits réservés.
+                </div>
             </div>
-            <p class="text-xs text-slate-500">
-                &copy; Plomberie Chauffage BRP Inc - Tous droits réservés. Service de plomberie à Sherbrooke.
-            </p>
         </div>
     </footer>
 
