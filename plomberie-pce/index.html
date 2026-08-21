@@ -3,42 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plomberie Pce | Plombier à Sherbrooke - Services de Plomberie</title>
-    <meta name="description" content="Plomberie Pce est votre expert plombier à Sherbrooke (73 Chem. Godin). Service de plomberie résidentiel et commercial de confiance. Contactez-nous au (819) 564-8300.">
+    <title>Plombier à Sherbrooke | Plomberie Pce - Services Résidentiels et Commerciaux</title>
+    <meta name="description" content="Vous cherchez un plombier qualifié à Sherbrooke? Plomberie Pce vous accompagne pour tous vos travaux de plomberie résidentielle et commerciale. Appelez le (819) 564-8300.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.plomberiepce.ca/">
-
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50: '#f0f7ff',
-                            100: '#e0effe',
-                            600: '#0284c7',
-                            700: '#0369a1',
-                            800: '#075985',
-                            900: '#0c4a6e',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-
-    <!-- Font Awesome Icons -->
+    
+    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Schema.org JSON-LD -->
+    <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "PlumbingService",
+      "@type": "Plumber",
       "name": "Plomberie Pce",
-      "image": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80",
       "telephone": "(819) 564-8300",
       "address": {
         "@type": "PostalAddress",
@@ -48,6 +30,11 @@
         "postalCode": "J1R 0S6",
         "addressCountry": "CA"
       },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.3986,
+        "longitude": -71.9567
+      },
       "areaServed": {
         "@type": "City",
         "name": "Sherbrooke"
@@ -56,353 +43,296 @@
     }
     </script>
 </head>
-<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-brand-600 selection:text-white">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-    <!-- En-tête / Header -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <!-- Logo -->
-                <a href="#" class="flex items-center space-x-3 group">
-                    <div class="bg-brand-700 text-white p-2.5 rounded-lg transition-transform group-hover:scale-105">
-                        <i class="fa-solid fa-wrench text-xl"></i>
-                    </div>
-                    <div>
-                        <span class="text-xl font-bold tracking-tight text-slate-900 block leading-none">Plomberie Pce</span>
-                        <span class="text-xs text-brand-700 font-semibold uppercase tracking-wider">Sherbrooke, QC</span>
-                    </div>
-                </a>
-
-                <!-- Navigation Desktop -->
-                <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-600">
-                    <a href="#accueil" class="hover:text-brand-700 transition-colors">Accueil</a>
-                    <a href="#services" class="hover:text-brand-700 transition-colors">Services</a>
-                    <a href="#a-propos" class="hover:text-brand-700 transition-colors">À propos</a>
-                    <a href="#contact" class="hover:text-brand-700 transition-colors">Contact</a>
-                </nav>
-
-                <!-- Bouton Téléphone CTA -->
-                <div class="flex items-center">
-                    <a href="tel:8195648300" class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg font-bold text-white bg-brand-700 hover:bg-brand-800 transition-all shadow-md hover:shadow-lg focus:ring-4 focus:ring-brand-100">
-                        <i class="fa-solid fa-phone mr-2 text-sm"></i>
-                        <span>(819) 564-8300</span>
-                    </a>
+    <!-- En-tête / Navigation -->
+    <header class="sticky top-0 z-50 bg-slate-900 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3">
+                <div class="bg-blue-600 p-2.5 rounded-lg text-white">
+                    <i class="fa-solid fa-wrench text-xl"></i>
                 </div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight block text-white">Plomberie Pce</span>
+                    <span class="text-xs text-slate-400 block -mt-1">Sherbrooke, QC</span>
+                </div>
+            </a>
+            
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#accueil" class="hover:text-blue-400 transition-colors">Accueil</a>
+                <a href="#services" class="hover:text-blue-400 transition-colors">Nos Services</a>
+                <a href="#apropos" class="hover:text-blue-400 transition-colors">À Propos</a>
+                <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+            </nav>
+
+            <div class="flex items-center">
+                <a href="tel:8195648300" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2.5 rounded-lg transition-all flex items-center space-x-2 shadow-md">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>(819) 564-8300</span>
+                </a>
             </div>
         </div>
     </header>
 
-    <!-- Section Héro -->
-    <section id="accueil" class="relative bg-slate-900 text-white overflow-hidden py-16 md:py-24">
-        <div class="absolute inset-0 opacity-25">
-            <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1920&q=80" alt="Tuyauterie de plomberie professionnelle" class="w-full h-full object-cover">
+    <!-- Hero Section -->
+    <section id="accueil" class="relative bg-slate-900 text-white py-20 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-25">
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1920&q=80" alt="Robinetterie et plomberie moderne à Sherbrooke" class="w-full h-full object-cover">
         </div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-600/30 text-brand-100 border border-brand-500/30 text-sm font-medium">
-                        <i class="fa-solid fa-location-dot text-brand-600"></i>
-                        <span>Service de plomberie à Sherbrooke</span>
+                    <div class="inline-flex items-center space-x-2 bg-blue-900/60 border border-blue-500/30 text-blue-300 px-3.5 py-1.5 rounded-full text-sm font-medium">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Service local à Sherbrooke et les environs</span>
                     </div>
-                    
-                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white">
-                        Plombier certifié à Sherbrooke : Service rapide et professionnel
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                        Plombier à Sherbrooke : Service Professionnel Résidentiel & Commercial
                     </h1>
-                    
                     <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0">
-                        Plomberie Pce répare, installe et entretient vos équipements de plomberie résidentiels et commerciaux. Intervention rigoureuse et solutions durables pour tous vos besoins à Sherbrooke et dans les environs.
+                        Plomberie Pce répond à tous vos besoins en installation, entretien et rénovation de système de tuyauterie. Faites confiance à une expertise locale reconnue à Sherbrooke.
                     </p>
-
-                    <div class="pt-2 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="tel:8195648300" class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg font-bold text-white bg-brand-600 hover:bg-brand-700 transition-all shadow-lg text-lg">
-                            <i class="fa-solid fa-phone mr-2"></i>
-                            (819) 564-8300
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+                        <a href="tel:8195648300" class="bg-blue-600 hover:bg-blue-700 text-white text-lg font-bold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center space-x-3">
+                            <i class="fa-solid fa-phone text-xl"></i>
+                            <span>(819) 564-8300</span>
                         </a>
-                        <a href="#contact" class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg font-bold text-slate-900 bg-white hover:bg-slate-100 transition-all text-lg">
+                        <a href="#contact" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-lg font-semibold px-8 py-4 rounded-lg transition-all flex items-center justify-center">
                             Demander une soumission
                         </a>
                     </div>
-
-                    <div class="pt-6 grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-slate-800 text-slate-300 text-sm">
-                        <div class="flex items-center space-x-2 justify-center lg:justify-start">
-                            <i class="fa-solid fa-check text-brand-600"></i>
-                            <span>Secteur Sherbrooke</span>
-                        </div>
-                        <div class="flex items-center space-x-2 justify-center lg:justify-start">
-                            <i class="fa-solid fa-check text-brand-600"></i>
-                            <span>Résidentiel & Commercial</span>
-                        </div>
-                        <div class="flex items-center space-x-2 justify-center lg:justify-start">
-                            <i class="fa-solid fa-check text-brand-600"></i>
-                            <span>Travail Garanti</span>
-                        </div>
-                    </div>
                 </div>
-
                 <div class="lg:col-span-5">
-                    <div class="relative mx-auto max-w-md rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10">
-                        <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=800&q=80" alt="Outillage professionnel de plombier" class="w-full h-80 sm:h-96 object-cover">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700">
+                        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=800&q=80" alt="Tuyauterie en cuivre et équipement de plomberie" class="w-full h-80 lg:h-96 object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-6">
-                            <div class="text-white">
-                                <p class="font-bold text-lg">Plomberie Pce</p>
-                                <p class="text-sm text-slate-300">73 Chem. Godin, Sherbrooke, QC J1R 0S6</p>
-                            </div>
+                            <p class="text-white text-sm font-medium">Travaux de plomberie durables et conformes aux normes du bâtiment.</p>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Section Avantages -->
-    <section class="py-12 bg-white border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="flex items-start space-x-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
-                    <div class="p-3 bg-brand-100 text-brand-700 rounded-lg shrink-0">
-                        <i class="fa-solid fa-shield-halved text-2xl"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-slate-900 text-lg mb-1">Expertise Révélée</h3>
-                        <p class="text-slate-600 text-sm">Normes de sécurité respectées et installation conforme aux standards les plus exigeants.</p>
-                    </div>
-                </div>
-
-                <div class="flex items-start space-x-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
-                    <div class="p-3 bg-brand-100 text-brand-700 rounded-lg shrink-0">
-                        <i class="fa-solid fa-map-location-dot text-2xl"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-slate-900 text-lg mb-1">Service Local à Sherbrooke</h3>
-                        <p class="text-slate-600 text-sm">Présence rapide sur le terrain pour répondre à vos demandes dans toute la ville.</p>
-                    </div>
-                </div>
-
-                <div class="flex items-start space-x-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
-                    <div class="p-3 bg-brand-100 text-brand-700 rounded-lg shrink-0">
-                        <i class="fa-solid fa-screwdriver-wrench text-2xl"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-slate-900 text-lg mb-1">Équipement Moderne</h3>
-                        <p class="text-slate-600 text-sm">Utilisation de matériel performant pour un diagnostic exact et un travail durable.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Services -->
-    <section id="services" class="py-20 bg-slate-50">
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-700 mb-2">Nos Prestations</h2>
-                <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">Services complets de plomberie à Sherbrooke</p>
-                <div class="w-20 h-1 bg-brand-700 mx-auto mt-4 rounded-full"></div>
+                <h2 class="text-blue-600 font-semibold text-sm tracking-wide uppercase mb-2">Nos Spécialités</h2>
+                <p class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Services de Plomberie à Sherbrooke</p>
+                <p class="mt-4 text-slate-600">Des solutions complètes et rigoureuses adaptées aux exigences des bâtiments résidentiels et commerciaux de la région.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Service 1 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-slate-200 transition-all hover:-translate-y-1 hover:shadow-lg flex flex-col">
-                    <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=800&q=80" alt="Tuyauterie et raccords en cuivre" class="w-full h-full object-cover">
+                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=600&q=80" alt="Plomberie résidentielle et robinetterie" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Plomberie Générale</h3>
-                        <p class="text-slate-600 text-sm mb-4 flex-grow">Installation, modification et réparation de canalisations pour projets neufs ou rénovations.</p>
-                        <a href="tel:8195648300" class="inline-flex items-center text-sm font-bold text-brand-700 hover:text-brand-800">
-                            Nous contacter <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
-                        </a>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Plomberie Résidentielle</h3>
+                            <p class="text-slate-600 text-sm">Installation et maintenance de vos conduites d'eau, raccordements d'appareils et robinetterie sanitaire.</p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-slate-200 transition-all hover:-translate-y-1 hover:shadow-lg flex flex-col">
-                    <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80" alt="Robinets et équipements de chauffe-eau" class="w-full h-full object-cover">
+                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80" alt="Plomberie commerciale et chauffe-eau" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Chauffe-eau</h3>
-                        <p class="text-slate-600 text-sm mb-4 flex-grow">Remplacement, entretien et mise en conformité de chauffe-eau électriques ou à gaz.</p>
-                        <a href="tel:8195648300" class="inline-flex items-center text-sm font-bold text-brand-700 hover:text-brand-800">
-                            Nous contacter <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
-                        </a>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Plomberie Commerciale</h3>
+                            <p class="text-slate-600 text-sm">Projets de plomberie pour commerces et bâtiments institutionnels, respectant scrupuleusement les normes en vigueur.</p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-slate-200 transition-all hover:-translate-y-1 hover:shadow-lg flex flex-col">
-                    <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Robinetterie et évacuation de lavabo" class="w-full h-full object-cover">
+                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Outillage professionnel de plombier" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Débouchement & Drains</h3>
-                        <p class="text-slate-600 text-sm mb-4 flex-grow">Déblocage efficace de renvois, lavabos, toilettes et réfection de conduits bloqués.</p>
-                        <a href="tel:8195648300" class="inline-flex items-center text-sm font-bold text-brand-700 hover:text-brand-800">
-                            Nous contacter <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
-                        </a>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Entretien & Réparation</h3>
+                            <p class="text-slate-600 text-sm">Détection de fuites, réparation de tuyauterie et optimisation de votre réseau d'alimentation en eau.</p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Service 4 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-slate-200 transition-all hover:-translate-y-1 hover:shadow-lg flex flex-col">
-                    <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80" alt="Rénovation de salle de bain et sanitaires" class="w-full h-full object-cover">
+                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=600&q=80" alt="Rénovation de salle de bain et tuyauterie moderne" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                     </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-xl font-bold text-slate-900 mb-2">Rénovation Sanitaire</h3>
-                        <p class="text-slate-600 text-sm mb-4 flex-grow">Installation de douches, baignoires, éviers et robinetterie moderne pour cuisine et salle de bain.</p>
-                        <a href="tel:8195648300" class="inline-flex items-center text-sm font-bold text-brand-700 hover:text-brand-800">
-                            Nous contacter <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Rénovation Sanitaire</h3>
+                            <p class="text-slate-600 text-sm">Réaménagement complet des installations d'eau pour cuisines et salles de bain lors de vos travaux de rénovation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À Propos / Pourquoi nous choisir -->
+    <section id="apropos" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-blue-600 font-semibold text-sm tracking-wide uppercase mb-2">Expertise Locale</h2>
+                    <p class="text-3xl font-extrabold text-slate-900 sm:text-4xl mb-6">Plomberie Pce : Votre partenaire de confiance à Sherbrooke</p>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Établie au 73 Chemin Godin à Sherbrooke, Plomberie Pce met à votre disposition un savoir-faire éprouvé pour l'ensemble de vos travaux de tuyauterie et de gestion d'eau. Qu'il s'agisse d'un projet neuf ou d'une modernisation de vos équipements, nous vous garantissons des interventions professionnelles et durables.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="text-blue-600 mt-1">
+                                <i class="fa-solid fa-circle-check text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Travaux rigoureux</h4>
+                                <p class="text-sm text-slate-600">Procédures strictes garantissant la pérennité de vos installations.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="text-blue-600 mt-1">
+                                <i class="fa-solid fa-circle-check text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Ancrage régional</h4>
+                                <p class="text-sm text-slate-600">Service dédié aux propriétaires et entreprises de la région de l'Estrie.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80" alt="Installation de tuyauterie d'eau chaude" class="rounded-lg shadow-md w-full h-64 object-cover">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Finition de plomberie moderne" class="rounded-lg shadow-md w-full h-64 object-cover mt-8">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-blue-600 font-semibold text-sm tracking-wide uppercase mb-2">Contactez-nous</h2>
+                <p class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Une demande ou un projet de plomberie?</p>
+                <p class="mt-4 text-slate-600">Communiquez avec notre équipe directement par téléphone ou via notre formulaire de contact.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Coordonnées -->
+                <div class="lg:col-span-5 bg-slate-900 text-white rounded-2xl p-8 flex flex-col justify-between shadow-xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Plomberie Pce</h3>
+                        <p class="text-slate-300 text-sm mb-8">
+                            Votre spécialiste en plomberie à Sherbrooke. N'hésitez pas à nous joindre pour obtenir de plus amples informations sur nos services.
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-blue-600/20 text-blue-400 p-3 rounded-lg border border-blue-500/30">
+                                    <i class="fa-solid fa-phone text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Téléphone</p>
+                                    <a href="tel:8195648300" class="text-lg font-bold text-white hover:text-blue-400 transition-colors">
+                                        (819) 564-8300
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-blue-600/20 text-blue-400 p-3 rounded-lg border border-blue-500/30">
+                                    <i class="fa-solid fa-location-dot text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Adresse</p>
+                                    <address class="text-white text-sm not-italic mt-0.5">
+                                        73 Chem. Godin<br>
+                                        Sherbrooke, QC J1R 0S6<br>
+                                        Canada
+                                    </address>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 pt-6 border-t border-slate-800">
+                        <a href="tel:8195648300" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-4 rounded-lg transition-colors flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Appeler maintenant</span>
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Section À Propos -->
-    <section id="a-propos" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-6">
-                    <span class="text-xs font-bold uppercase tracking-widest text-brand-700">À propos de l'entreprise</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">
-                        Plomberie Pce : Votre partenaire de confiance à Sherbrooke
-                    </h2>
-                    <p class="text-slate-600 leading-relaxed">
-                        Basée au 73 Chem. Godin à Sherbrooke, l'entreprise Plomberie Pce met tout son savoir-faire technique au service des propriétaires résidentiels et des gestionnaires commerciaux.
-                    </p>
-                    <p class="text-slate-600 leading-relaxed">
-                        Notre mission est simple : offrir un travail rigoureux, propre et exécuté selon les normes québécoises en vigueur. Qu'il s'agisse d'une urgence, d'un remplacement d'équipement ou d'une réfection complète, nous intervenons avec professionnalisme.
-                    </p>
-                    
-                    <div class="pt-4 border-t border-slate-200 grid grid-cols-2 gap-4">
-                        <div>
-                            <p class="font-bold text-slate-900">Localisation</p>
-                            <p class="text-sm text-slate-600">Sherbrooke, QC</p>
-                        </div>
-                        <div>
-                            <p class="font-bold text-slate-900">Téléphone</p>
-                            <p class="text-sm text-slate-600">(819) 564-8300</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="relative">
-                    <div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden shadow-xl border border-slate-100">
-                        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1000&q=80" alt="Matériel de travail et équipements de plomberie" class="w-full h-full object-cover">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Contact / CTA -->
-    <section id="contact" class="py-20 bg-slate-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-                
-                <!-- Coordonnées -->
-                <div class="lg:col-span-5 space-y-8">
-                    <div>
-                        <span class="text-xs font-bold uppercase tracking-widest text-brand-600">Contact Direct</span>
-                        <h2 class="text-3xl font-extrabold text-white mt-1">Besoin d'un plombier à Sherbrooke ?</h2>
-                        <p class="text-slate-300 mt-3">
-                            Contactez Plomberie Pce dès aujourd'hui par téléphone ou via notre formulaire pour discuter de votre projet.
-                        </p>
-                    </div>
-
-                    <div class="space-y-6">
-                        <div class="flex items-start space-x-4">
-                            <div class="p-3 bg-slate-800 text-brand-600 rounded-lg shrink-0 border border-slate-700">
-                                <i class="fa-solid fa-phone text-xl"></i>
+                <!-- Formulaire -->
+                <div class="lg:col-span-7 bg-slate-50 p-8 rounded-2xl border border-slate-200">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-6">Envoyez-nous un message</h3>
+                    <form action="#" method="POST" class="space-y-6" onsubmit="event.preventDefault(); alert('Merci pour votre message. Nous vous contacterons sous peu.');">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="nom" class="block text-sm font-medium text-slate-700 mb-2">Nom complet</label>
+                                <input type="text" id="nom" name="nom" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none bg-white text-slate-900">
                             </div>
                             <div>
-                                <p class="text-xs text-slate-400 font-medium">Téléphone</p>
-                                <a href="tel:8195648300" class="text-xl font-bold text-white hover:text-brand-600 transition-colors">
-                                    (819) 564-8300
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start space-x-4">
-                            <div class="p-3 bg-slate-800 text-brand-600 rounded-lg shrink-0 border border-slate-700">
-                                <i class="fa-solid fa-location-dot text-xl"></i>
-                            </div>
-                            <div>
-                                <p class="text-xs text-slate-400 font-medium">Adresse</p>
-                                <p class="text-base text-white font-medium">
-                                    73 Chem. Godin<br>
-                                    Sherbrooke, QC J1R 0S6, Canada
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="p-6 bg-slate-800/80 rounded-xl border border-slate-700">
-                        <h3 class="font-bold text-white mb-2 flex items-center">
-                            <i class="fa-solid fa-circle-info text-brand-600 mr-2"></i> Zone de service
-                        </h3>
-                        <p class="text-sm text-slate-300">
-                            Interventions prioritaires dans la ville de Sherbrooke et les secteurs environnants de l'Estrie.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Formulaire de contact -->
-                <div class="lg:col-span-7 bg-white text-slate-800 rounded-2xl p-8 shadow-xl">
-                    <h3 class="text-2xl font-bold text-slate-900 mb-6">Demande d'information</h3>
-                    <form onsubmit="event.preventDefault(); alert('Merci! Votre message a été reçu. Nous vous contacterons sous peu.');" class="space-y-4">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div>
-                                <label for="nom" class="block text-sm font-medium text-slate-700 mb-1">Nom complet</label>
-                                <input type="text" id="nom" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-600 focus:border-brand-600 outline-none transition-all" placeholder="Votre nom">
-                            </div>
-                            <div>
-                                <label for="telephone" class="block text-sm font-medium text-slate-700 mb-1">Téléphone</label>
-                                <input type="tel" id="telephone" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-600 focus:border-brand-600 outline-none transition-all" placeholder="(819) 000-0000">
+                                <label for="telephone" class="block text-sm font-medium text-slate-700 mb-2">Numéro de téléphone</label>
+                                <input type="tel" id="telephone" name="telephone" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none bg-white text-slate-900">
                             </div>
                         </div>
 
                         <div>
-                            <label for="adresse" class="block text-sm font-medium text-slate-700 mb-1">Adresse ou quartier (Sherbrooke)</label>
-                            <input type="text" id="adresse" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-600 focus:border-brand-600 outline-none transition-all" placeholder="Ex: Sherbrooke Nord">
+                            <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Courriel</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none bg-white text-slate-900">
                         </div>
 
                         <div>
-                            <label for="message" class="block text-sm font-medium text-slate-700 mb-1">Description des travaux</label>
-                            <textarea id="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-600 focus:border-brand-600 outline-none transition-all" placeholder="Décrivez votre besoin en plomberie..."></textarea>
+                            <label for="service" class="block text-sm font-medium text-slate-700 mb-2">Type de service souhaité</label>
+                            <select id="service" name="service" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none bg-white text-slate-900">
+                                <option value="residentiel">Plomberie résidentielle</option>
+                                <option value="commercial">Plomberie commerciale</option>
+                                <option value="entretien">Entretien / Réparation</option>
+                                <option value="renovation">Rénovation sanitaire</option>
+                                <option value="autre">Autre demande</option>
+                            </select>
                         </div>
 
-                        <button type="submit" class="w-full py-4 px-6 rounded-lg font-bold text-white bg-brand-700 hover:bg-brand-800 transition-all shadow-md text-base">
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-slate-700 mb-2">Détails de votre demande</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none bg-white text-slate-900"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 rounded-lg transition-colors text-center shadow-md">
                             Envoyer la demande
                         </button>
                     </form>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Pied de page / Footer -->
+    <!-- Footer -->
     <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
                 <div>
-                    <span class="text-lg font-bold text-white">Plomberie Pce</span>
-                    <p class="text-sm text-slate-500 mt-1">Services de plomberie professionnelle à Sherbrooke, QC.</p>
+                    <span class="text-xl font-bold text-white block">Plomberie Pce</span>
+                    <p class="text-sm mt-1">Service de plomberie professionnel à Sherbrooke, QC.</p>
                 </div>
-
-                <div class="text-sm text-center md:text-right space-y-1">
-                    <p>73 Chem. Godin, Sherbrooke, QC J1R 0S6</p>
-                    <p>Téléphone : <a href="tel:8195648300" class="text-brand-600 hover:underline">(819) 564-8300</a></p>
+                <div class="text-center md:text-right">
+                    <p class="text-sm">73 Chem. Godin, Sherbrooke, QC J1R 0S6, Canada</p>
+                    <p class="text-sm font-semibold text-white mt-1">Téléphone : <a href="tel:8195648300" class="hover:text-blue-400">(819) 564-8300</a></p>
                 </div>
             </div>
-
-            <div class="mt-8 pt-8 border-t border-slate-900 text-xs text-center text-slate-600">
-                <p>&copy; <script>document.write(new Date().getFullYear())</script> Plomberie Pce. Tous droits réservés. Plomberie à Sherbrooke.</p>
+            <div class="mt-8 pt-8 border-t border-slate-900 text-center text-xs text-slate-500">
+                <p>&copy; Plomberie Pce. Tous droits réservés. Sherbrooke, Québec.</p>
             </div>
         </div>
     </footer>
