@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Électricien à Sherbrooke | J.S.B. Services Électriques inc.</title>
-    <meta name="description" content="Services électriques résidentiels à Sherbrooke : réfection de panneau électrique, installation de luminaires, remplacement de prises et mise aux normes. Appelez au (819) 580-7949.">
+    <title>J.S.B. Services Électriques inc. | Électricien à Sherbrooke</title>
+    <meta name="description" content="J.S.B. Services Électriques inc. à Sherbrooke : réfection de panneau électrique, installation de luminaires, prises et travaux électriques résidentiels. Travail propre, minutieux et prix compétitifs. Appelez au (819) 580-7949.">
+    
+    <!-- Open Graph / Meta Social -->
+    <meta property="og:title" content="J.S.B. Services Électriques inc. | Électricien à Sherbrooke">
+    <meta property="og:description" content="Services électriques professionnels à Sherbrooke. Panneaux électriques, rénovation, éclairage, prises et interrupteurs.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_CA">
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -12,21 +20,24 @@
                 extend: {
                     colors: {
                         brand: {
-                            blue: '#0f2b48',
-                            amber: '#f59e0b',
-                            dark: '#0a192f',
-                            light: '#f8fafc'
+                            blue: '#0F2C59',
+                            gold: '#D97706',
+                            dark: '#1E293B',
+                            light: '#F8FAFC'
                         }
                     }
                 }
             }
         }
     </script>
+
+    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Electrician",
       "name": "J.S.B. Services Électriques inc.",
+      "telephone": "(819) 580-7949",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "576 Rue McManamy",
@@ -35,90 +46,79 @@
         "postalCode": "J1H 2M7",
         "addressCountry": "CA"
       },
-      "telephone": "(819) 580-7949",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.3948,
+        "longitude": -71.8963
+      },
       "areaServed": {
         "@type": "City",
         "name": "Sherbrooke"
-      }
+      },
+      "priceRange": "$$"
     }
     </script>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-    <!-- En-tête / Navigation -->
-    <header class="sticky top-0 z-50 bg-brand-blue text-white shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <div class="flex items-center space-x-3">
-                    <div class="bg-brand-amber text-brand-dark p-2 rounded-lg font-bold">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                        </svg>
-                    </div>
-                    <div>
-                        <span class="text-xl font-bold tracking-tight block leading-tight">J.S.B. Services Électriques inc.</span>
-                        <span class="text-xs text-slate-300 font-medium">Sherbrooke, QC</span>
-                    </div>
-                </div>
-                <nav class="hidden md:flex space-x-8 text-sm font-semibold">
-                    <a href="#accueil" class="hover:text-brand-amber transition">Accueil</a>
-                    <a href="#services" class="hover:text-brand-amber transition">Services</a>
-                    <a href="#avis" class="hover:text-brand-amber transition">Avis Clients</a>
-                    <a href="#contact" class="hover:text-brand-amber transition">Contact</a>
-                </nav>
-                <div>
-                    <a href="tel:8195807949" class="bg-brand-amber hover:bg-amber-500 text-brand-dark font-bold px-5 py-2.5 rounded-lg transition inline-flex items-center shadow-md">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                        </svg>
-                        (819) 580-7949
-                    </a>
-                </div>
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-brand-blue text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 font-bold text-xl tracking-tight">
+                <span class="bg-amber-500 text-brand-blue p-2 rounded-lg">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                </span>
+                <span>J.S.B. Services Électriques inc.</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm">
+                <a href="#services" class="hover:text-amber-400 transition">Services</a>
+                <a href="#avis" class="hover:text-amber-400 transition">Avis Clients</a>
+                <a href="#a-propos" class="hover:text-amber-400 transition">À propos</a>
+                <a href="#contact" class="hover:text-amber-400 transition">Contact</a>
+            </nav>
+
+            <div>
+                <a href="tel:8195807949" class="bg-amber-500 hover:bg-amber-400 text-brand-blue font-bold px-4 py-2.5 rounded-lg text-sm flex items-center gap-2 transition shadow">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h32a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm0 6a2 2 0 012-2h32a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2zm0 6a2 2 0 012-2h32a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2z"/></svg>
+                    <span>(819) 580-7949</span>
+                </a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="accueil" class="relative bg-brand-dark text-white py-20 lg:py-28 overflow-hidden">
-        <div class="absolute inset-0 opacity-20">
-            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1920&q=80" alt="Travaux électriques et panneau de distribution" class="w-full h-full object-cover">
-        </div>
+    <section class="relative bg-brand-blue text-white overflow-hidden py-16 md:py-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-7">
-                    <span class="inline-block bg-amber-500/20 text-brand-amber border border-brand-amber/30 text-xs uppercase tracking-widest px-3 py-1 rounded-full font-bold mb-4">
-                        Électricien qualifié à Sherbrooke
-                    </span>
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
-                        Électricien à Sherbrooke | J.S.B. Services Électriques inc.
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-slate-800/80 border border-slate-700 px-3 py-1.5 rounded-full text-xs text-amber-400 font-semibold uppercase tracking-wider">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+                        Service résidentiel à Sherbrooke
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+                        Électricien à Sherbrooke – J.S.B. Services Électriques inc.
                     </h1>
-                    <p class="text-lg text-slate-300 mb-8 max-w-2xl leading-relaxed">
-                        Service électrique professionnel, efficace et propre pour vos projets résidentiels et rénovations. Réfection de panneaux électriques, mise aux normes et installations soignées à prix compétitif.
+                    <p class="text-slate-300 text-lg leading-relaxed max-w-2xl">
+                        Un service électrique professionnel, honnête et compétent à Sherbrooke. Spécialiste de la réfection de panneaux électriques, de l'optimisation d'éclairage et des mises à niveau résidentielles effectuées dans le souci du détail.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="tel:8195807949" class="bg-brand-amber hover:bg-amber-500 text-brand-dark font-bold px-8 py-4 rounded-lg transition text-center shadow-lg text-lg">
-                            Composer le (819) 580-7949
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="tel:8195807949" class="inline-flex justify-center items-center gap-3 bg-amber-500 hover:bg-amber-400 text-brand-blue font-bold px-6 py-3.5 rounded-xl transition shadow-lg text-center">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h32a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm0 6a2 2 0 012-2h32a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2zm0 6a2 2 0 012-2h32a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2z"/></svg>
+                            Appeler le (819) 580-7949
                         </a>
-                        <a href="#contact" class="border border-slate-400 hover:border-white text-white font-semibold px-8 py-4 rounded-lg transition text-center">
-                            Demander une estimation
+                        <a href="#services" class="inline-flex justify-center items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-semibold px-6 py-3.5 rounded-xl border border-slate-700 transition text-center">
+                            Voir nos services
                         </a>
                     </div>
                 </div>
                 <div class="lg:col-span-5">
-                    <div class="bg-slate-800/80 backdrop-blur border border-slate-700 p-6 rounded-2xl shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&w=800&q=80" alt="Panneau électrique aux normes" class="rounded-xl w-full h-64 object-cover mb-6">
-                        <div class="space-y-3">
-                            <div class="flex items-center text-sm text-slate-300">
-                                <svg class="w-5 h-5 text-brand-amber mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                Travail méticuleux et souci du détail
-                            </div>
-                            <div class="flex items-center text-sm text-slate-300">
-                                <svg class="w-5 h-5 text-brand-amber mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                Équipes courtoises, à l'écoute et ponctuelles
-                            </div>
-                            <div class="flex items-center text-sm text-slate-300">
-                                <svg class="w-5 h-5 text-brand-amber mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                                Estimation directe et tarifs très avantageux
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-700/50">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80" alt="Équipement et outillage d'électricien professionnel" class="w-full h-80 lg:h-[420px] object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-6">
+                            <div class="text-sm text-slate-200">
+                                <p class="font-bold text-white text-base">Travaux propres & efficaces</p>
+                                <p>Interventions minutieuses sur Sherbrooke et les environs.</p>
                             </div>
                         </div>
                     </div>
@@ -127,164 +127,248 @@
         </div>
     </section>
 
-    <!-- Engagement & Valeurs -->
-    <section class="py-12 bg-slate-100 border-b border-slate-200">
+    <!-- Point forts -->
+    <section class="bg-white border-b border-slate-200 py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-8 text-center">
-                <div class="p-4">
-                    <div class="text-brand-blue font-bold text-lg mb-2">Honnête & Compétent</div>
-                    <p class="text-slate-600 text-sm">Une approche transparente sans mauvaise surprise, axée sur la qualité et la sécurité de vos installations.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 rounded-lg bg-slate-50">
+                    <div class="text-amber-500 font-bold text-xl mb-1">Service Honnête</div>
+                    <div class="text-xs text-slate-600">Transparence & conseils adaptés</div>
                 </div>
-                <div class="p-4">
-                    <div class="text-brand-blue font-bold text-lg mb-2">Travail Propre & Efficace</div>
-                    <p class="text-slate-600 text-sm">Prise en charge rapide du chantier, exécution soignée et nettoyage après l'intervention.</p>
+                <div class="p-4 rounded-lg bg-slate-50">
+                    <div class="text-amber-500 font-bold text-xl mb-1">Tarifs Compétitifs</div>
+                    <div class="text-xs text-slate-600">Rapport qualité-prix exceptionnel</div>
                 </div>
-                <div class="p-4">
-                    <div class="text-brand-blue font-bold text-lg mb-2">Tarification Compétitive</div>
-                    <p class="text-slate-600 text-sm">Des tarifs abordables pour un service haut de gamme reconnu par les clients de la région.</p>
+                <div class="p-4 rounded-lg bg-slate-50">
+                    <div class="text-amber-500 font-bold text-xl mb-1">Travail Propre</div>
+                    <div class="text-xs text-slate-600">Chantiers rangés et sécurisés</div>
+                </div>
+                <div class="p-4 rounded-lg bg-slate-50">
+                    <div class="text-amber-500 font-bold text-xl mb-1">Souci du Détail</div>
+                    <div class="text-xs text-slate-600">Finition impeccable garantie</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 bg-white">
+    <section id="services" class="py-20 bg-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-extrabold text-brand-dark sm:text-4xl">Nos Services Électriques à Sherbrooke</h2>
-                <p class="mt-4 text-slate-600 max-w-2xl mx-auto">
-                    Des solutions électriques adaptées à vos projets de rénovation, de remise aux normes ou de mise à jour résidentielle.
-                </p>
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-amber-600 uppercase tracking-widest mb-2">Nos Spécialités</h2>
+                <p class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Services Électriques Résidentiels</p>
+                <p class="mt-4 text-slate-600">Des interventions rapides, conformes et sécuritaires pour votre propriété à Sherbrooke.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Service 1 -->
-                <div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
-                    <img src="https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&w=800&q=80" alt="Réfection de panneau électrique" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl text-brand-dark mb-2">Panneaux Électriques</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            Remplacement et réfection de panneaux électriques. Remise en ordre complète de votre panneau pour une sécurité optimale.
-                        </p>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-slate-200 flex flex-col">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&w=800&q=80" alt="Panneau électrique et disjoncteurs" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Remplacement & Remise à Neuf de Panneaux Électriques</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Remise en ordre complète de panneaux électriques anciens ou encombrés. Installation propre, étiquetage clair et sécurisation complète de votre entrée électrique.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-4">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                Mise aux normes de sécurité
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                Panneaux secondaires et ajouts
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
-                    <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=800&q=80" alt="Installation d'éclairage et luminaires" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl text-brand-dark mb-2">Éclairage & Luminaires</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            Ajout d'encastrés, changement de luminaires, séparation des circuits (ex. ventilation/éclairage de salle de bain).
-                        </p>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-slate-200 flex flex-col">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=800&q=80" alt="Installation d'éclairage et luminaires" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Installation d'Éclairage & Luminaires</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Ajout de lumières encastrées, remplacement de luminaires suspendus et séparation des commandes d'éclairage et de ventilation (salle de bain).
+                            </p>
+                        </div>
+                        <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-4">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                Ajout de points lumineux
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                Ventilation & éclairage indépendants
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
-                    <img src="https://images.unsplash.com/photo-1558442074-3c19857bc1dc?auto=format&fit=crop&w=800&q=80" alt="Prises électriques et interrupteurs" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl text-brand-dark mb-2">Prises & Interrupteurs</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            Remplacement de prises lousses, installation d'interrupteurs modernes et sécurisation des appareillages.
-                        </p>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-slate-200 flex flex-col">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=800&q=80" alt="Prises électriques et interrupteurs" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Prises Électriques & Interrupteurs</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Remplacement des prises usées ou relâchées, installation de nouveaux interrupteurs décora et modernisation du réseau électrique de vos pièces.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-4">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                Remplacement de prises lousses
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                Interrupteurs modernes et gradateurs
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
                 <!-- Service 4 -->
-                <div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
-                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Mise aux normes et rénovation" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl text-brand-dark mb-2">Mise aux Normes</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            Mise à jour électrique de maisons anciennes et bungalows des années 1970 pour assurer la conformité.
-                        </p>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition border border-slate-200 flex flex-col">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80" alt="Mise à niveau et rénovation électrique" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Mise à Niveau Résidentielle & Rénovations</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Travaux de mise à jour électrique pour maisons plus anciennes (ex. bungalows des années 1970). Optimisation complète et sécurisée.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-4">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                Rénovation de circuits existants
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                                Conseils d'aménagement électrique
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Avis Clients Section -->
-    <section id="avis" class="py-20 bg-slate-100">
+    <!-- About Section -->
+    <section id="a-propos" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <span class="text-brand-amber font-bold text-sm tracking-wide uppercase">Témoignages Réels</span>
-                <h2 class="text-3xl font-extrabold text-brand-dark sm:text-4xl mt-2">Avis de nos clients sur Google</h2>
+            <div class="bg-slate-900 rounded-3xl text-white p-8 sm:p-12 lg:p-16 relative overflow-hidden">
+                <div class="max-w-3xl relative z-10 space-y-6">
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-amber-400">À propos de J.S.B. Services Électriques inc.</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Établie au cœur de Sherbrooke, l'entreprise J.S.B. Services Électriques inc. privilégie la proximité, l'écoute et l'excellence technique. Que ce soit pour une mise aux normes complète de votre panneau électrique ou pour de petits travaux de finition résidentielle, chaque projet est exécuté avec professionnalisme, rigueur et propreté.
+                    </p>
+                    <div class="pt-2 flex flex-wrap gap-6 text-sm text-slate-300">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+                            <span>576 Rue McManamy, Sherbrooke</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h32a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm0 6a2 2 0 012-2h32a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2zm0 6a2 2 0 012-2h32a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2z"/></svg>
+                            <span>(819) 580-7949</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="avis" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-amber-600 uppercase tracking-widest mb-2">Avis Réels</h2>
+                <p class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Témoignages de nos clients à Sherbrooke</p>
+                <p class="mt-4 text-slate-600">Avis authentiques rédigés par nos clients sur Google.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Avis 1 -->
-                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
-                    <div>
-                        <div class="flex text-amber-400 mb-3">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between lg:col-span-2">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1">
                             ★★★★★
                         </div>
-                        <p class="text-slate-700 text-sm leading-relaxed italic mb-4">
-                            "Extrêmement satisfaite de mon expérience, je recommande à tout le monde qui se cherche un électricien honnête, compétent, à un prix compétitif. Je l'ai engagé pour refaire notre panneau électrique, et, ensuite, pour une journée complète pour mettre à jour certaines choses de notre vieux bungalow des années 1970: ajouter des lumières, séparer la fan de la lumière de la salle de bain, changer des luminaires, changer toutes nos prises lousses. Son assistante et lui ont travaillé extrêmement fort et la facture était à un prix plus que compétitif..."
+                        <p class="text-slate-700 text-sm leading-relaxed italic">
+                            "Extrêmement satisfaite de mon expérience, je recommande à tout le monde qui se cherche un électricien honnête, compétent, à un prix compétitif. Je l'ai engagé pour refaire notre panneau électrique, et, ensuite, pour une journée complète pour mettre à jour certaines choses de notre vieux bungalow des années 1970: ajouter des lumières, séparer la fan de la lumière de la salle de bain, changer des luminaires, changer toutes nos prises lousses. Son assistante et lui ont travaillé extrêmement fort et la facture était à un prix plus que compétitif. Quelques points à noter: J'ai dû le booker un mois d'avance les deux fois, signe qu'il est beaucoup apprécié des clients! Si vous remettez votre maison à neuf et que vous voulez des belles switch (interrupteur) ou prises cutes ou de couleurs, c'est mieux d'acheter les vôtres d'avance (assurez vous qu'elles soient aux normes aussi). Ceux proposées sont extrêmement abordables mais plus de base. Merci Jean et Valérie!"
                         </p>
                     </div>
-                    <div class="border-t border-slate-100 pt-3 text-xs font-semibold text-slate-500">
-                        Merci Jean et Valérie!
+                    <div class="mt-6 pt-4 border-t border-slate-100 font-semibold text-xs text-slate-500">
+                        Avis vérifié Google
                     </div>
                 </div>
 
-                <!-- Avis 2 -->
+                <!-- Review 2 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
-                    <div>
-                        <div class="flex text-amber-400 mb-3">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1">
                             ★★★★★
                         </div>
-                        <p class="text-slate-700 text-sm leading-relaxed italic mb-4">
+                        <p class="text-slate-700 text-sm leading-relaxed italic">
                             "Le contact, la prise de rendez-vous et l'estimation ont été rapides et simple. Pour les travaux : professionnel, efficace et propre. Je ferais affaire avec cette compagnie à nouveau les yeux fermés. Des gens de confiance, doux et professionnels. Je recommande à 100%"
                         </p>
                     </div>
-                    <div class="border-t border-slate-100 pt-3 text-xs font-semibold text-slate-500">
+                    <div class="mt-6 pt-4 border-t border-slate-100 font-semibold text-xs text-slate-500">
                         Avis vérifié Google
                     </div>
                 </div>
 
-                <!-- Avis 3 -->
+                <!-- Review 3 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
-                    <div>
-                        <div class="flex text-amber-400 mb-3">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1">
                             ★★★★★
                         </div>
-                        <p class="text-slate-700 text-sm leading-relaxed italic mb-4">
+                        <p class="text-slate-700 text-sm leading-relaxed italic">
                             "Excellent service! Très professionnel et tout a été fait dans le soucis du détails. C'était le bordel dans mon panneau et il a mis tout ça propre avec les nouveaux panneaux! Je le recommande fortement pour du travail de qualité avec un excellent tarif."
                         </p>
                     </div>
-                    <div class="border-t border-slate-100 pt-3 text-xs font-semibold text-slate-500">
+                    <div class="mt-6 pt-4 border-t border-slate-100 font-semibold text-xs text-slate-500">
                         Avis vérifié Google
                     </div>
                 </div>
 
-                <!-- Avis 4 -->
+                <!-- Review 4 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
-                    <div>
-                        <div class="flex text-amber-400 mb-3">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1">
                             ★★★★★
                         </div>
-                        <p class="text-slate-700 text-sm leading-relaxed italic mb-4">
+                        <p class="text-slate-700 text-sm leading-relaxed italic">
                             "Super bon ! Super professionnel ! Rapide et efficace ! Travaille bien fait ! Très sympathique et prends le temps d'être à l'écoute des besoins ! Excellente coupe de cheveux et barbe hors pair. Très propre et va dans sa litière. Souriant et bien le fun comme personne ! Je vous le recommande ! 10/10 !!!"
                         </p>
                     </div>
-                    <div class="border-t border-slate-100 pt-3 text-xs font-semibold text-slate-500">
+                    <div class="mt-6 pt-4 border-t border-slate-100 font-semibold text-xs text-slate-500">
                         Avis vérifié Google
                     </div>
                 </div>
 
-                <!-- Avis 5 -->
+                <!-- Review 5 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
-                    <div>
-                        <div class="flex text-amber-400 mb-3">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1">
                             ★★★★★
                         </div>
-                        <p class="text-slate-700 text-sm leading-relaxed italic mb-4">
+                        <p class="text-slate-700 text-sm leading-relaxed italic">
                             "Très satisfait beau travail et sont tous les deux très gentil, je recommande pour un travail bien fait"
                         </p>
                     </div>
-                    <div class="border-t border-slate-100 pt-3 text-xs font-semibold text-slate-500">
+                    <div class="mt-6 pt-4 border-t border-slate-100 font-semibold text-xs text-slate-500">
                         Avis vérifié Google
                     </div>
                 </div>
@@ -295,100 +379,85 @@
     <!-- Contact & Map Section -->
     <section id="contact" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-12 gap-12">
-                
-                <!-- Info Contact -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
                 <div class="lg:col-span-5 space-y-8">
                     <div>
-                        <h2 class="text-3xl font-extrabold text-brand-dark">Prendre Contact</h2>
-                        <p class="mt-3 text-slate-600">
-                            Besoin d'un électricien à Sherbrooke ? Contactez-nous par téléphone pour une prise de rendez-vous ou une estimation.
+                        <h2 class="text-xs font-bold text-amber-600 uppercase tracking-widest mb-2">Contactez-nous</h2>
+                        <h3 class="text-3xl font-extrabold text-slate-900">Prendre rendez-vous à Sherbrooke</h3>
+                        <p class="mt-4 text-slate-600 leading-relaxed">
+                            Pour toute demande d'estimation ou pour planifier vos travaux électriques, contactez directement l'équipe de J.S.B. Services Électriques inc.
                         </p>
                     </div>
 
-                    <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-6">
-                        <div class="flex items-start">
-                            <div class="p-3 bg-brand-blue text-white rounded-lg mr-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                </svg>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-amber-100 text-amber-600 p-3 rounded-xl mt-1">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h32a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm0 6a2 2 0 012-2h32a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2zm0 6a2 2 0 012-2h32a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2z"/></svg>
                             </div>
                             <div>
-                                <h3 class="text-sm font-semibold text-slate-500 uppercase">Téléphone</h3>
-                                <a href="tel:8195807949" class="text-xl font-bold text-brand-dark hover:text-brand-amber transition">
-                                    (819) 580-7949
-                                </a>
+                                <h4 class="font-bold text-slate-900">Téléphone</h4>
+                                <a href="tel:8195807949" class="text-slate-600 hover:text-amber-600 font-semibold transition">(819) 580-7949</a>
                             </div>
                         </div>
 
-                        <div class="flex items-start">
-                            <div class="p-3 bg-brand-blue text-white rounded-lg mr-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                </svg>
+                        <div class="flex items-start gap-4">
+                            <div class="bg-amber-100 text-amber-600 p-3 rounded-xl mt-1">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                             </div>
                             <div>
-                                <h3 class="text-sm font-semibold text-slate-500 uppercase">Adresse</h3>
-                                <p class="text-base font-medium text-slate-800">
-                                    576 Rue McManamy<br>
-                                    Sherbrooke, QC J1H 2M7, Canada
-                                </p>
+                                <h4 class="font-bold text-slate-900">Adresse</h4>
+                                <p class="text-slate-600">576 Rue McManamy, Sherbrooke, QC J1H 2M7, Canada</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="rounded-xl overflow-hidden border border-slate-200">
-                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Outillage électrique professionnel" class="w-full h-48 object-cover">
+                    <div class="p-6 bg-slate-50 border border-slate-200 rounded-2xl text-sm text-slate-600">
+                        <p class="font-semibold text-slate-900 mb-1">Conseil pour vos projets :</p>
+                        <p>En raison d'une forte demande, il est préférable de réserver vos travaux à l'avance.</p>
                     </div>
                 </div>
 
-                <!-- Formulaire de contact -->
-                <div class="lg:col-span-7 bg-slate-50 p-8 rounded-2xl border border-slate-200">
-                    <h3 class="text-2xl font-bold text-brand-dark mb-6">Envoyer une demande</h3>
-                    <form onsubmit="event.preventDefault();" class="space-y-4">
+                <div class="lg:col-span-7 bg-slate-50 border border-slate-200 p-8 rounded-3xl">
+                    <h4 class="text-xl font-bold text-slate-900 mb-6">Demande de contact</h4>
+                    <form class="space-y-4" onsubmit="event.preventDefault(); alert('Merci pour votre message. Veuillez téléphoner au (819) 580-7949 pour une prise de rendez-vous directe.');">
                         <div>
                             <label class="block text-sm font-medium text-slate-700 mb-1">Nom complet</label>
-                            <input type="text" placeholder="Votre nom" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-amber focus:border-transparent outline-none transition bg-white">
+                            <input type="text" required placeholder="Votre nom" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 bg-white">
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-1">Téléphone</label>
+                                <input type="tel" required placeholder="(819) 000-0000" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 bg-white">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-1">Ville</label>
+                                <input type="text" value="Sherbrooke" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 bg-white">
+                            </div>
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-slate-700 mb-1">Téléphone</label>
-                            <input type="tel" placeholder="(819) 000-0000" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-amber focus:border-transparent outline-none transition bg-white">
+                            <label class="block text-sm font-medium text-slate-700 mb-1">Description des travaux</label>
+                            <textarea rows="4" required placeholder="Remplacement de panneau, ajouts de prises, éclairage..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 bg-white"></textarea>
                         </div>
-                        <div>
-                            <label class="block text-sm font-medium text-slate-700 mb-1">Type de travaux</label>
-                            <select class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-amber focus:border-transparent outline-none transition bg-white">
-                                <option>Remplacement / Réfection de panneau électrique</option>
-                                <option>Installation d'éclairage / Luminaires</option>
-                                <option>Changement de prises ou interrupteurs</option>
-                                <option>Mise aux normes résidentielle</option>
-                                <option>Autre projet électrique</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-slate-700 mb-1">Détails de la demande</label>
-                            <textarea rows="4" placeholder="Décrivez votre projet d'électricité..." class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-amber focus:border-transparent outline-none transition bg-white"></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-brand-blue hover:bg-slate-800 text-white font-bold py-4 rounded-lg transition shadow-md">
-                            Demander mon estimation
+                        <button type="submit" class="w-full bg-brand-blue hover:bg-slate-800 text-white font-bold py-3.5 px-6 rounded-xl transition shadow">
+                            Envoyer le message
                         </button>
                     </form>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Pied de page -->
-    <footer class="bg-brand-dark text-slate-400 py-8 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left sm:flex sm:justify-between sm:items-center">
-            <div>
-                <p class="text-white font-bold text-lg">J.S.B. Services Électriques inc.</p>
-                <p class="text-xs mt-1">Électricien résidentiel à Sherbrooke (QC)</p>
-            </div>
-            <div class="mt-4 sm:mt-0 text-xs">
-                <p>576 Rue McManamy, Sherbrooke, QC J1H 2M7 | Tél : (819) 580-7949</p>
-                <p class="mt-1">&copy; Tous droits réservés.</p>
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-6">
+                <div>
+                    <span class="text-white font-bold text-lg">J.S.B. Services Électriques inc.</span>
+                    <p class="text-sm text-slate-500 mt-1">576 Rue McManamy, Sherbrooke, QC J1H 2M7 | (819) 580-7949</p>
+                </div>
+                <div class="text-sm text-slate-500">
+                    &copy; J.S.B. Services Électriques inc. Tous droits réservés.
+                </div>
             </div>
         </div>
     </footer>
