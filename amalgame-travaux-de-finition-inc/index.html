@@ -1,396 +1,462 @@
 <!DOCTYPE html>
 <html lang="fr-CA" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amalgame Travaux de Finition | Entreprise de finition intérieure à Sherbrooke</title>
-    <meta name="description" content="Spécialiste en travaux de finition intérieure à Sherbrooke : pose et sablage de planchers de bois franc, céramique, douches et peinture. Travail soigné et professionnel. (819) 432-2990.">
-    
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50: '#fdf8f6',
-                            100: '#f2e8e5',
-                            600: '#b45309',
-                            700: '#92400e',
-                            800: '#78350f',
-                            900: '#451a03',
-                        }
-                    }
-                }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amalgame Travaux de Finition Inc. | Plancher & Finition à Sherbrooke</title>
+  <meta name="description" content="Spécialiste en travaux de finition intérieure à Sherbrooke : pose, sablage et vernissage de planchers en bois franc, céramique avec système Schluter, vinyle et peinture. Service clé en main et minutieux.">
+  <link rel="canonical" href="https://www.amalgametravauxdefiniction.ca">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fdf8f6',
+              100: '#f2e8e5',
+              600: '#c25e00',
+              700: '#a34800',
+              800: '#843803',
+              900: '#2b211b',
             }
+          }
         }
-    </script>
-    
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Amalgame Travaux de Finition Inc.",
-      "image": "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&q=80&w=1200",
-      "telephone": "(819) 432-2990",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "632 Rue Murray",
-        "addressLocality": "Sherbrooke",
-        "addressRegion": "QC",
-        "postalCode": "J1G 2K9",
-        "addressCountry": "CA"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 45.4082,
-        "longitude": -71.8790
-      },
-      "priceRange": "$$"
+      }
     }
-    </script>
+  </script>
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Amalgame Travaux de Finition Inc.",
+    "image": "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=1200&q=80",
+    "telephone": "(819) 432-2990",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "632 Rue Murray",
+      "addressLocality": "Sherbrooke",
+      "addressRegion": "QC",
+      "postalCode": "J1G 2K9",
+      "addressCountry": "CA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 45.4098,
+      "longitude": -71.8795
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Sherbrooke"
+    },
+    "priceRange": "$$"
+  }
+  </script>
 </head>
-<body class="bg-stone-50 text-stone-800 font-sans antialiased selection:bg-brand-600 selection:text-white">
+<body class="bg-stone-50 text-stone-800 antialiased font-sans">
 
-    <!-- En-tête / Navigation -->
-    <header class="sticky top-0 z-50 bg-stone-900/95 backdrop-blur border-b border-stone-800 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="#" class="flex flex-col">
-                <span class="text-xl sm:text-2xl font-bold tracking-tight text-white">Amalgame</span>
-                <span class="text-xs uppercase tracking-widest text-brand-600 font-semibold">Travaux de Finition Inc.</span>
+  <!-- Entête & Navigation -->
+  <header class="sticky top-0 z-50 bg-stone-900/95 backdrop-blur-md text-white border-b border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex flex-col">
+        <span class="font-bold text-xl sm:text-2xl tracking-tight text-white">AMALGAME</span>
+        <span class="text-xs uppercase tracking-widest text-amber-500 font-medium">Travaux de Finition Inc.</span>
+      </a>
+
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+        <a href="#services" class="hover:text-amber-500 transition-colors">Nos Services</a>
+        <a href="#engagement" class="hover:text-amber-500 transition-colors">Notre Engagement</a>
+        <a href="#avis" class="hover:text-amber-500 transition-colors">Avis Clients</a>
+        <a href="#contact" class="hover:text-amber-500 transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center space-x-4">
+        <a href="tel:+18194322990" class="inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-amber-600 hover:bg-amber-500 text-white font-semibold text-sm transition-all shadow-md">
+          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+          </svg>
+          (819) 432-2990
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section Héro -->
+  <section class="relative bg-stone-900 text-white overflow-hidden py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Texte Héro -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-amber-500"></span> Service professionnel à Sherbrooke
+          </div>
+          
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
+            Entrepreneur en travaux de finition et pose de plancher à Sherbrooke
+          </h1>
+          
+          <p class="text-stone-300 text-base sm:text-lg max-w-2xl leading-relaxed">
+            Spécialiste de la finition intérieure clé en main. Du sablage et la pose de bois franc aux douches en céramique avec systèmes chauffants, Louis-David et son équipe réalisent vos projets avec rigueur, minutie et honnêteté.
+          </p>
+
+          <div class="pt-4 flex flex-col sm:flex-row gap-4">
+            <a href="#contact" class="inline-flex justify-center items-center px-6 py-3.5 rounded-lg bg-amber-600 hover:bg-amber-500 text-white font-bold text-base transition-all shadow-lg hover:shadow-amber-600/20">
+              Demander une estimation
             </a>
-            
-            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
-                <a href="#services" class="hover:text-brand-600 transition-colors">Services</a>
-                <a href="#engagement" class="hover:text-brand-600 transition-colors">Notre Engagement</a>
-                <a href="#temoignages" class="hover:text-brand-600 transition-colors">Avis Clients</a>
-                <a href="#contact" class="hover:text-brand-600 transition-colors">Contact</a>
-            </nav>
+            <a href="tel:+18194322990" class="inline-flex justify-center items-center px-6 py-3.5 rounded-lg border border-stone-700 hover:bg-stone-800 text-stone-200 font-semibold text-base transition-all">
+              Nous joindre : (819) 432-2990
+            </a>
+          </div>
 
-            <div class="flex items-center gap-4">
-                <a href="tel:8194322990" class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-semibold px-4 py-2.5 rounded-lg transition-colors text-sm shadow-sm">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                    <span>(819) 432-2990</span>
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Section Héro -->
-    <section class="relative bg-stone-900 text-white overflow-hidden py-20 lg:py-28">
-        <div class="absolute inset-0 z-0 opacity-25">
-            <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&q=80&w=1920" alt="Plancher en bois franc haut de gamme à Sherbrooke" class="w-full h-full object-cover">
-        </div>
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-7 space-y-6">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-stone-800/80 border border-stone-700 text-brand-600 text-xs font-semibold uppercase tracking-wider">
-                        Sherbrooke & Environs
-                    </div>
-                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
-                        Travaux de finition intérieure et pose de plancher à Sherbrooke
-                    </h1>
-                    <p class="text-lg text-stone-300 leading-relaxed max-w-2xl">
-                        Spécialiste de la finition soignée : pose et sablage de planchers de bois franc, vinyle, installation de céramique, douches sur mesure et peinture intérieure. Un service clé en main, rigoureux et transparent.
-                    </p>
-                    <div class="pt-4 flex flex-col sm:flex-row gap-4">
-                        <a href="#contact" class="inline-flex justify-center items-center px-6 py-3.5 bg-brand-600 hover:bg-brand-700 text-white font-bold rounded-lg transition-colors shadow-lg">
-                            Demander une soumission
-                        </a>
-                        <a href="#services" class="inline-flex justify-center items-center px-6 py-3.5 bg-stone-800 hover:bg-stone-700 text-stone-200 border border-stone-700 font-semibold rounded-lg transition-colors">
-                            Découvrir nos services
-                        </a>
-                    </div>
-                </div>
-                <div class="lg:col-span-5">
-                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-stone-700/50">
-                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800" alt="Finition intérieure d'escalier en bois et contremarches" class="w-full h-auto object-cover">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services" class="py-20 bg-stone-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-xs uppercase tracking-widest text-brand-600 font-bold mb-2">Expertise & Surchoix</h2>
-                <p class="text-3xl font-extrabold text-stone-900 sm:text-4xl">Nos services de finition intérieure</p>
-                <p class="mt-4 text-stone-600">Des réalisations impeccables exécutées avec méthode, minutie et respect des engagements.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Service 1 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md border border-stone-200 flex flex-col">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=600" alt="Pose de plancher en bois franc" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between">
-                        <div>
-                            <h3 class="text-xl font-bold text-stone-900 mb-2">Pose de Planchers</h3>
-                            <p class="text-stone-600 text-sm leading-relaxed">
-                                Installation professionnelle de bois franc, vinyle et revêtements souples. Expertise adaptée aux maisons centenaires comme aux constructions modernes.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 2 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md border border-stone-200 flex flex-col">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&q=80&w=600" alt="Sablage et vernissage de plancher de bois" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between">
-                        <div>
-                            <h3 class="text-xl font-bold text-stone-900 mb-2">Sablage & Vernissage</h3>
-                            <p class="text-stone-600 text-sm leading-relaxed">
-                                Restauration complète de planchers et d'escaliers en bois franc. Finition haut de gamme pour redonner tout l'éclat à vos surfaces.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md border border-stone-200 flex flex-col">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600" alt="Pose de céramique et installation de douche" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between">
-                        <div>
-                            <h3 class="text-xl font-bold text-stone-900 mb-2">Céramique & Douches</h3>
-                            <p class="text-stone-600 text-sm leading-relaxed">
-                                Installation de douches complètes, pose de céramique et intégration de systèmes de plancher chauffant (ex. Schluter) au sous-sol ou en salle de bain.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service 4 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md border border-stone-200 flex flex-col">
-                    <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&q=80&w=600" alt="Travaux de peinture intérieure" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between">
-                        <div>
-                            <h3 class="text-xl font-bold text-stone-900 mb-2">Peinture Intérieure</h3>
-                            <p class="text-stone-600 text-sm leading-relaxed">
-                                Travaux de peinture murale pour chambres, salons avec toits cathédrale, contremarches d'escaliers et finitions d'armoires.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Engagement / Pourquoi nous choisir -->
-    <section id="engagement" class="py-20 bg-stone-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-xs uppercase tracking-widest text-brand-600 font-bold mb-2">Service clé en main</h2>
-                    <p class="text-3xl font-extrabold sm:text-4xl mb-6">Un travail honnête, professionnel et sans surprise</p>
-                    <p class="text-stone-300 mb-8 leading-relaxed">
-                        Chez Amalgame Travaux de Finition Inc., chaque projet est abordé avec une planification intelligente et une exécution minutieuse. Nous accordons une importance capitale au respect de vos attentes, de vos délais et de vos budgets.
-                    </p>
-                    
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3">
-                            <span class="bg-brand-600/20 text-brand-600 p-1 rounded font-bold">✓</span>
-                            <div>
-                                <strong class="text-white">Planification rigoureuse :</strong> Respect des échéanciers et prévisions budgétaires exactes.
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="bg-brand-600/20 text-brand-600 p-1 rounded font-bold">✓</span>
-                            <div>
-                                <strong class="text-white">Prise en charge complète :</strong> Achats de matériaux et gestion des détails logistiques pour un projet 100 % clé en main.
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="bg-brand-600/20 text-brand-600 p-1 rounded font-bold">✓</span>
-                            <div>
-                                <strong class="text-white">Confiance absolue :</strong> Un service franc, attentionné et personnalisé à Sherbrooke.
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=800" alt="Outillage et précision pour travaux de finition" class="rounded-2xl shadow-xl border border-stone-800">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Témoignages Clients (Avis authentiques Google) -->
-    <section id="temoignages" class="py-20 bg-stone-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-xs uppercase tracking-widest text-brand-600 font-bold mb-2">Avis Clients Google</h2>
-                <p class="text-3xl font-extrabold text-stone-900 sm:text-4xl">Ce que disent nos clients</p>
-                <p class="mt-4 text-stone-600">Découvrez les témoignages réels déposés par nos clients à Sherbrooke et dans la région.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Témoignage 1 -->
-                <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm flex flex-col justify-between">
-                    <div>
-                        <div class="flex text-amber-500 mb-3">★★★★★</div>
-                        <p class="text-stone-700 italic text-sm leading-relaxed mb-4">
-                            "Louis-David a fait un excellent travail ! Nous adorons nos planchers, il a su comprendre nos besoins. C’est encore plus beau que ce dont nous avions espéré. Un grand merci !"
-                        </p>
-                    </div>
-                    <div class="border-t border-stone-100 pt-3 text-xs font-semibold text-stone-500">
-                        Avis client vérifié Google
-                    </div>
-                </div>
-
-                <!-- Témoignage 2 -->
-                <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm flex flex-col justify-between">
-                    <div>
-                        <div class="flex text-amber-500 mb-3">★★★★★</div>
-                        <p class="text-stone-700 italic text-sm leading-relaxed mb-4">
-                            "Louis-Davis a installé un plancher en bois franc dans notre maison centenaire. Le résultat est tout simplement IMPECCABLE! Planification intelligente, exécution minutieuse, respect des engagements, à l'écoute de nos attentes, professionnalisme +++. Excellent travail! Merci Louis-David, Karelle et Nathan."
-                        </p>
-                    </div>
-                    <div class="border-t border-stone-100 pt-3 text-xs font-semibold text-stone-500">
-                        Avis client vérifié Google
-                    </div>
-                </div>
-
-                <!-- Témoignage 3 -->
-                <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm flex flex-col justify-between">
-                    <div>
-                        <div class="flex text-amber-500 mb-3">★★★★★</div>
-                        <p class="text-stone-700 italic text-sm leading-relaxed mb-4">
-                            "Divers travaux effectués : douche complète ; sous-sol en céramique chauffante Schluter ; peinture murale sous-sol + chambres. Excellent service, et travail très soigné!"
-                        </p>
-                    </div>
-                    <div class="border-t border-stone-100 pt-3 text-xs font-semibold text-stone-500">
-                        Avis client vérifié Google
-                    </div>
-                </div>
-
-                <!-- Témoignage 4 (Large sur desktop) -->
-                <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm flex flex-col justify-between md:col-span-2 lg:col-span-2">
-                    <div>
-                        <div class="flex text-amber-500 mb-3">★★★★★</div>
-                        <p class="text-stone-700 italic text-sm leading-relaxed mb-4">
-                            "J'ai consulté les commentaires Google avant de contacter Louis-David et ils étaient très positifs sauf un qui était destructeur et qui m'a fait hésiter. Maintenant que les travaux sont terminés, je suis plus que satisfaite de l'excellence des travaux effectués (sablage et vernissage de planchers, escalier de bois franc avec contremarche peinturée en blanc, pose d'un plancher de cuisine en vinyle, peinture d'un salon avec un toit cathédrale, réparation du coup de pied des armoires). Tout a été fait dans les délais prévus et aux coûts prévus. Il a même fait plusieurs achats nécessaires aux travaux. C'est du travail clé en main. Il est franc et honnête et très à l'écoute de nos besoins. On peut lui confier les clés de la maison sans hésitation. Je suis heureuse d'avoir enfin trouvé quelqu'un de confiance à qui je ferai désormais appel pour tous mes travaux de finition."
-                        </p>
-                    </div>
-                    <div class="border-t border-stone-100 pt-3 text-xs font-semibold text-stone-500">
-                        Avis client vérifié Google
-                    </div>
-                </div>
-
-                <!-- Témoignage 5 -->
-                <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm flex flex-col justify-between">
-                    <div>
-                        <div class="flex text-amber-500 mb-3">★★★★★</div>
-                        <p class="text-stone-700 italic text-sm leading-relaxed mb-4">
-                            "Service professionnel, attentionné et personnalisé. J’adore mon plancher tout neuf et mon escalier spectaculaire!"
-                        </p>
-                    </div>
-                    <div class="border-t border-stone-100 pt-3 text-xs font-semibold text-stone-500">
-                        Avis client vérifié Google
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Contact & Coordonnées -->
-    <section id="contact" class="py-20 bg-stone-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-                
-                <!-- Infos entreprise -->
-                <div class="lg:col-span-5 space-y-6">
-                    <h2 class="text-xs uppercase tracking-widest text-brand-600 font-bold">Contactez-nous</h2>
-                    <p class="text-3xl font-extrabold sm:text-4xl">Parlons de votre projet de finition</p>
-                    <p class="text-stone-300 leading-relaxed">
-                        Que ce soit pour la pose de vos planchers, un sablage, une douche sur mesure ou de la peinture intérieure à Sherbrooke, contactez-nous directement pour en discuter.
-                    </p>
-
-                    <div class="space-y-4 pt-4">
-                        <div class="flex items-start gap-4">
-                            <div class="p-3 bg-stone-800 rounded-lg text-brand-600">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                            </div>
-                            <div>
-                                <h3 class="text-sm font-semibold text-stone-400">Adresse</h3>
-                                <p class="text-white font-medium">632 Rue Murray, Sherbrooke, QC J1G 2K9, Canada</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                            <div class="p-3 bg-stone-800 rounded-lg text-brand-600">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                            </div>
-                            <div>
-                                <h3 class="text-sm font-semibold text-stone-400">Téléphone</h3>
-                                <a href="tel:8194322990" class="text-white font-medium hover:text-brand-600 transition-colors">
-                                    (819) 432-2990
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Formulaire de contact -->
-                <div class="lg:col-span-7 bg-stone-800 p-8 rounded-2xl border border-stone-700">
-                    <h3 class="text-xl font-bold text-white mb-6">Demander des informations</h3>
-                    <form action="#" method="POST" class="space-y-4" onsubmit="event.preventDefault(); alert('Merci! Votre message a été simulé avec succès.');">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div>
-                                <label for="nom" class="block text-xs font-semibold text-stone-300 mb-1">Nom complet</label>
-                                <input type="text" id="nom" required class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-2.5 text-white placeholder-stone-500 focus:outline-none focus:border-brand-600">
-                            </div>
-                            <div>
-                                <label for="telephone" class="block text-xs font-semibold text-stone-300 mb-1">Téléphone</label>
-                                <input type="tel" id="telephone" required class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-2.5 text-white placeholder-stone-500 focus:outline-none focus:border-brand-600">
-                            </div>
-                        </div>
-                        <div>
-                            <label for="service" class="block text-xs font-semibold text-stone-300 mb-1">Service désiré</label>
-                            <select id="service" class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-brand-600">
-                                <option>Pose de plancher (bois franc, vinyle)</option>
-                                <option>Sablage et vernissage de plancher/escalier</option>
-                                <option>Céramique et douche complète</option>
-                                <option>Peinture intérieure</option>
-                                <option>Autre projet de finition</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="message" class="block text-xs font-semibold text-stone-300 mb-1">Détails de votre projet</label>
-                            <textarea id="message" rows="4" required class="w-full bg-stone-900 border border-stone-700 rounded-lg px-4 py-2.5 text-white placeholder-stone-500 focus:outline-none focus:border-brand-600" placeholder="Décrivez brièvement vos travaux à effectuer..."></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-3.5 rounded-lg transition-colors">
-                            Envoyer la demande
-                        </button>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Pied de page -->
-    <footer class="bg-stone-950 text-stone-400 py-8 border-t border-stone-800 text-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+          <div class="pt-6 grid grid-cols-3 gap-4 border-t border-stone-800 text-xs text-stone-400">
             <div>
-                <p class="font-semibold text-stone-200">Amalgame Travaux de Finition Inc.</p>
-                <p class="text-xs text-stone-500">632 Rue Murray, Sherbrooke, QC J1G 2K9, Canada | (819) 432-2990</p>
+              <span class="block font-bold text-white text-sm">Clé en main</span>
+              Gestion complète des travaux
             </div>
-            <p class="text-xs text-stone-500">
-                &copy; Tous droits réservés. Entrepreneur en finition intérieure à Sherbrooke.
-            </p>
+            <div>
+              <span class="block font-bold text-white text-sm">Exécution minutieuse</span>
+              Qualité sans compromis
+            </div>
+            <div>
+              <span class="block font-bold text-white text-sm">Respect des délais</span>
+              Engagements honorés
+            </div>
+          </div>
         </div>
-    </footer>
+
+        <!-- Image Héro (Unsplash sans personnes) -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-stone-800">
+            <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=1000&q=80" alt="Finition de plancher en bois franc à Sherbrooke" class="w-full h-[420px] object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-stone-900/90 backdrop-blur border border-stone-800 text-xs text-stone-300">
+              <p class="font-semibold text-white">Travaux de finition résidentielle</p>
+              <p class="text-stone-400">Sherbrooke et les environs</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Services -->
+  <section id="services" class="py-20 bg-stone-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-amber-600 mb-2">Savoir-faire et expertise</h2>
+        <p class="text-3xl font-bold text-stone-900 sm:text-4xl">Nos services de finition intérieure</p>
+        <p class="mt-4 text-stone-600 text-base">Des solutions complètes pour transformer vos espaces avec des matériaux durables et une pose impeccable.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Service 1 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-stone-200 flex flex-col">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Sablage et pose de plancher en bois franc" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-stone-900 mb-2">Planchers en bois franc</h3>
+              <p class="text-stone-600 text-sm leading-relaxed">
+                Pose, sablage et vernissage de planchers en bois franc. Expertise adaptée aux demeures neuves comme aux maisons centenaires.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-stone-200 flex flex-col">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Pose de céramique et système Schluter" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-stone-900 mb-2">Céramique & Schluter</h3>
+              <p class="text-stone-600 text-sm leading-relaxed">
+                Installation complète de douches sur mesure, sous-sols en céramique chauffante avec membrane et systèmes Schluter.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-stone-200 flex flex-col">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=800&q=80" alt="Travaux de peinture murale et plafond" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-stone-900 mb-2">Peinture murale & plafonds</h3>
+              <p class="text-stone-600 text-sm leading-relaxed">
+                Travaux de peinture soignés pour salons, chambres et espaces complexes incluant les structures avec toit cathédrale.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-stone-200 flex flex-col">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Escaliers et planchers de vinyle" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-stone-900 mb-2">Escaliers & Vinyle</h3>
+              <p class="text-stone-600 text-sm leading-relaxed">
+                Pose de planchers de cuisine en vinyle, rénovation d'escaliers en bois franc avec finition de contremarches et réparations de finition.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Engagements / À propos -->
+  <section id="engagement" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        
+        <div>
+          <h2 class="text-xs font-bold uppercase tracking-widest text-amber-600 mb-2">Rigueur & Confiance</h2>
+          <h3 class="text-3xl font-bold text-stone-900 sm:text-4xl mb-6">Un service clé en main axé sur l'excellence</h3>
+          
+          <div class="space-y-4 text-stone-600 text-base">
+            <p>
+              Chez <strong>Amalgame Travaux de Finition Inc.</strong>, chaque projet est exécuté avec une planification intelligente et une attention minutieuse aux détails. Qu'il s'agisse de la restauration d'une maison centenaire ou de la modernisation d'une pièce, nous veillons à ce que le résultat soit impeccable.
+            </p>
+            <p>
+              Notre philosophie repose sur la transparence, l'honnêteté et le respect strict des coûts et délais convenus. Nous prenons en charge l'approvisionnement des matériaux nécessaires pour vous offrir une tranquillité d'esprit totale.
+            </p>
+          </div>
+
+          <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="p-4 rounded-lg bg-stone-50 border border-stone-200">
+              <span class="font-bold text-stone-900 block mb-1">Planification rigoureuse</span>
+              <span class="text-sm text-stone-600">Respect des budgets et des échéanciers prévus.</span>
+            </div>
+            <div class="p-4 rounded-lg bg-stone-50 border border-stone-200">
+              <span class="font-bold text-stone-900 block mb-1">Service attentionné</span>
+              <span class="text-sm text-stone-600">À l'écoute constante de vos besoins et attentes.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="rounded-2xl overflow-hidden shadow-xl border border-stone-200">
+            <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=800&q=80" alt="Outillage de finition et précision" class="w-full h-[400px] object-cover">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Témoignages Clients (Google Avis Vérifiés) -->
+  <section id="avis" class="py-20 bg-stone-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-amber-500 mb-2">Avis clients</h2>
+        <p class="text-3xl font-bold sm:text-4xl">Ce que nos clients disent de nous</p>
+        <p class="mt-4 text-stone-400">Témoignages authentiques provenant de nos clients à Sherbrooke.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Avis 1 -->
+        <div class="bg-stone-800 p-6 rounded-xl border border-stone-700 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-500">
+              ★★★★★
+            </div>
+            <p class="text-stone-300 text-sm italic leading-relaxed">
+              « Louis-David a fait un excellent travail ! Nous adorons nos planchers, il a su comprendre nos besoins. C’est encore plus beau que ce dont nous avions espéré. Un grand merci ! »
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-stone-700 text-xs font-semibold text-amber-400">
+            Client Google
+          </div>
+        </div>
+
+        <!-- Avis 2 -->
+        <div class="bg-stone-800 p-6 rounded-xl border border-stone-700 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-500">
+              ★★★★★
+            </div>
+            <p class="text-stone-300 text-sm italic leading-relaxed">
+              « Louis-Davis a installé un plancher en bois franc dans notre maison centenaire. Le résultat est tout simplement IMPECCABLE! Planification intelligente, exécution minutieuse, respect des engagements, à l'écoute de nos attentes, professionnalisme +++. Excellent travail! Merci Louis-David, Karelle et Nathan. »
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-stone-700 text-xs font-semibold text-amber-400">
+            Client Google
+          </div>
+        </div>
+
+        <!-- Avis 3 -->
+        <div class="bg-stone-800 p-6 rounded-xl border border-stone-700 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-500">
+              ★★★★★
+            </div>
+            <p class="text-stone-300 text-sm italic leading-relaxed">
+              « Divers travaux effectués : douche complète ; sous-sol en céramique chauffante Schluter ; peinture murale sous-sol + chambres. Excellent service, et travail très soigné! »
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-stone-700 text-xs font-semibold text-amber-400">
+            Client Google
+          </div>
+        </div>
+
+        <!-- Avis 4 -->
+        <div class="bg-stone-800 p-6 rounded-xl border border-stone-700 md:col-span-2 lg:col-span-2 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-500">
+              ★★★★★
+            </div>
+            <p class="text-stone-300 text-sm italic leading-relaxed">
+              « J'ai consulté les commentaires Google avant de contacter Louis-David et ils étaient très positifs sauf un qui était destructeur et qui m'a fait hésiter. Maintenant que les travaux sont terminés, je suis plus que satisfaite de l'excellence des travaux effectués (sablage et vernissage de planchers, escalier de bois franc avec contremarche peinturée en blanc, pose d'un plancher de cuisine en vinyle, peinture d'un salon avec un toit cathédrale, réparation du coup de pied des armoires). Tout a été fait dans les délais prévus et aux coûts prévus. Il a même fait plusieurs achats nécessaires aux travaux. C'est du travail clé en main. Il est franc et honnête et très à l'écoute de nos besoins. On peut lui confier les clés de la maison sans hésitation. Je suis heureuse d'avoir enfin trouvé quelqu'un de confiance à qui je ferai désormais appel pour tous mes travaux de finition. »
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-stone-700 text-xs font-semibold text-amber-400">
+            Client Google
+          </div>
+        </div>
+
+        <!-- Avis 5 -->
+        <div class="bg-stone-800 p-6 rounded-xl border border-stone-700 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-500">
+              ★★★★★
+            </div>
+            <p class="text-stone-300 text-sm italic leading-relaxed">
+              « Service professionnel, attentionné et personnalisé. J’adore mon plancher tout neuf et mon escalier spectaculaire! »
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-stone-700 text-xs font-semibold text-amber-400">
+            Client Google
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section Contact & Coordonnées -->
+  <section id="contact" class="py-20 bg-stone-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Coordonnées -->
+        <div class="lg:col-span-5 space-y-8">
+          <div>
+            <h2 class="text-xs font-bold uppercase tracking-widest text-amber-600 mb-2">Prendre contact</h2>
+            <h3 class="text-3xl font-bold text-stone-900">Discutons de vos travaux de finition</h3>
+            <p class="mt-3 text-stone-600 text-sm">
+              Contactez-nous directement par téléphone ou remplissez le formulaire pour m'expliquer votre projet.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <div class="flex items-start space-x-4 bg-white p-4 rounded-xl border border-stone-200 shadow-sm">
+              <div class="p-3 bg-amber-100 text-amber-800 rounded-lg">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-stone-500 uppercase tracking-wider block">Téléphone</span>
+                <a href="tel:+18194322990" class="text-lg font-bold text-stone-900 hover:text-amber-600 transition-colors">
+                  (819) 432-2990
+                </a>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-4 bg-white p-4 rounded-xl border border-stone-200 shadow-sm">
+              <div class="p-3 bg-amber-100 text-amber-800 rounded-lg">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <div>
+                <span class="text-xs font-bold text-stone-500 uppercase tracking-wider block">Adresse locale</span>
+                <p class="text-sm font-semibold text-stone-900">
+                  Amalgame Travaux de Finition Inc.<br>
+                  632 Rue Murray, Sherbrooke, QC J1G 2K9, Canada
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulaire de Demande -->
+        <div class="lg:col-span-7 bg-white p-8 rounded-2xl border border-stone-200 shadow-sm">
+          <h4 class="text-xl font-bold text-stone-900 mb-6">Demande d'information ou de soumission</h4>
+          
+          <form action="#" method="POST" class="space-y-4" onsubmit="event.preventDefault(); alert('Merci pour votre message. Nous vous contacterons sous peu.');">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="name" class="block text-xs font-semibold text-stone-700 uppercase tracking-wider mb-1">Nom complet</label>
+                <input type="text" id="name" required class="w-full px-4 py-2.5 rounded-lg border border-stone-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 text-sm outline-none">
+              </div>
+              <div>
+                <label for="phone" class="block text-xs font-semibold text-stone-700 uppercase tracking-wider mb-1">Téléphone</label>
+                <input type="tel" id="phone" required class="w-full px-4 py-2.5 rounded-lg border border-stone-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 text-sm outline-none">
+              </div>
+            </div>
+
+            <div>
+              <label for="service" class="block text-xs font-semibold text-stone-700 uppercase tracking-wider mb-1">Type de projet</label>
+              <select id="service" class="w-full px-4 py-2.5 rounded-lg border border-stone-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 text-sm outline-none">
+                <option>Plancher en bois franc (sablage ou pose)</option>
+                <option>Céramique & Douche (Système Schluter)</option>
+                <option>Plancher en vinyle & Escaliers</option>
+                <option>Peinture murale & Finition</option>
+                <option>Autre projet de finition</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="message" class="block text-xs font-semibold text-stone-700 uppercase tracking-wider mb-1">Description de vos besoins</label>
+              <textarea id="message" rows="4" required class="w-full px-4 py-2.5 rounded-lg border border-stone-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 text-sm outline-none" placeholder="Précisez la superficie, le type de surface ou vos attentes..."></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 bg-amber-600 hover:bg-amber-500 text-white font-bold rounded-lg transition-colors text-sm uppercase tracking-wider">
+              Envoyer la demande
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="bg-stone-950 text-stone-400 py-12 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-6">
+        <div>
+          <p class="text-white font-bold text-lg">Amalgame Travaux de Finition Inc.</p>
+          <p class="text-xs text-stone-500 mt-1">632 Rue Murray, Sherbrooke, QC J1G 2K9, Canada</p>
+        </div>
+        <div class="text-xs text-stone-500">
+          © <script>document.write(new Date().getFullYear())</script> Amalgame Travaux de Finition Inc. Tous droits réservés.
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
