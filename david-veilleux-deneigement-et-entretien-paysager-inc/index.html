@@ -3,32 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Veilleux Déneigement et Entretien Paysager | Sherbrooke</title>
-    <meta name="description" content="Services professionnels de déneigement résidentiel et commercial et d'entretien paysager à Sherbrooke. Intervention rapide, travail minutieux et service client attentionné. Téléphone : (819) 822-3371.">
+    <title>David Veilleux | Déneigement et Entretien Paysager à Sherbrooke</title>
+    <meta name="description" content="Services professionnels de déneigement et d'entretien paysager à Sherbrooke. Service minutieux, alertes neige et réactivité. Contactez-nous au (819) 822-3371.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            blue: '#1e3a8a',
-                            lightBlue: '#0284c7',
-                            green: '#15803d',
-                            dark: '#0f172a',
-                            slate: '#334155'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "David Veilleux Déneigement et Entretien Paysager inc",
-      "image": "https://images.unsplash.com/photo-1548777123-e216912df7d8",
+      "image": "https://images.unsplash.com/photo-1517299321529-639f8c26d4a1?auto=format&fit=crop&w=1200&q=80",
       "telephone": "(819) 822-3371",
       "address": {
         "@type": "PostalAddress",
@@ -40,265 +23,339 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 45.401,
-        "longitude": -71.888
+        "addressCountry": "CA"
       },
-      "areaServed": {
-        "@type": "City",
-        "name": "Sherbrooke"
-      }
+      "url": "https://www.davidveilleuxdeneigement.ca"
     }
     </script>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-    <!-- En-tête / Navigation -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <div class="flex items-center">
-                    <span class="text-xl sm:text-2xl font-bold text-brand-blue tracking-tight">
-                        David Veilleux <span class="text-brand-green font-normal">Inc.</span>
-                    </span>
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur border-b border-slate-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-xl text-white">
+                    DV
                 </div>
-                <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-700">
-                    <a href="#services" class="hover:text-brand-lightBlue transition-colors">Services</a>
-                    <a href="#avis" class="hover:text-brand-lightBlue transition-colors">Avis clients</a>
-                    <a href="#contact" class="hover:text-brand-lightBlue transition-colors">Contact</a>
-                </nav>
-                <div class="flex items-center space-x-4">
-                    <a href="tel:8198223371" class="inline-flex items-center justify-center px-4 py-2.5 rounded-lg text-sm font-semibold bg-brand-blue text-white hover:bg-blue-900 transition-colors shadow-sm">
-                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h32a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
-                        (819) 822-3371
-                    </a>
+                <div>
+                    <span class="block font-bold text-lg leading-tight">David Veilleux</span>
+                    <span class="block text-xs text-blue-400 font-medium">Déneigement & Entretien Paysager inc</span>
                 </div>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#services" class="hover:text-blue-400 transition-colors">Nos Services</a>
+                <a href="#engagement" class="hover:text-blue-400 transition-colors">Notre Engagement</a>
+                <a href="#temoignages" class="hover:text-blue-400 transition-colors">Avis Clients</a>
+                <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+            </nav>
+            <div class="flex items-center">
+                <a href="tel:8198223371" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2.5 rounded-lg text-sm transition-all shadow-md flex items-center space-x-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h32.8a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 01-5.516 5.516l-1.13 2.257a1 1 0 01-1.21.502l-4.493-1.498A1 1 0 013 15.2V5z"></path></svg>
+                    <span>(819) 822-3371</span>
+                </a>
             </div>
         </div>
     </header>
 
-    <!-- Section Héro (OBLIGATOIRE avec Image) -->
-    <section class="relative bg-slate-900 text-white overflow-hidden">
+    <!-- Hero Section -->
+    <section class="relative bg-slate-900 text-white overflow-hidden py-20 lg:py-32">
         <div class="absolute inset-0 z-0 opacity-40">
-            <img src="https://images.unsplash.com/photo-1548777123-e216912df7d8?auto=format&fit=crop&w=1920&q=80" alt="Déneigement et paysage à Sherbrooke" class="w-full h-full object-cover">
+            <img src="https://images.unsplash.com/photo-1517299321529-639f8c26d4a1?auto=format&fit=crop&w=1920&q=80" alt="Paysage hivernal et travail de déneigement à Sherbrooke" class="w-full h-full object-cover">
         </div>
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
-            <div class="max-w-3xl">
-                <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-brand-lightBlue/20 text-blue-200 border border-blue-400/30 mb-4">
-                    Service professionnel à Sherbrooke
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/80 to-transparent z-10"></div>
+        
+        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-2xl">
+                <span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-xs font-semibold tracking-wide uppercase mb-4 border border-blue-500/30">
+                    Service Local à Sherbrooke
                 </span>
-                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight mb-6">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
                     Déneigement et Entretien Paysager à Sherbrooke
                 </h1>
-                <p class="text-lg sm:text-xl text-slate-200 mb-8 leading-relaxed">
-                    David Veilleux Déneigement et Entretien Paysager inc. assure un service rigoureux et minutieux tout au long de l'année. Du déneigement d'allées à l'entretien de vos espaces verts.
+                <p class="text-lg text-slate-300 mb-8 leading-relaxed">
+                    Un service résidentiel et commercial fiable, minutieux et réactif. Que ce soit pour traverser l'hiver en toute tranquillité grâce à nos alertes neige ou pour l'entretien de votre terrain, notre équipe est là pour vous.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="tel:8198223371" class="inline-flex justify-center items-center px-6 py-3.5 rounded-lg text-base font-medium bg-brand-blue hover:bg-blue-900 text-white transition-colors shadow-md">
-                        Appeler le (819) 822-3371
+                    <a href="#contact" class="inline-flex justify-center items-center px-6 py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-all text-base">
+                        Demander une soumission
                     </a>
-                    <a href="#contact" class="inline-flex justify-center items-center px-6 py-3.5 rounded-lg text-base font-medium bg-white/10 hover:bg-white/20 text-white backdrop-blur border border-white/20 transition-colors">
-                        Obtenir une soumission
+                    <a href="tel:8198223371" class="inline-flex justify-center items-center px-6 py-3.5 bg-slate-800 hover:bg-slate-700 text-slate-100 font-semibold rounded-lg border border-slate-700 transition-all text-base">
+                        Appeler (819) 822-3371
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Services -->
+    <!-- Services Section -->
     <section id="services" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-2xl sm:text-4xl font-bold text-slate-900 mb-4">Nos Services à Sherbrooke</h2>
-                <p class="text-slate-600 text-lg">Des prestations adaptées pour les particuliers et les entreprises, avec une attention particulière portée aux détails et à la satisfaction client.</p>
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Nos Services Spécialisés</h2>
+                <p class="text-slate-600 text-lg">
+                    Des solutions adaptées aux rigueurs de l'hiver et aux besoins de votre propriété durant toute l'année à Sherbrooke.
+                </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 shadow-sm flex flex-col">
-                    <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1517299321609-52687d1bc55a?auto=format&fit=crop&w=800&q=80" alt="Service de déneigement" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between">
-                        <div>
-                            <h3 class="text-xl font-bold text-slate-900 mb-3">Déneigement Résidentiel & Commercial</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                                Dégagement minutieux des entrées, des cours et des accès stationnés. Service d'alertes neige pour anticiper les passages et passages fréquents même lors de petites accumulations.
-                            </p>
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+                <!-- Service 1: Déneigement -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1548777123-e216912df7f8?auto=format&fit=crop&w=800&q=80" alt="Entrée résidentielle couverte de neige dégagée" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-slate-900/80 backdrop-blur text-white text-xs px-3 py-1 rounded-full font-medium">
+                            Saison Hivernale
                         </div>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-3">Service de Déneigement</h3>
+                            <p class="text-slate-600 mb-6 leading-relaxed">
+                                Déneigement minutieux d'entrées résidentielles et cour de stationnement. Nos équipements sont adaptés pour intervenir proprement, même dans les espaces réduits ou autour des véhicules stationnés.
+                            </p>
+                            <ul class="space-y-3 text-slate-700 mb-6">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span>Passages réguliers, même pour de petites accumulations.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span>Système d'alertes neige pour vous simplifier la vie.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span>Travail précis de nos chauffeurs sur le terrain.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center font-semibold text-blue-600 hover:text-blue-700">
+                            Demander un devis déneigement
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Service 2 -->
-                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 shadow-sm flex flex-col">
-                    <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=800&q=80" alt="Entretien paysager" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between">
-                        <div>
-                            <h3 class="text-xl font-bold text-slate-900 mb-3">Entretien Paysager</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                                Prise en charge complète de vos espaces extérieurs durant la saison estivale. Entretien professionnel pour valoriser et préserver vos terrains à Sherbrooke.
-                            </p>
+                <!-- Service 2: Entretien Paysager -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=800&q=80" alt="Aménagement paysager et entretien de terrain à Sherbrooke" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-emerald-900/80 backdrop-blur text-white text-xs px-3 py-1 rounded-full font-medium">
+                            Saison Estivale
                         </div>
                     </div>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 shadow-sm flex flex-col">
-                    <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&w=800&q=80" alt="Machinerie et équipement spécialisé" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div class="p-8 flex-1 flex flex-col justify-between">
                         <div>
-                            <h3 class="text-xl font-bold text-slate-900 mb-3">Service Adapté & Espaces Étroits</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                                Utilisation d'équipements adaptés assurant un travail de précision près des véhicules stationnés, dans les espaces étroits et les cours complexes.
+                            <h3 class="text-2xl font-bold text-slate-900 mb-3">Entretien Paysager</h3>
+                            <p class="text-slate-600 mb-6 leading-relaxed">
+                                Prise en charge de vos espaces extérieurs pour conserver un terrain propre, esthétique et bien entretenu tout au long de la belle saison.
                             </p>
+                            <ul class="space-y-3 text-slate-700 mb-6">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span>Entretien général des terrains et bordures.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span>Préparation du terrain pour les changements de saison.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-emerald-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    <span>Service courtois et personnalisé pour chaque propriété.</span>
+                                </li>
+                            </ul>
                         </div>
+                        <a href="#contact" class="inline-flex items-center font-semibold text-emerald-600 hover:text-emerald-700">
+                            Demander un devis aménagement
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Témoignages / Avis Google -->
-    <section id="avis" class="py-20 bg-slate-100">
+    <!-- Engagement & Quality Section -->
+    <section id="engagement" class="py-16 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Ajustements Rapides</h3>
+                    <p class="text-slate-600 text-sm">
+                        Une équipe facile à joindre et réactive dès que des demandes spécifiques ou des ajustements de service sont nécessaires.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Travail Minutieux</h3>
+                    <p class="text-slate-600 text-sm">
+                        Chaque manœuvre est réalisée avec soin pour respecter vos espaces, véhicules stationnés et équipements extérieurs.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1 1 0 01-1-1V4a1 1 0 011-1h8a1 1 0 011 1v4z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Transparence & Honnêteté</h3>
+                    <p class="text-slate-600 text-sm">
+                        Une gestion attentive et honnête des dossiers clients, avec une communication directe menée par David et son équipe.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section (Real Google Reviews) -->
+    <section id="temoignages" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-2xl sm:text-4xl font-bold text-slate-900 mb-4">Avis de nos clients</h2>
-                <p class="text-slate-600">Découvrez les retours d'expérience réels de nos clients à Sherbrooke.</p>
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Avis de nos clients à Sherbrooke</h2>
+                <p class="text-slate-600">
+                    Découvrez les retours réels laissés par nos clients sur notre fiche Google.
+                </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Avis 1 -->
-                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 flex flex-col justify-between">
                     <div>
-                        <div class="flex items-center mb-4 text-amber-400">
+                        <div class="flex text-amber-400 mb-4">
                             ★★★★★
                         </div>
-                        <p class="text-slate-700 text-sm leading-relaxed mb-6 italic">
-                            « Excellent service! L'entrée double est toujours bien dégagée même quand un véhicule reste stationné. Les alertes neige nous simplifie la vie et lorsque des ajustements sont nécessaires, l'équipe est facile à joindre et répondent rapidement. Merci à toutes l'équipe, les hivers sont moins pénibles grâce à vous! »
+                        <p class="text-slate-700 text-sm italic mb-6 leading-relaxed">
+                            "Excellent service! L'entrée double est toujours bien dégagée même quand un véhicule reste stationné. Les alertes neige nous simplifie la vie et lorsque des ajustements sont nécessaires, l'équipe est facile à joindre et répondent rapidement. Merci à toutes l'équipe, les hivers sont moins pénibles grâce à vous!"
                         </p>
                     </div>
-                    <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Avis Client Google</div>
+                    <div class="pt-4 border-t border-slate-200">
+                        <span class="block font-semibold text-slate-900 text-sm">Avis vérifié Google</span>
+                        <span class="block text-xs text-slate-500">Client Déneigement Résidentiel</span>
+                    </div>
                 </div>
 
-                <!-- Avis 2 -->
-                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                <!-- Review 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 flex flex-col justify-between">
                     <div>
-                        <div class="flex items-center mb-4 text-amber-400">
+                        <div class="flex text-amber-400 mb-4">
                             ★★★★★
                         </div>
-                        <p class="text-slate-700 text-sm leading-relaxed mb-6 italic">
-                            « Je suis cliente depuis des années et je dois dire que cette année, le service de déneigement est excellent, je suis très satisfaite. Je laisse ma voiture souvent dans un coin de ma cour car je travaille de la maison et le tracteur fait un très bon travail minutieux sur l’autre moitié de la cour qui est quand même plutôt étroite, ainsi que devant ma voiture. Et vous passez souvent même pour des petites accumulations, ce qui n’a pas été toujours le cas par le passé. »
+                        <p class="text-slate-700 text-sm italic mb-6 leading-relaxed">
+                            "Je suis cliente depuis des années et je dois dire que cette année, le service de déneigement est excellent, je suis très satisfaite .<br><br>Je laisse ma voiture souvent dans un coin de ma cour car je travaille de la maison et le tracteur fait un très bon travail minutieux sur l’autre moitié de la cour qui est quand même plutôt étroite, ainsi que devant ma voiture.<br><br>Et vous passez souvent même pour des petites accumulations , ce qui n’a pas été toujours le cas par le passé."
                         </p>
                     </div>
-                    <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Avis Client Google</div>
+                    <div class="pt-4 border-t border-slate-200">
+                        <span class="block font-semibold text-slate-900 text-sm">Avis vérifié Google</span>
+                        <span class="block text-xs text-slate-500">Cliente fidèle</span>
+                    </div>
                 </div>
 
-                <!-- Avis 3 -->
-                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                <!-- Review 3 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 flex flex-col justify-between">
                     <div>
-                        <div class="flex items-center mb-4 text-amber-400">
+                        <div class="flex text-amber-400 mb-4">
                             ★★★★★
                         </div>
-                        <p class="text-slate-700 text-sm leading-relaxed mb-6 italic">
-                            « Rectification au commentaire précédent : Suite à mon courriel, tout à été réglé et la facture annulée en très peu de temps. C'est super apprécié. Merci à David pour sa rapidité et honnêteté! »
+                        <p class="text-slate-700 text-sm italic mb-6 leading-relaxed">
+                            "Rectification au commentaire précédent :<br>
+                            Suite à mon courriel, tout à été réglé et la facture annulée en très peu de temps. C'est super apprécié. Merci à David pour sa rapidité et honnêteté!"
                         </p>
                     </div>
-                    <div class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Avis Client Google</div>
+                    <div class="pt-4 border-t border-slate-200">
+                        <span class="block font-semibold text-slate-900 text-sm">Avis vérifié Google</span>
+                        <span class="block text-xs text-slate-500">Service Client & Suivi</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Contact & Coordonnées -->
-    <section id="contact" class="py-20 bg-white">
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-900 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Details -->
                 <div>
-                    <h2 class="text-2xl sm:text-4xl font-bold text-slate-900 mb-6">Contactez-nous</h2>
-                    <p class="text-slate-600 mb-8 leading-relaxed">
-                        Pour toute question, demande d'ajustement ou information sur nos services de déneigement et d'entretien paysager à Sherbrooke, notre équipe est joignable rapidement.
+                    <span class="text-blue-400 font-semibold text-sm tracking-wider uppercase">Contact Direct</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-6 mt-2">Discutez de votre projet avec David Veilleux</h2>
+                    <p class="text-slate-300 mb-8 leading-relaxed">
+                        N'hésitez pas à nous contacter pour toute demande de renseignement ou pour obtenir une estimation de service de déneigement ou d'entretien paysager à Sherbrooke.
                     </p>
 
                     <div class="space-y-6">
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 bg-blue-50 p-3 rounded-lg text-brand-blue">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                                </svg>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-blue-600/20 text-blue-400 rounded-lg flex items-center justify-center flex-shrink-0 border border-blue-500/30">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                             </div>
-                            <div class="ml-4">
-                                <h3 class="text-sm font-semibold text-slate-900 uppercase tracking-wider">Adresse</h3>
-                                <p class="text-slate-700 mt-1">
-                                    David Veilleux Déneigement et Entretien Paysager inc<br>
-                                    2395 Chem. Lemire<br>
-                                    Sherbrooke, QC J1H 0C5, Canada
-                                </p>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white">Adresse</h3>
+                                <p class="text-slate-300 mt-1">2395 Chem. Lemire, Sherbrooke, QC J1H 0C5, Canada</p>
                             </div>
                         </div>
 
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 bg-blue-50 p-3 rounded-lg text-brand-blue">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                                </svg>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-blue-600/20 text-blue-400 rounded-lg flex items-center justify-center flex-shrink-0 border border-blue-500/30">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h32.8a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 01-5.516 5.516l-1.13 2.257a1 1 0 01-1.21.502l-4.493-1.498A1 1 0 013 15.2V5z"></path></svg>
                             </div>
-                            <div class="ml-4">
-                                <h3 class="text-sm font-semibold text-slate-900 uppercase tracking-wider">Téléphone</h3>
-                                <p class="text-slate-700 mt-1">
-                                    <a href="tel:8198223371" class="text-brand-blue font-bold hover:underline">(819) 822-3371</a>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white">Téléphone</h3>
+                                <p class="text-slate-300 mt-1">
+                                    <a href="tel:8198223371" class="hover:text-blue-400 transition-colors">(819) 822-3371</a>
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Formulaire de contact -->
-                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
-                    <h3 class="text-xl font-bold text-slate-900 mb-6">Envoyer un message</h3>
-                    <form class="space-y-4" action="#" method="POST" onsubmit="event.preventDefault();">
+                <!-- Contact Form -->
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700">
+                    <h3 class="text-2xl font-bold mb-6">Demande d'information</h3>
+                    <form class="space-y-4" action="#" method="POST" onsubmit="event.preventDefault(); alert('Votre message a été simulé avec succès.');">
                         <div>
-                            <label class="block text-sm font-medium text-slate-700 mb-1">Nom complet</label>
-                            <input type="text" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-transparent outline-none transition">
+                            <label for="name" class="block text-sm font-medium text-slate-300 mb-1">Nom complet</label>
+                            <input type="text" id="name" name="name" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Votre nom">
                         </div>
+
                         <div>
-                            <label class="block text-sm font-medium text-slate-700 mb-1">Téléphone</label>
-                            <input type="tel" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-transparent outline-none transition">
+                            <label for="phone" class="block text-sm font-medium text-slate-300 mb-1">Numéro de téléphone</label>
+                            <input type="tel" id="phone" name="phone" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="(819) 000-0000">
                         </div>
+
                         <div>
-                            <label class="block text-sm font-medium text-slate-700 mb-1">Adresse à Sherbrooke</label>
-                            <input type="text" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-transparent outline-none transition">
+                            <label for="service" class="block text-sm font-medium text-slate-300 mb-1">Service recherché</label>
+                            <select id="service" name="service" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="deneigement">Déneigement</option>
+                                <option value="paysager">Entretien paysager</option>
+                                <option value="autre">Autre demande</option>
+                            </select>
                         </div>
+
                         <div>
-                            <label class="block text-sm font-medium text-slate-700 mb-1">Message</label>
-                            <textarea rows="4" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-transparent outline-none transition"></textarea>
+                            <label for="message" class="block text-sm font-medium text-slate-300 mb-1">Message ou détails de la demande</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Précisez votre adresse à Sherbrooke et vos besoins..."></textarea>
                         </div>
-                        <button type="submit" class="w-full py-3 px-6 rounded-lg bg-brand-blue text-white font-semibold hover:bg-blue-900 transition duration-200 shadow">
+
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors shadow-lg">
                             Envoyer la demande
                         </button>
                     </form>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Pied de page -->
-    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left flex flex-col sm:flex-row justify-between items-center gap-6">
-            <div>
-                <p class="text-white font-semibold">David Veilleux Déneigement et Entretien Paysager inc</p>
-                <p class="text-sm mt-1">2395 Chem. Lemire, Sherbrooke, QC J1H 0C5</p>
-            </div>
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="text-sm">
-                &copy; David Veilleux Déneigement et Entretien Paysager inc. Tous droits réservés.
+                <span class="font-semibold text-slate-200">David Veilleux Déneigement et Entretien Paysager inc</span> &copy; Tous droits réservés.
+            </div>
+            <div class="text-xs text-slate-500">
+                2395 Chem. Lemire, Sherbrooke, QC J1H 0C5, Canada | (819) 822-3371
             </div>
         </div>
     </footer>
