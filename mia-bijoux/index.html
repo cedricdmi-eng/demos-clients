@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fr-CA" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIA Bijoux Sherbrooke | Bijouterie & Accessoires de Qualité</title>
+    <meta name="description" content="MIA Bijoux à Sherbrooke au Carrefour de l'Estrie (3050 Boul de Portland). Découvrez nos collections de bijoux de qualité qui ne ternissent pas et notre service attentionné.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#faf8f5',
+                            100: '#f4efe6',
+                            200: '#e6dac8',
+                            300: '#d5be9f',
+                            400: '#c29f75',
+                            500: '#b28656',
+                            600: '#a3724a',
+                            700: '#875b3e',
+                            800: '#6f4a36',
+                            900: '#5a3d2e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "JewelryStore",
+      "name": "MIA Bijoux",
+      "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80",
+      "telephone": "(819) 347-2850",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3050 Boul de Portland",
+        "addressLocality": "Sherbrooke",
+        "addressRegion": "QC",
+        "postalCode": "J1L 1K1",
+        "addressCountry": "CA"
+      }
+    }
+    </script>
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans antialiased selection:bg-brand-200 selection:text-brand-900">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-stone-900/95 backdrop-blur-md text-white border-b border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-2">
+                <span class="font-serif text-2xl tracking-widest font-bold uppercase text-brand-200">MIA Bijoux</span>
+                <span class="text-xs tracking-wider text-stone-400 uppercase hidden sm:inline-block">| Sherbrooke</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <a href="#accueil" class="hover:text-brand-300 transition-colors">Accueil</a>
+                <a href="#services" class="hover:text-brand-300 transition-colors">Nos Services</a>
+                <a href="#temoignages" class="hover:text-brand-300 transition-colors">Avis Clients</a>
+                <a href="#contact" class="hover:text-brand-300 transition-colors">Boutique & Contact</a>
+            </nav>
+
+            <a href="tel:8193472850" class="inline-flex items-center justify-center px-4 py-2 text-xs sm:text-sm font-semibold tracking-wider uppercase bg-brand-300 text-stone-950 hover:bg-brand-200 transition-all rounded-sm shadow-sm">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+                (819) 347-2850
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="relative bg-stone-900 text-white overflow-hidden py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 z-10">
+                    <div class="inline-flex items-center space-x-2 bg-stone-800/80 border border-stone-700 px-3 py-1.5 rounded-full text-xs font-medium tracking-wider text-brand-300 uppercase">
+                        <span class="w-2 h-2 rounded-full bg-brand-400"></span>
+                        <span>Au Carrefour de l'Estrie</span>
+                    </div>
+                    
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-stone-100 leading-tight">
+                        Bijouterie & Bijoux de Qualité à Sherbrooke
+                    </h1>
+                    
+                    <p class="text-stone-300 text-base sm:text-lg leading-relaxed max-w-2xl">
+                        Découvrez une collection raffinée de bijoux qui ne ternissent pas, alliance parfaite entre élégance, durabilité et prix accessible. Profitez d'une expérience d'essayage personnalisée et d'un service à la clientèle irréprochable.
+                    </p>
+
+                    <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                        <a href="tel:8193472850" class="inline-flex justify-center items-center px-6 py-3.5 border border-transparent text-sm font-semibold rounded-sm text-stone-950 bg-brand-300 hover:bg-brand-200 transition-all uppercase tracking-wider text-center">
+                            Nous Appeler
+                        </a>
+                        <a href="#contact" class="inline-flex justify-center items-center px-6 py-3.5 border border-stone-600 text-sm font-semibold rounded-sm text-stone-200 hover:bg-stone-800 hover:border-stone-500 transition-all uppercase tracking-wider text-center">
+                            Trouver la Boutique
+                        </a>
+                    </div>
+
+                    <div class="pt-8 border-t border-stone-800 grid grid-cols-2 sm:grid-cols-3 gap-4 text-xs tracking-wider text-stone-400 uppercase">
+                        <div>
+                            <span class="block text-stone-200 font-semibold mb-1">Qualité Durable</span>
+                            <span>Ne ternit pas</span>
+                        </div>
+                        <div>
+                            <span class="block text-stone-200 font-semibold mb-1">Service Attentionné</span>
+                            <span>En ligne & en magasin</span>
+                        </div>
+                        <div>
+                            <span class="block text-stone-200 font-semibold mb-1">Sherbrooke</span>
+                            <span>Carrefour de l'Estrie</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-lg overflow-hidden shadow-2xl border border-stone-800">
+                        <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80" alt="Présentation de bijoux élégants MIA Bijoux" class="w-full h-[450px] object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-950/60 via-transparent to-transparent"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Specifics Section -->
+    <section id="services" class="py-20 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-semibold uppercase tracking-widest text-brand-700 mb-2">Expérience & Produits</h2>
+                <p class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">L'Excellence MIA Bijoux à Sherbrooke</p>
+                <div class="w-16 h-0.5 bg-brand-500 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-white rounded-sm overflow-hidden border border-stone-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1611591475111-2d7c040188ca?auto=format&fit=crop&w=800&q=80" alt="Combinaisons et mix and match de bracelets" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold text-stone-900 mb-2">Essayage & Mix / Match</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            Prenez tout votre temps en boutique pour essayer et composer vos combinaisons uniques de bracelets, colliers et bagues, avec l'accompagnement patient de notre personnel.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-sm overflow-hidden border border-stone-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80" alt="Bijoux de haute qualité durable" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold text-stone-900 mb-2">Bijoux Durables & Inaltérables</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            Des créations conçues pour résister au quotidien sans ternir, vous offrant un éclat durable à un prix accessible.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-sm overflow-hidden border border-stone-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80" alt="Service client et support réactif" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold text-stone-900 mb-2">Service Client Uniquement Dédié</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            Qu'il s'agisse d'un suivi de livraison, d'un échange ou d'un conseil en boutique au Carrefour de l'Estrie, notre équipe réagit promptement pour votre entière satisfaction.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Real Reviews Section -->
+    <section id="temoignages" class="py-20 bg-stone-900 text-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-semibold uppercase tracking-widest text-brand-300 mb-2">Expériences Vérifiées</h2>
+                <p class="font-serif text-3xl sm:text-4xl font-bold text-stone-100">Avis de nos Clients sur Google</p>
+                <div class="w-16 h-0.5 bg-brand-400 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-stone-800/80 p-8 rounded-sm border border-stone-700/60 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="text-brand-300">
+                            <svg class="w-8 h-8 opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+                        <p class="text-stone-300 italic text-sm leading-relaxed">
+                            "Super service! Lors d’un samedi assez achalandé j’avais trouvé mes produits en ligne et j’ai voulu prendre le temps d’essayer des mix/match de bracelet! Super patiente et m’a jamais fait sentir comme si j’en demandais trop! Merci ☺️"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-stone-700/50 flex items-center justify-between text-xs text-stone-400">
+                        <span class="font-medium text-stone-200">Avis Client Google</span>
+                        <span class="text-brand-300">★ Google Verified</span>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-stone-800/80 p-8 rounded-sm border border-stone-700/60 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="text-brand-300">
+                            <svg class="w-8 h-8 opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+                        <p class="text-stone-300 italic text-sm leading-relaxed">
+                            "Excellent service à la clientèle ! La compagnie de livraison avait perdu mon colis, alors j’ai contacté le service à la clientèle. En moins de 24 heures, le problème était réglé et, en moins de deux jours, mon colis était chez moi."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-stone-700/50 flex items-center justify-between text-xs text-stone-400">
+                        <span class="font-medium text-stone-200">Avis Client Google</span>
+                        <span class="text-brand-300">★ Google Verified</span>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-stone-800/80 p-8 rounded-sm border border-stone-700/60 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="text-brand-300">
+                            <svg class="w-8 h-8 opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+                        <p class="text-stone-300 italic text-sm leading-relaxed">
+                            "En effet, les bijoux ne ternissent pas, même avec leur faible prix. La livraison est rapide, et les échanges/remboursements sont simples. De plus, le service à la clientèle (en ligne comme en magasin) est impeccable. J’ai reçu une réponse à mon courriel une minute après l’avoir envoyé."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-stone-700/50 flex items-center justify-between text-xs text-stone-400">
+                        <span class="font-medium text-stone-200">Avis Client Google</span>
+                        <span class="text-brand-300">★ Google Verified</span>
+                    </div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="bg-stone-800/80 p-8 rounded-sm border border-stone-700/60 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="text-brand-300">
+                            <svg class="w-8 h-8 opacity-80" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                        </div>
+                        <p class="text-stone-300 italic text-sm leading-relaxed">
+                            "Il manquait définitivement une belle marque de bijoux de qualité au Carrefour de l’Estrie, enfin! J’ai reçu un à service impeccable de la part de Tania, une personne soucieuse de son personnel et de sa clientèle. J’y retournerais pour mes futurs achats!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-stone-700/50 flex items-center justify-between text-xs text-stone-400">
+                        <span class="font-medium text-stone-200">Avis Client Google</span>
+                        <span class="text-brand-300">★ Google Verified</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section id="contact" class="py-20 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <h2 class="text-xs font-semibold uppercase tracking-widest text-brand-700 mb-2">Visitez-nous</h2>
+                        <h3 class="font-serif text-3xl font-bold text-stone-900">Coordonnées & Emplacement</h3>
+                        <div class="w-12 h-0.5 bg-brand-500 mt-3"></div>
+                    </div>
+
+                    <div class="space-y-6 text-sm text-stone-700">
+                        <div class="flex items-start space-x-4">
+                            <div class="p-3 bg-stone-200 text-stone-800 rounded-sm mt-1">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-stone-900 uppercase text-xs tracking-wider mb-1">Adresse</h4>
+                                <p class="text-stone-800">MIA Bijoux</p>
+                                <p>3050 Boul de Portland</p>
+                                <p>Sherbrooke, QC J1L 1K1, Canada</p>
+                                <p class="text-xs text-stone-500 mt-1">(Carrefour de l'Estrie)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="p-3 bg-stone-200 text-stone-800 rounded-sm mt-1">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-stone-900 uppercase text-xs tracking-wider mb-1">Téléphone</h4>
+                                <a href="tel:8193472850" class="text-brand-800 font-semibold hover:underline text-base">
+                                    (819) 347-2850
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-stone-200/60 rounded-sm border border-stone-300">
+                        <p class="text-xs text-stone-700 leading-relaxed">
+                            <strong class="font-semibold text-stone-900">Information boutique :</strong> Retrouvez-nous directement dans le centre commercial du Carrefour de l'Estrie à Sherbrooke pour découvrir nos collections complètes en personne.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7 bg-white p-8 sm:p-10 rounded-sm border border-stone-200 shadow-sm">
+                    <h3 class="font-serif text-2xl font-bold text-stone-900 mb-6">Nous Contacter</h3>
+                    <form onsubmit="event.preventDefault(); alert('Merci de votre message. Notre équipe vous répondra sous peu.');" class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-2">Nom complet</label>
+                                <input type="text" required class="w-full px-4 py-3 bg-stone-50 border border-stone-300 rounded-sm text-sm focus:outline-none focus:border-stone-800 transition-colors" placeholder="Votre nom">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-2">Courriel</label>
+                                <input type="email" required class="w-full px-4 py-3 bg-stone-50 border border-stone-300 rounded-sm text-sm focus:outline-none focus:border-stone-800 transition-colors" placeholder="votre@courriel.com">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-2">Sujet</label>
+                            <input type="text" required class="w-full px-4 py-3 bg-stone-50 border border-stone-300 rounded-sm text-sm focus:outline-none focus:border-stone-800 transition-colors" placeholder="Information produit, service après-vente...">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-stone-700 mb-2">Message</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 bg-stone-50 border border-stone-300 rounded-sm text-sm focus:outline-none focus:border-stone-800 transition-colors" placeholder="Comment pouvons-nous vous aider ?"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3.5 bg-stone-900 text-white text-xs font-semibold uppercase tracking-widest hover:bg-stone-800 transition-all rounded-sm">
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-950 text-stone-400 py-12 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <span class="font-serif text-xl tracking-widest font-bold uppercase text-stone-200 block mb-2">MIA Bijoux</span>
+                    <p class="text-xs text-stone-400 leading-relaxed">
+                        Votre bijouterie de confiance au Carrefour de l'Estrie à Sherbrooke. Des créations durables et accessibles pour sublimer votre style au quotidien.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-semibold uppercase tracking-wider text-stone-200 mb-3">Sherbrooke</h4>
+                    <p class="text-xs leading-relaxed">
+                        3050 Boul de Portland<br>
+                        Sherbrooke, QC J1L 1K1<br>
+                        Canada
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-semibold uppercase tracking-wider text-stone-200 mb-3">Téléphone</h4>
+                    <p class="text-xs">
+                        <a href="tel:8193472850" class="hover:text-stone-200 transition-colors">(819) 347-2850</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-stone-900 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500">
+                <p>&copy; MIA Bijoux Sherbrooke. Tous droits réservés.</p>
+                <p class="mt-2 sm:mt-0">SEO Local Sherbrooke, QC</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
