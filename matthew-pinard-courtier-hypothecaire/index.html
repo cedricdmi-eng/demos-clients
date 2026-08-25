@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fr-CA" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Pinard | Courtier hypothécaire à Sherbrooke</title>
+    <meta name="description" content="Courtier hypothécaire à Sherbrooke. Matthew Pinard vous offre un service personnalisé et dévoué pour votre prêt hypothécaire, achat, refinancement ou renouvellement.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#020617',
+                        },
+                        accent: {
+                            500: '#d97706',
+                            600: '#b45309',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Schema.org Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Matthew Pinard Courtier hypothécaire",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "455 Rue King Ouest",
+        "addressLocality": "Sherbrooke",
+        "addressRegion": "QC",
+        "postalCode": "J1H 6E9",
+        "addressCountry": "CA"
+      },
+      "telephone": "(438) 258-8139",
+      "areaServed": {
+        "@type": "City",
+        "name": "Sherbrooke"
+      }
+    }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-navy-900/95 backdrop-blur-md border-b border-slate-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-house-chimney-key text-accent-500 text-2xl"></i>
+                <div>
+                    <span class="font-bold text-lg leading-none block">Matthew Pinard</span>
+                    <span class="text-xs text-slate-400 tracking-wider uppercase font-medium">Courtier hypothécaire</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#services" class="hover:text-accent-500 transition-colors">Services</a>
+                <a href="#engagement" class="hover:text-accent-500 transition-colors">Mon Approche</a>
+                <a href="#temoignages" class="hover:text-accent-500 transition-colors">Témoignages</a>
+                <a href="#contact" class="hover:text-accent-500 transition-colors">Contact</a>
+            </nav>
+
+            <div>
+                <a href="tel:4382588139" class="inline-flex items-center space-x-2 bg-accent-500 hover:bg-accent-600 text-white font-semibold px-4 py-2.5 rounded-lg transition-all shadow-md hover:shadow-lg">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>(438) 258-8139</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-navy-950 text-white min-h-[85vh] flex items-center py-20 overflow-hidden">
+        <!-- Unsplash Background Image (Architectural detail, no people) -->
+        <div class="absolute inset-0 z-0 opacity-25 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="absolute inset-0 z-0 bg-gradient-to-r from-navy-950 via-navy-950/90 to-transparent"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-slate-800/80 border border-slate-700 rounded-full px-3 py-1 text-xs text-slate-300 uppercase tracking-wider font-semibold">
+                    <i class="fa-solid fa-location-dot text-accent-500"></i>
+                    <span>Sherbrooke &amp; Estrie</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                    Courtier hypothécaire à Sherbrooke
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-300 leading-relaxed font-light">
+                    Un accompagnement rigoureux, attentif et sur mesure pour concrétiser vos projets immobiliers. Bénéficiez d'une prise en charge complète de votre dossier, sans aucun jugement et avec une efficacité démontrée.
+                </p>
+                
+                <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                    <a href="tel:4382588139" class="inline-flex justify-center items-center space-x-3 bg-accent-500 hover:bg-accent-600 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-accent-500/20 transition-all">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <span>Discuter de votre projet</span>
+                    </a>
+                    <a href="#contact" class="inline-flex justify-center items-center space-x-2 bg-slate-800/80 hover:bg-slate-800 text-slate-200 border border-slate-700 font-semibold text-lg px-8 py-4 rounded-xl transition-all">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Écrire un message</span>
+                    </a>
+                </div>
+
+                <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 text-slate-400 text-xs sm:text-sm">
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-check text-accent-500"></i>
+                        <span>Prise en charge dévouée</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-check text-accent-500"></i>
+                        <span>Solutions adaptées</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-check text-accent-500"></i>
+                        <span>Service courtois</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5">
+                <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-800 bg-slate-900">
+                    <!-- Unsplash Image (House keys detail, no people) -->
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" alt="Clés de maison et propriété à Sherbrooke" class="w-full h-80 object-cover">
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="p-3 bg-accent-500/10 text-accent-500 rounded-lg">
+                                <i class="fa-solid fa-building-user text-xl"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-white font-bold text-base">Service local à Sherbrooke</h2>
+                                <p class="text-slate-400 text-sm mt-1">Matthew Pinard vous accueille et analyse votre situation financière avec précision et clarté.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-xs uppercase font-extrabold tracking-wider text-accent-600">Expertise &amp; Solutions</h2>
+                <p class="text-3xl sm:text-4xl font-bold text-slate-900">Services hypothécaires sur mesure à Sherbrooke</p>
+                <p class="text-slate-600">Chaque dossier est unique. Profitez d'un accompagnement personnalisé pour trouver la solution adaptée à vos besoins réels.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-200 flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <!-- Unsplash Image (Facade home, no people) -->
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Achat d'une première maison" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Achat Résidentiel &amp; Premier Acheteur</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Préqualification et recherche de la meilleure structure d'emprunt pour concrétiser l'achat de votre future propriété en toute sérénité.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-4">
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-accent-500 mr-2"></i> Analyse de capacité d'emprunt</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-accent-500 mr-2"></i> Préqualification claire</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-200 flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <!-- Unsplash Image (Financial desk details, no people) -->
+                        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80" alt="Refinancement hypothécaire" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Refinancement Hypothécaire</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Dégagez de la liquidité pour financer des rénovations, investir ou optimiser vos avoirs existants grâce au capital accumulé sur votre propriété.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-4">
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-accent-500 mr-2"></i> Accès à l'équité de votre maison</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-accent-500 mr-2"></i> Optimisation financière</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-slate-200 flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <!-- Unsplash Image (Calculator & documents, no people) -->
+                        <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80" alt="Renouvellement et consolidation" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Renouvellement &amp; Consolidation</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Ne réavalez pas les termes sortants sans comparer. Regroupez également vos dettes à un taux plus avantageux pour alléger vos paiements mensuels.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-4">
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-accent-500 mr-2"></i> Négociation de renouvellement</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-accent-500 mr-2"></i> Réduction du coût mensuel global</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engagement / Values Section -->
+    <section id="engagement" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-xs uppercase font-extrabold tracking-wider text-accent-600">Un service à la hauteur</h2>
+                    <h3 class="text-3xl font-bold text-slate-900 leading-tight">
+                        Une approche humaine, rigoureuse et sans aucun jugement
+                    </h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Faire affaire avec Matthew Pinard, c'est s'assurer d'une disponibilité constante et d'un suivi clair à chaque étape de votre demande hypothécaire. Que votre cas soit simple ou complexe, chaque dossier est pris au sérieux pour maximiser vos chances de réussite.
+                    </p>
+                    
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-accent-500/10 text-accent-600 rounded-lg flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Rigueur et transparence</h4>
+                                <p class="text-sm text-slate-600">Explications claires, précises et efficaces pour faire des choix éclairés.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 w-10 h-10 bg-accent-500/10 text-accent-600 rounded-lg flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Toujours disponible</h4>
+                                <p class="text-sm text-slate-600">Un courtier réactif qui répond présent pour vous appuyer à tout moment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <!-- Unsplash Image (Real estate contract/key detail, no people) -->
+                    <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=800&q=80" alt="Dossier hypothécaire Sherbrooke" class="rounded-2xl shadow-xl border border-slate-100 object-cover w-full h-[420px]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="temoignages" class="py-24 bg-navy-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-xs uppercase font-extrabold tracking-wider text-accent-500">Avis Vérifiés</h2>
+                <p class="text-3xl sm:text-4xl font-bold">Ce que disent les clients de Sherbrooke</p>
+                <p class="text-slate-400">Découvrez les témoignages réels transmis par les clients accompagnés par Matthew Pinard.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Avis 1 -->
+                <div class="bg-navy-800/80 p-6 rounded-2xl border border-slate-700/60 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="text-accent-500 text-xl">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Ce fut un réel plaisir de travailler avec cette équiipe Bravo!"
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Avis 2 -->
+                <div class="bg-navy-800/80 p-6 rounded-2xl border border-slate-700/60 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="text-accent-500 text-xl">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Très bon service à l’écoute de nos besoins et toujours disponible pour nous appuyer et trouver des solutions! Poli et courtois ! Il fait tout pour la réussite de ses clients ! Je vous le recommande sans hésiter !! Merci ! Matthew"
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Avis 3 -->
+                <div class="bg-navy-800/80 p-6 rounded-2xl border border-slate-700/60 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="text-accent-500 text-xl">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Matthew est un excellent courtier. Il est rigoureux, attentif et très professionnel. Ça ėtė une merveilleuse expérience d'avoir fait affaire avec lui. Merci beaucoup Mathieu pour votre expertise. Continuez votre excellent travail!"
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Avis 4 -->
+                <div class="bg-navy-800/80 p-6 rounded-2xl border border-slate-700/60 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="text-accent-500 text-xl">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Merci beaucoup Matthew pour toute l’aide que tu nous a apporté!! Très professionnel et courtois! Aucun jugement et bonne prise en charge de notre dossier. Il a à cœur d’aider ses clients!!"
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Avis 5 -->
+                <div class="bg-navy-800/80 p-6 rounded-2xl border border-slate-700/60 flex flex-col justify-between lg:col-span-2">
+                    <div class="space-y-4">
+                        <div class="text-accent-500 text-xl">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Le téléphone a sonné c’était Matthew, prise au sérieux de mon cas, vraiment une personne dévouée à son métier, claire , précis et efficace, je le recommande! Un gros Merci Matthew! Garde bien ton service légendaire !"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section id="contact" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <h2 class="text-xs uppercase font-extrabold tracking-wider text-accent-600 mb-2">Contact Direct</h2>
+                        <h3 class="text-3xl font-bold text-slate-900">Prenez contact avec Matthew Pinard</h3>
+                        <p class="text-slate-600 mt-2">Discutons de vos besoins hypothécaires à Sherbrooke et ses environs.</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4 bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                            <div class="p-3 bg-accent-500/10 text-accent-600 rounded-lg">
+                                <i class="fa-solid fa-phone text-xl"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block">Téléphone</span>
+                                <a href="tel:4382588139" class="text-lg font-bold text-slate-900 hover:text-accent-600 transition-colors">
+                                    (438) 258-8139
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                            <div class="p-3 bg-accent-500/10 text-accent-600 rounded-lg">
+                                <i class="fa-solid fa-location-dot text-xl"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block">Adresse du bureau</span>
+                                <p class="text-base font-bold text-slate-900">455 Rue King Ouest</p>
+                                <p class="text-slate-600 text-sm">Sherbrooke, QC J1H 6E9, Canada</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-navy-900 text-white rounded-xl space-y-3">
+                        <h4 class="font-bold text-lg">Prêt à démarrer ?</h4>
+                        <p class="text-slate-300 text-sm">Un simple coup de fil suffit pour faire le point sur votre dossier sans engagement.</p>
+                        <a href="tel:4382588139" class="inline-block bg-accent-500 hover:bg-accent-600 text-white font-bold px-5 py-2.5 rounded-lg text-sm transition-colors mt-2">
+                            Appeler maintenant
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Form / Location Details -->
+                <div class="lg:col-span-7 bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+                    <h4 class="text-xl font-bold text-slate-900 mb-6">Envoyer un message</h4>
+                    <form action="#" method="POST" class="space-y-4" onsubmit="event.preventDefault(); alert('Merci! Votre message a été reçu.');">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Nom complet</label>
+                                <input type="text" required placeholder="Votre nom" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-accent-500 focus:outline-none text-slate-800">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Téléphone</label>
+                                <input type="tel" required placeholder="(819) 000-0000" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-accent-500 focus:outline-none text-slate-800">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Courriel</label>
+                            <input type="email" required placeholder="votre@courriel.com" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-accent-500 focus:outline-none text-slate-800">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Type de besoin</label>
+                            <select class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-accent-500 focus:outline-none text-slate-800">
+                                <option>Achat résidentiel / Première maison</option>
+                                <option>Refinancement hypothécaire</option>
+                                <option>Renouvellement de prêt</option>
+                                <option>Consolidation de dettes</option>
+                                <option>Autre demande</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Message ou détails du projet</label>
+                            <textarea rows="4" required placeholder="Décrivez brièvement votre projet hypothécaire..." class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-accent-500 focus:outline-none text-slate-800"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-navy-900 hover:bg-navy-800 text-white font-bold py-4 rounded-xl transition-all shadow-md">
+                            Transmettre la demande
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-6">
+            <div class="text-center sm:text-left">
+                <span class="text-white font-bold text-lg block">Matthew Pinard Courtier hypothécaire</span>
+                <p class="text-xs text-slate-500 mt-1">455 Rue King Ouest, Sherbrooke, QC J1H 6E9 | (438) 258-8139</p>
+            </div>
+            <div class="text-xs text-slate-500 text-center sm:text-right">
+                <p>&copy; Matthew Pinard Courtier hypothécaire. Tous droits réservés.</p>
+                <p class="mt-1">Sherbrooke &amp; région de l'Estrie</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
