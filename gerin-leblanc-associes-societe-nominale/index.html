@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr-CA" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avocats à Sherbrooke | Gérin Leblanc & Associés</title>
+    <meta name="description" content="Cabinet d'avocats à Sherbrooke. Gérin Leblanc & Associés vous accompagne avec rigueur, écoute et transparence. Contactez-nous au (819) 564-3131.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1b2a4a',
+                            900: '#0f172a',
+                        },
+                        gold: {
+                            500: '#c5a059',
+                            600: '#b08944',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Gérin Leblanc & Associés (Sociéte Nominale)",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "315 Rue Marquette",
+        "addressLocality": "Sherbrooke",
+        "addressRegion": "QC",
+        "postalCode": "J1H 1M2",
+        "addressCountry": "CA"
+      },
+      "telephone": "(819) 564-3131",
+      "areaServed": {
+        "@type": "City",
+        "name": "Sherbrooke"
+      }
+    }
+    </script>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased">
+
+    <!-- En-tête / Navigation -->
+    <header class="sticky top-0 z-50 bg-navy-900 text-white shadow-lg border-b border-gold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex flex-col">
+                <span class="font-serif text-lg md:text-xl tracking-wider text-white font-bold uppercase">Gérin Leblanc & Associés</span>
+                <span class="text-xs text-gold-500 font-medium tracking-widest uppercase">Société Nominale • Sherbrooke</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#services" class="hover:text-gold-500 transition-colors">Services juridiques</a>
+                <a href="#temoignages" class="hover:text-gold-500 transition-colors">Avis clients</a>
+                <a href="#contact" class="hover:text-gold-500 transition-colors">Contact</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a href="tel:8195643131" class="bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold px-4 py-2.5 rounded transition-all inline-flex items-center text-sm">
+                    <i class="fa-solid fa-phone mr-2"></i>
+                    (819) 564-3131
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-navy-900 text-white py-20 lg:py-32 overflow-hidden border-b border-gold-500/30">
+        <div class="absolute inset-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1920&q=80" alt="Marteau de justice et livres de droit" class="w-full h-full object-cover">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-gold-500/10 border border-gold-500/30 px-3 py-1.5 rounded-full text-gold-500 text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                        <span>Sherbrooke, QC</span>
+                    </div>
+                    <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-white">
+                        Cabinet d'avocats à Sherbrooke : représentation et conseil juridique
+                    </h1>
+                    <p class="text-slate-300 text-lg max-w-2xl leading-relaxed">
+                        Le cabinet Gérin Leblanc & Associés vous offre un accompagnement juridique rigoureux, humain et accessible. Nous mettons notre expertise au service de la défense complète et transparente de vos intérêts.
+                    </p>
+                    <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold px-6 py-3.5 rounded text-center transition-all shadow-lg hover:shadow-gold-500/20">
+                            Prendre rendez-vous
+                        </a>
+                        <a href="tel:8195643131" class="border border-white/20 hover:bg-white/10 text-white font-semibold px-6 py-3.5 rounded text-center transition-all flex items-center justify-center">
+                            <i class="fa-solid fa-phone mr-2 text-gold-500"></i>
+                            (819) 564-3131
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-lg overflow-hidden shadow-2xl border-2 border-gold-500/30">
+                        <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=800&q=80" alt="Architecture juridique et colonnes du palais de justice" class="w-full h-auto object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <p class="text-gold-500 font-serif font-bold text-lg">Cabinet Gérin Leblanc & Associés</p>
+                            <p class="text-slate-300 text-sm">315 Rue Marquette, Sherbrooke</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="font-serif text-3xl font-bold text-navy-900">Nos domaines d'expertise</h2>
+                <div class="w-16 h-1 bg-gold-500 mx-auto"></div>
+                <p class="text-slate-600">
+                    Des conseils clairs et une stratégie adaptée à votre situation juridique à Sherbrooke.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md border border-slate-200 flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80" alt="Balance de la justice et documents juridiques" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-navy-900 mb-2">Droit de la famille & des personnes</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Accompagnement humain et à l'écoute pour l'ensemble de vos procédures familiales. Gestion rigoureuse des dossiers visant la protection de vos droits tout en minimisant les coûts inutiles.
+                            </p>
+                        </div>
+                        <a href="#contact" class="text-gold-600 font-semibold text-sm hover:underline inline-flex items-center">
+                            En savoir plus <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md border border-slate-200 flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?auto=format&fit=crop&w=800&q=80" alt="Code civil et lunettes sur un bureau d'avocat" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-navy-900 mb-2">Défense & Représentation</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Analyse approfondie de votre dossier pour vous offrir une défense adaptée et solide. Préservation stricte de vos intérêts avec motivation, rigueur et transparence tarifaire.
+                            </p>
+                        </div>
+                        <a href="#contact" class="text-gold-600 font-semibold text-sm hover:underline inline-flex items-center">
+                            En savoir plus <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md border border-slate-200 flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=800&q=80" alt="Bibliothèque d'ouvrages juridiques" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-navy-900 mb-2">Litige Civil & Conseil Juridique</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Rédaction minutieuse d'actes juridiques et réponses élaborées pour la partie adverse. Explications claires de chaque étape de la procédure pour vous guider en toute confiance.
+                            </p>
+                        </div>
+                        <a href="#contact" class="text-gold-600 font-semibold text-sm hover:underline inline-flex items-center">
+                            En savoir plus <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages Section (Google Reviews) -->
+    <section id="temoignages" class="py-20 bg-white border-t border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="font-serif text-3xl font-bold text-navy-900">Témoignages de nos clients</h2>
+                <div class="w-16 h-1 bg-gold-500 mx-auto"></div>
+                <p class="text-slate-600">Avis réels publiés par nos clients sur Google</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Avis 1 -->
+                <div class="bg-slate-50 p-8 rounded-lg border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="text-gold-500 flex space-x-1">
+                            <i class="fa-solid fa-quote-left text-3xl opacity-30"></i>
+                        </div>
+                        <p class="text-slate-700 italic leading-relaxed text-sm">
+                            "Maître Kemp-Bélanger: je n'ai que des bons mots pour elle. Elle a été à l'écoute et disponible pour l'ensemble des procédures. Je me suis sentie écoutée et dirigée adéquatement, et quand je posais des questions elle prenait vraiment le temps de m'expliquer. Très disponible, elle est facilement rejoignable, que ce soit par téléphone ou courriel. Ses réponses à la partie adverse étaient vraiment très bien élaborées, et représentaient tout-à-fait ma position. Je n'ai aucunement sentie que l'aspect financier était un moteur pour elle, au contraire, elle faisait en sorte de minimiser le plus possible les coûts reliés au va et vient des réponses dans mon dossier. Je la conseille à 100% si vous voulez être représentée par une avocate investie, humaine et à l'écoute."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between">
+                        <span class="font-semibold text-navy-900 text-sm">Avis client vérifié</span>
+                        <span class="text-xs text-slate-500"><i class="fa-brands fa-google mr-1"></i> Google Reviews</span>
+                    </div>
+                </div>
+
+                <!-- Avis 2 -->
+                <div class="bg-slate-50 p-8 rounded-lg border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="text-gold-500 flex space-x-1">
+                            <i class="fa-solid fa-quote-left text-3xl opacity-30"></i>
+                        </div>
+                        <p class="text-slate-700 italic leading-relaxed text-sm">
+                            "Excellent avocat, à l’écoute et très motivé à t’offrir une défense hors du commun. Très honnête dans ses tarifs. Merci."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between">
+                        <span class="font-semibold text-navy-900 text-sm">Avis client vérifié</span>
+                        <span class="text-xs text-slate-500"><i class="fa-brands fa-google mr-1"></i> Google Reviews</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Section SEO Local -->
+    <section id="contact" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Infos de contact -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <h2 class="font-serif text-3xl font-bold text-navy-900 mb-4">Contactez notre cabinet</h2>
+                        <p class="text-slate-600 leading-relaxed">
+                            Prenez rendez-vous dès aujourd'hui pour faire évaluer votre dossier par une équipe dédiée à Sherbrooke.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-navy-900 text-gold-500 p-3 rounded-lg mt-1">
+                                <i class="fa-solid fa-location-dot text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-navy-900">Adresse</h3>
+                                <p class="text-slate-600">315 Rue Marquette</p>
+                                <p class="text-slate-600">Sherbrooke, QC J1H 1M2, Canada</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-navy-900 text-gold-500 p-3 rounded-lg mt-1">
+                                <i class="fa-solid fa-phone text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-navy-900">Téléphone</h3>
+                                <p class="text-slate-600">
+                                    <a href="tel:8195643131" class="hover:text-gold-600 transition-colors font-medium">(819) 564-3131</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-white rounded-lg border border-slate-200">
+                        <h4 class="font-serif font-bold text-navy-900 mb-2">Cabinet d'avocats à Sherbrooke</h4>
+                        <p class="text-xs text-slate-500 leading-relaxed">
+                            Situé au cœur de Sherbrooke sur la rue Marquette, le cabinet Gérin Leblanc & Associés (Société Nominale) dessert les particuliers et les entreprises de l'Estrie pour leurs besoins juridiques et leur représentation devant les tribunaux.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Formulaire de contact -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white p-8 rounded-lg shadow-md border border-slate-200">
+                        <h3 class="font-serif text-2xl font-bold text-navy-900 mb-6">Demande d'information</h3>
+                        <form action="#" method="POST" class="space-y-6">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-700 mb-2">Nom complet</label>
+                                    <input type="text" required class="w-full px-4 py-3 rounded border border-slate-300 focus:ring-2 focus:ring-navy-800 focus:border-navy-800 outline-none transition-all">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-700 mb-2">Numéro de téléphone</label>
+                                    <input type="tel" required class="w-full px-4 py-3 rounded border border-slate-300 focus:ring-2 focus:ring-navy-800 focus:border-navy-800 outline-none transition-all">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-2">Adresse courriel</label>
+                                <input type="email" required class="w-full px-4 py-3 rounded border border-slate-300 focus:ring-2 focus:ring-navy-800 focus:border-navy-800 outline-none transition-all">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-slate-700 mb-2">Sujet / Nature de votre dossier</label>
+                                <textarea rows="4" required class="w-full px-4 py-3 rounded border border-slate-300 focus:ring-2 focus:ring-navy-800 focus:border-navy-800 outline-none transition-all" placeholder="Décrivez brièvement votre besoin juridique..."></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-navy-900 hover:bg-navy-800 text-white font-bold py-3.5 px-6 rounded transition-colors text-center shadow-lg">
+                                Envoyer le message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="bg-navy-900 text-slate-400 py-12 border-t border-gold-500/20 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+                <div>
+                    <span class="font-serif text-lg text-white font-bold uppercase tracking-wider block">Gérin Leblanc & Associés</span>
+                    <span class="text-xs text-slate-400">Société Nominale • 315 Rue Marquette, Sherbrooke, QC J1H 1M2</span>
+                </div>
+                <div class="text-center md:text-right text-xs">
+                    <p>&copy; Gérin Leblanc & Associés. Tous droits réservés.</p>
+                    <p class="text-slate-500 mt-1">Avocats à Sherbrooke, QC • Téléphone : (819) 564-3131</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
