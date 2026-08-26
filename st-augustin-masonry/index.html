@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fr-CA" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St.Augustin Masonry | Service de Maçonnerie et Briquetage à Laval</title>
+    <meta name="description" content="St.Augustin Masonry : expert maçon à Laval. Briquetage, réfection de façade, rejointoiement de mortier, réparation d'arches et appuis de fenêtre. Travail d'expert et conseils personnalisés.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brick: {
+                            50: '#fdf8f6',
+                            100: '#f2e8e5',
+                            600: '#b94a2b',
+                            700: '#9e3b1f',
+                            800: '#7c2d18',
+                            900: '#5c2214',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MasonryContractor",
+      "name": "St.Augustin Masonry",
+      "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "278 Rue Molière",
+        "addressLocality": "Laval",
+        "addressRegion": "QC",
+        "postalCode": "H7N 2G3",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "addressCountry": "CA"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Laval"
+      }
+    }
+    </script>
+</head>
+<body class="bg-stone-50 text-stone-900 font-sans antialiased">
+
+    <!-- En-tête / Navigation -->
+    <header class="sticky top-0 z-50 bg-stone-900/95 backdrop-blur-md border-b border-stone-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-brick-700 flex items-center justify-center font-bold text-xl rounded shadow">StA</div>
+                <span class="text-xl font-bold tracking-tight text-stone-100">St.Augustin <span class="text-brick-600">Masonry</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#services" class="hover:text-brick-600 transition-colors">Services</a>
+                <a href="#avis" class="hover:text-brick-600 transition-colors">Avis Clients</a>
+                <a href="#engagement" class="hover:text-brick-600 transition-colors">Notre Expertise</a>
+                <a href="#contact" class="hover:text-brick-600 transition-colors">Contact</a>
+            </nav>
+            <div>
+                <a href="#contact" class="bg-brick-700 hover:bg-brick-800 text-white font-medium px-5 py-2.5 rounded transition-all shadow-md inline-block text-sm">
+                    Demander une soumission
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-stone-900 text-white py-24 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-25">
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1920&q=80" alt="Mur de briques maçonnerie" class="w-full h-full object-cover">
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-stone-800/80 border border-stone-700 px-3 py-1 rounded-full text-xs font-semibold text-brick-600 uppercase tracking-wider">
+                        <span>Laval & Environs</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Service de Maçonnerie et Briquetage à Laval
+                    </h1>
+                    <p class="text-lg text-stone-300 max-w-2xl">
+                        St.Augustin Masonry offre des solutions durables et impeccables pour tous vos travaux de brique, rejointoiement, réparation de murs et changement d'allèges à Laval. Adaptabilité maximale, rigueur et respect du chantier.
+                    </p>
+                    <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-brick-700 hover:bg-brick-800 text-white font-semibold px-8 py-4 rounded shadow-lg text-center transition-all">
+                            Obtenir une estimation
+                        </a>
+                        <a href="#services" class="border border-stone-700 hover:bg-stone-800 text-stone-200 font-semibold px-8 py-4 rounded text-center transition-all">
+                            Découvrir nos services
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-lg overflow-hidden shadow-2xl border border-stone-800 bg-stone-800">
+                        <img src="https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&w=800&q=80" alt="Travaux de brique et maçonnerie de bâtiment" class="w-full h-80 object-cover">
+                        <div class="p-6 bg-stone-900">
+                            <h3 class="font-bold text-lg text-white">Expertise de chantier sur mesure</h3>
+                            <p class="text-sm text-stone-400 mt-2">Gestion efficace des accès difficiles, des contraintes météo et des imprévus structuraux.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">Nos Services de Maçonnerie à Laval</h2>
+                <p class="mt-4 text-lg text-stone-600">Des travaux exécutés avec précision, souci du détail et respect de l'architecture de votre propriété.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-stone-200 flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Briquetage et réfection de façade" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-stone-900 mb-2">Briquetage & Façades</h3>
+                            <p class="text-stone-600 text-sm">Réfection partielle ou complète de la brique de façade. Pose soignée garantissant étanchéité et solidité durable.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-stone-200 flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Réparation de mur et arche" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-stone-900 mb-2">Murs & Arches</h3>
+                            <p class="text-stone-600 text-sm">Reconstitution de sections de murs endommagés et reconstruction d'arches de fenêtres ou de portes avec haute précision.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-stone-200 flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Appuis de fenêtre et allèges" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-stone-900 mb-2">Appuis & Allèges</h3>
+                            <p class="text-stone-600 text-sm">Remplacement et installation d'appuis de fenêtre pour prévenir l'infiltration d'eau et protéger l'enveloppe du bâtiment.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-stone-200 flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1578844251758-2f71da64c96f?auto=format&fit=crop&w=600&q=80" alt="Rejointoiement et démolition de maçonnerie" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-stone-900 mb-2">Rejointoiement & Démolition</h3>
+                            <p class="text-stone-600 text-sm">Démolition sécurisée d'anciennes briques, réfection des joints de mortier dégradés et adaptation aux contraintes de structure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engagement / Adaptabilité -->
+    <section id="engagement" class="py-20 bg-stone-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold tracking-tight sm:text-4xl mb-6">
+                        Un service honnête, rigoureux et adapté à votre chantier
+                    </h2>
+                    <p class="text-stone-300 mb-6 leading-relaxed">
+                        Chaque projet de maçonnerie comporte son lot de particularités. Qu'il s'agisse d'un accès particulièrement difficile au chantier, d'une météo capricieuse ou de la découverte d'un problème structural imprévu lors des travaux, St.Augustin Masonry s'adapte sans jamais faire de compromis sur la qualité.
+                    </p>
+                    <ul class="space-y-4 text-stone-300">
+                        <li class="flex items-start">
+                            <span class="text-brick-600 font-bold mr-3">✓</span>
+                            <span><strong>Communication transparente :</strong> suivi régulier et ajustements clairs tout au long du projet.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-brick-600 font-bold mr-3">✓</span>
+                            <span><strong>Ponctualité et respect :</strong> engagement total pour mener à bien les travaux dans les meilleures conditions.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-brick-600 font-bold mr-3">✓</span>
+                            <span><strong>Prix compétitifs :</strong> un travail d'une grande valeur sans excès de zèle.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-2xl border border-stone-800">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Matériaux de maçonnerie et chantier" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avis Clients -->
+    <section id="avis" class="py-20 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">Témoignages Clients</h2>
+                <p class="mt-4 text-lg text-stone-600">Découvrez les retours d'expérience vérifiés de nos clients sur nos travaux de maçonnerie.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Avis 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-stone-200 flex flex-col justify-between">
+                    <p class="text-stone-700 italic text-sm leading-relaxed mb-6">
+                        « Excellent travail de Mehdi !<br>
+                        Il a refait le briquetage d’une partie de la façade de ma maison et le résultat est impeccable. Malgré un site difficile d’accès, il a été d'un grand professionnalisme, toujours ponctuel, et a réalisé un super boulot à un prix très compétitif.<br>
+                        De plus, il communique vraiment très bien et a su composer avec toutes les contraintes du chantier de manière ultra efficace. Je le recommande sans hésiter ! »
+                    </p>
+                    <div class="border-t border-stone-100 pt-4">
+                        <span class="font-semibold text-stone-900 block">Avis Client Google</span>
+                        <span class="text-xs text-stone-500">Façade & Briquetage</span>
+                    </div>
+                </div>
+
+                <!-- Avis 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-stone-200 flex flex-col justify-between">
+                    <p class="text-stone-700 italic text-sm leading-relaxed mb-6">
+                        « Nous sommes reconnaissants du travail acharné et du professionnalisme dont a fait preuve l'équipe de St. Augustin. Mehdi a réalisé un excellent travail de démolition des anciennes briques et de pose des nouvelles. Malgré la découverte d'un problème plus important au niveau du bâtiment après le début des travaux, Mehdi a démontré une grande capacité d'adaptation et un engagement sans faille pour mener à bien le projet. Il est honnête et traite ses clients et son travail avec respect. Nous recommandons vivement Mehdi et son entreprise à toute personne recherchant un maçon. »
+                    </p>
+                    <div class="border-t border-stone-100 pt-4">
+                        <span class="font-semibold text-stone-900 block">Avis Client Google</span>
+                        <span class="text-xs text-stone-500">Démolition & Pose de briques</span>
+                    </div>
+                </div>
+
+                <!-- Avis 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-stone-200 flex flex-col justify-between">
+                    <p class="text-stone-700 italic text-sm leading-relaxed mb-6">
+                        « Excellent communicateur, toujours ponctuel. Travail impeccable. Compétent et sans excès de zèle. Je referais appel à ses services sans hésiter.<br><br>
+                        Mehdi a reconstruit une partie de mon mur et de l'arche de ma fenêtre, remplacé six appuis de fenêtre, refait les joints et réparé d'autres sections.<br><br>
+                        L'accès au chantier était vraiment difficile, mais Mehdi s'est démené pour trouver une solution. Tout a été réalisé avec le sourire.<br><br>
+                        Les travaux ont pris un peu plus de temps que prévu, mais nous avons eu la malchance d'avoir une météo capricieuse, avec beaucoup de pluie. Mehdi est même venu travailler le week-end, profitant d'une période de beau temps après s'être assuré que cela nous convenait. »
+                    </p>
+                    <div class="border-t border-stone-100 pt-4">
+                        <span class="font-semibold text-stone-900 block">Avis Client Google</span>
+                        <span class="text-xs text-stone-500">Murs, arche, appuis & joints</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Localisation -->
+    <section id="contact" class="py-20 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <h2 class="text-3xl font-bold text-stone-900">Contactez St.Augustin Masonry</h2>
+                        <p class="mt-3 text-stone-600">
+                            Faites part de votre projet de maçonnerie à Laval. Que ce soit pour une réparation de mur, un remplacement d'allèges ou une réfection complète de briquetage.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl border border-stone-200 shadow-sm space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="p-3 bg-brick-50 text-brick-700 rounded-lg">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900">Adresse de l'entreprise</h3>
+                                <p class="text-stone-600 text-sm mt-1">
+                                    St.Augustin Masonry<br>
+                                    278 Rue Molière<br>
+                                    Laval, QC H7N 2G3<br>
+                                    Canada
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="p-3 bg-brick-50 text-brick-700 rounded-lg">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-stone-900">Secteur desservi</h3>
+                                <p class="text-stone-600 text-sm mt-1">Ville de Laval et secteurs environnants.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="bg-white p-8 rounded-xl border border-stone-200 shadow-sm">
+                        <h3 class="text-xl font-bold text-stone-900 mb-6">Demander une estimation</h3>
+                        <form action="#" method="POST" class="space-y-6" onsubmit="event.preventDefault(); alert('Merci pour votre message. Nous communiquerons avec vous sous peu.');">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-stone-700 mb-2">Nom complet</label>
+                                    <input type="text" required class="w-full px-4 py-3 border border-stone-300 rounded-md focus:ring-2 focus:ring-brick-600 focus:border-transparent outline-none transition-all" placeholder="Votre nom">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-stone-700 mb-2">Courriel</label>
+                                    <input type="email" required class="w-full px-4 py-3 border border-stone-300 rounded-md focus:ring-2 focus:ring-brick-600 focus:border-transparent outline-none transition-all" placeholder="votre@courriel.com">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-stone-700 mb-2">Adresse du chantier (à Laval ou environs)</label>
+                                <input type="text" class="w-full px-4 py-3 border border-stone-300 rounded-md focus:ring-2 focus:ring-brick-600 focus:border-transparent outline-none transition-all" placeholder="Numéro, rue, ville">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-stone-700 mb-2">Description des travaux de maçonnerie</label>
+                                <textarea rows="4" required class="w-full px-4 py-3 border border-stone-300 rounded-md focus:ring-2 focus:ring-brick-600 focus:border-transparent outline-none transition-all" placeholder="Précisez votre besoin : réfection de façade, rejointoiement, appuis de fenêtre, mur endommagé..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-brick-700 hover:bg-brick-800 text-white font-bold py-4 rounded transition-all shadow-md">
+                                Envoyer la demande
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="bg-stone-900 text-stone-400 py-12 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div>
+                    <span class="text-xl font-bold text-white">St.Augustin <span class="text-brick-600">Masonry</span></span>
+                    <p class="text-xs text-stone-500 mt-1">278 Rue Molière, Laval, QC H7N 2G3, Canada</p>
+                </div>
+                <div class="text-sm text-stone-500">
+                    &copy; St.Augustin Masonry. Tous droits réservés. Maçonnerie & Briquetage à Laval.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
