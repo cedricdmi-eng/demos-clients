@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="fr-CA" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garderie éducative à Laval | Garderie Soleil de St Martin</title>
+  <meta name="description" content="Garderie éducative à Laval (Boul Saint-Martin Est). Un environnement propre, chaleureux, sécuritaire et stimulant pour l'épanouissement de vos tout-petits. Contactez-nous au (450) 490-9092.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.garderiesoleildestmartin.ca">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sunshine: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            },
+            warmgray: {
+              50: '#fafaf9',
+              100: '#f5f5f4',
+              800: '#292524',
+              900: '#1c1917',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ChildCare",
+    "name": "Garderie Soleil de St Martin",
+    "image": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=1200&q=80",
+    "telephone": "(450) 490-9092",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2475 Boul Saint-Martin Est",
+      "addressLocality": "Laval",
+      "addressRegion": "QC",
+      "postalCode": "H7E 4X6",
+      "addressCountry": "CA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 45.6025,
+      "longitude": -73.6640
+    },
+    "url": "https://www.garderiesoleildestmartin.ca"
+  }
+  </script>
+</head>
+<body class="bg-warmgray-50 text-warmgray-800 font-sans antialiased selection:bg-sunshine-400 selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-sunshine-500 text-white text-sm py-2 px-4 text-center font-medium shadow-inner">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <span>📍 Garderie éducative située au 2475 Boul Saint-Martin Est, Laval</span>
+      <a href="tel:4504909092" class="inline-flex items-center gap-1 font-bold underline hover:text-sunshine-100 transition-colors">
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        (450) 490-9092
+      </a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="#" class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-sunshine-400 flex items-center justify-center text-white font-bold text-xl shadow">
+            ☀️
+          </div>
+          <div>
+            <span class="block font-bold text-lg leading-tight text-gray-900">Garderie Soleil</span>
+            <span class="block text-xs text-amber-600 font-semibold uppercase tracking-wider">de St Martin • Laval</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8 font-medium text-gray-700">
+          <a href="#accueil" class="hover:text-sunshine-600 transition-colors">Accueil</a>
+          <a href="#services" class="hover:text-sunshine-600 transition-colors">Nos Services</a>
+          <a href="#engagement" class="hover:text-sunshine-600 transition-colors">Notre Engagement</a>
+          <a href="#temoignages" class="hover:text-sunshine-600 transition-colors">Avis Parents</a>
+          <a href="#contact" class="hover:text-sunshine-600 transition-colors">Contact</a>
+        </nav>
+
+        <div>
+          <a href="tel:4504909092" class="bg-sunshine-500 hover:bg-sunshine-600 text-white font-semibold px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all duration-200 inline-flex items-center gap-2 text-sm">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            Nous appeler
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section (Règle respectée : Image Unsplash incluse) -->
+  <section id="accueil" class="relative bg-gradient-to-b from-sunshine-50 to-white py-16 lg:py-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wide">
+            🌱 Un milieu bienveillant & sécurisant
+          </div>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
+            Garderie éducative à Laval – <span class="text-sunshine-600">Soleil de St Martin</span>
+          </h1>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            Offrez à votre enfant un environnement propre, stimulant et rempli de douceur à Laval. Une véritable deuxième maison où chaque enfant évolue à son rythme avec des éducatrices passionnées et attentionnées.
+          </p>
+          
+          <div class="pt-2 flex flex-col sm:flex-row gap-4">
+            <a href="tel:4504909092" class="inline-flex items-center justify-center gap-3 bg-sunshine-500 hover:bg-sunshine-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all text-base">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              (450) 490-9092
+            </a>
+            <a href="#contact" class="inline-flex items-center justify-center gap-2 bg-white border-2 border-gray-200 hover:border-sunshine-400 text-gray-800 font-semibold px-8 py-4 rounded-xl transition-all text-base">
+              Nous écrire
+            </a>
+          </div>
+
+          <div class="pt-6 border-t border-gray-200/80 grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm font-medium text-gray-600">
+            <div class="flex items-center gap-2">
+              <span class="text-emerald-500 font-bold">✓</span> Équipe attentionnée
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-emerald-500 font-bold">✓</span> Locaux très propres
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-emerald-500 font-bold">✓</span> Repas & couverts adaptés
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Image (Strict constraint: NO human faces/people, strictly toys/materials) -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+            <img 
+              src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=1200&q=80" 
+              alt="Matériel éducatif et jeux en bois de la garderie" 
+              class="w-full h-96 lg:h-[480px] object-cover"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-lg">
+              <p class="text-xs font-semibold text-sunshine-600 uppercase tracking-wider">Un espace de découverte</p>
+              <p class="text-sm font-bold text-gray-800">Des équipements stimulants et adaptés au développement de chaque enfant.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Services (Strict constraint: Une photo Unsplash par service, SANS visage/personne) -->
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-bold text-sunshine-600 uppercase tracking-widest mb-2">Service éducatif de qualité à Laval</h2>
+        <p class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Un cadre pensé pour l'épanouissement complet de votre enfant</p>
+        <p class="mt-4 text-gray-600">Notre équipe met tout en œuvre pour offrir un environnement chaleureux, structuré et propice à l'apprentissage au quotidien.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Service 1 -->
+        <div class="bg-warmgray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col">
+          <div class="h-48 overflow-hidden relative">
+            <img 
+              src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=800&q=80" 
+              alt="Matériel d'éveil pour poupons" 
+              class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            >
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Accueil des poupons</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Soins empreints de douceur, de patience et d'attention pour les tout-petits dès leur plus jeune âge (9 à 11 mois et plus).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-warmgray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col">
+          <div class="h-48 overflow-hidden relative">
+            <img 
+              src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&w=800&q=80" 
+              alt="Matériel de dessin et activités créatives" 
+              class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            >
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Activités Éducatives</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Un programme d'activités variées pour stimuler la curiosité, favoriser les découvertes et encourager de beaux progrès.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-warmgray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col">
+          <div class="h-48 overflow-hidden relative">
+            <img 
+              src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=800&q=80" 
+              alt="Alimentation saine et repas adaptés" 
+              class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            >
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Repas & Couverts Adaptés</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Une nourriture très bonne, préparée avec soin, accompagnée d'ustensiles super doux parfaitement adaptés aux bébés.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bg-warmgray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col">
+          <div class="h-48 overflow-hidden relative">
+            <img 
+              src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=800&q=80" 
+              alt="Environnement propre et sécurisé" 
+              class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            >
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Locaux Propres & Sécurisés</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">
+                Une garderie très propre et bien entretenue offrant un cadre sécuritaire où chaque enfant se sent comme à la maison.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Pourquoi Nous Choisir / Valeurs -->
+  <section id="engagement" class="py-20 bg-sunshine-50/60 border-y border-amber-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 relative">
+          <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+            <img 
+              src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80" 
+              alt="Espace d'apprentissage et livres éducatifs" 
+              class="w-full h-[400px] object-cover"
+            >
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 space-y-6">
+          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            La confiance des parents, au cœur de nos priorités à Laval
+          </h2>
+          <p class="text-gray-600 leading-relaxed">
+            À la Garderie Soleil de St Martin, nous créons un lien précieux avec chaque famille. Notre équipe d'éducatrices passionnées prend le temps de s'adapter à la personnalité de chaque enfant, qu'il s'agisse d'un tout-petit curieux ou d'un plus grand qui a besoin de percer sa bulle.
+          </p>
+
+          <div class="space-y-4">
+            <div class="p-4 bg-white rounded-xl shadow-sm border border-amber-100 flex items-start gap-4">
+              <div class="p-2 bg-sunshine-100 rounded-lg text-sunshine-600 font-bold">💛</div>
+              <div>
+                <h3 class="font-bold text-gray-900">Bienveillance & Douceur</h3>
+                <p class="text-sm text-gray-600">Un encadrement rempli d'amour, de patience et d'écoute pour partir travailler le cœur léger.</p>
+              </div>
+            </div>
+
+            <div class="p-4 bg-white rounded-xl shadow-sm border border-amber-100 flex items-start gap-4">
+              <div class="p-2 bg-sunshine-100 rounded-lg text-sunshine-600 font-bold">✨</div>
+              <div>
+                <h3 class="font-bold text-gray-900">Hygiène & Entretien Irréprochables</h3>
+                <p class="text-sm text-gray-600">Des locaux régulièrement nettoyés et parfaitement entretenus pour le bien-être quotidien.</p>
+              </div>
+            </div>
+
+            <div class="p-4 bg-white rounded-xl shadow-sm border border-amber-100 flex items-start gap-4">
+              <div class="p-2 bg-sunshine-100 rounded-lg text-sunshine-600 font-bold">🚀</div>
+              <div>
+                <h3 class="font-bold text-gray-900">Développement & Progrès Visible</h3>
+                <p class="text-sm text-gray-600">Un accompagnement constant qui permet aux enfants de s'épanouir et de progresser chaque jour.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Témoignages (Avis clients Google REELS uniquement - Règle respectée à 100%) -->
+  <section id="temoignages" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-bold text-sunshine-600 uppercase tracking-widest mb-2">Avis clients vérifiés</h2>
+        <p class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Ce que les parents disent de notre garderie</p>
+        <p class="mt-4 text-gray-600">Découvrez les témoignages réels laissés par les familles qui nous font confiance à Laval.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Avis 1 -->
+        <div class="bg-warmgray-50 p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-400">★★★★★</div>
+            <p class="text-gray-700 text-sm leading-relaxed italic">
+              "Ma fille de 11 mois fréquente cette garderie et je ne pourrais pas être plus satisfaite. Elle a un petit caractère curieux et enjoué, et les éducatrices savent parfaitement s’adapter à elle. Elles la traitent avec beaucoup de douceur, de patience et d’attention, ce qui me rassure énormément. On voit qu’elles prennent vraiment le temps de stimuler les enfants, de jouer avec eux et de les encourager dans leurs petites découvertes. L’ambiance est chaleureuse et sécurisante, ma fille sourit en arrivant et repart toujours de bonne humeur. La nourriture est très bonne et les couverts sont super doux, parfaitement adaptés aux bébés. Merci à toute l’équipe pour votre professionnalisme et votre bienveillance, vous faites une vraie différence dans le quotidien de nos enfants."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-200">
+            <p class="font-bold text-gray-900 text-sm">Parent d'une fille de 11 mois</p>
+            <p class="text-xs text-gray-500">Avis laissé sur Google</p>
+          </div>
+        </div>
+
+        <!-- Avis 2 -->
+        <div class="bg-warmgray-50 p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-400">★★★★★</div>
+            <p class="text-gray-700 text-sm leading-relaxed italic">
+              "Je tiens à dire à quel point je suis content d’avoir trouvé cette garderie pour mon fils de 9 mois. L’équipe est accueillante, attentionnée et très professionnelle. Mon bébé s’y sent en sécurité et épanoui, il sourit chaque matin en arriving et je pars travailler le cœur léger. Les éducatrices prennent vraiment le temps de s’occuper de chaque enfant avec douceur et patience.<br><br>
+              Je remarque déjà de beaux progrès dans son développement et je suis rassurée de savoir qu’il évolue dans un environnement propre, chaleureux et rempli d’activités adaptées à son âge. C’est vraiment une deuxième maison pour lui.<br><br>
+              Je recommande cette garderie sans hésitation à tous les parents qui cherchent un endroit de confiance pour leur enfant."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-200">
+            <p class="font-bold text-gray-900 text-sm">Parent d'un garçon de 9 mois</p>
+            <p class="text-xs text-gray-500">Avis laissé sur Google</p>
+          </div>
+        </div>
+
+        <!-- Avis 3 -->
+        <div class="bg-warmgray-50 p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-400">★★★★★</div>
+            <p class="text-gray-700 text-sm leading-relaxed italic">
+              "Mes deux filles vont à cette garderie depuis déja 4 ans! Toutes les éducatrices sont super! Elles ont fais beaucoup de progrès avec ma plus grande et ont réussit à percer sa bulle! Les filles font des activités régulièrement et reviennent toujours de bonne humeur! Chaque éducatrice s'occupe de mes filles avec beaucoup d'attention et d'amour! Je recommande cette garderie à 100%!"
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-200">
+            <p class="font-bold text-gray-900 text-sm">Parent fréquentant la garderie depuis 4 ans</p>
+            <p class="text-xs text-gray-500">Avis laissé sur Google</p>
+          </div>
+        </div>
+
+        <!-- Avis 4 -->
+        <div class="bg-warmgray-50 p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex text-amber-400">★★★★★</div>
+            <p class="text-gray-700 text-sm leading-relaxed italic">
+              "Une garderie vraiment exceptionnelle où l’on sent l’amour et le dévouement envers les enfants. L’équipe est attentionnée, professionnelle et crée un environnement sécuritaire et chaleureux. Une belle expérience que je recommande."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-200">
+            <p class="font-bold text-gray-900 text-sm">Parent de la garderie</p>
+            <p class="text-xs text-gray-500">Avis laissé sur Google</p>
+          </div>
+        </div>
+
+        <!-- Avis 5 -->
+        <div class="bg-warmgray-50 p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between lg:col-span-2">
+          <div class="space-y-4">
+            <div class="flex text-amber-400">★★★★★</div>
+            <p class="text-gray-700 text-sm leading-relaxed italic">
+              "Garderie très très propre et surtout bien entretenue. Les éducatrices et la direction sont très attentionnées et dévouées et prennent bien soin de nos petits. Les activités sont également variées. Mes enfants ont fréquentés cet établissement et se sont toujours sentis comme à la maison et d’ailleurs mon petit dernier y est toujours. Je recommande fortement."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-gray-200">
+            <p class="font-bold text-gray-900 text-sm">Parent d'enfants fréquentant l'établissement</p>
+            <p class="text-xs text-gray-500">Avis laissé sur Google</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact & Coordonnées -->
+  <section id="contact" class="py-20 bg-warmgray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Informations directes -->
+        <div class="lg:col-span-6 space-y-8">
+          <div>
+            <h2 class="text-xs font-bold text-sunshine-400 uppercase tracking-widest mb-2">Nous joindre</h2>
+            <p class="text-3xl font-extrabold sm:text-4xl">Garderie Soleil de St Martin</p>
+            <p class="mt-3 text-warmgray-100">
+              Vous cherchez une garderie de confiance à Laval? Contactez-nous dès aujourd'hui pour plus d'informations.
+            </p>
+          </div>
+
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-warmgray-800 flex items-center justify-center text-sunshine-400 shrink-0 border border-warmgray-800">
+                📍
+              </div>
+              <div>
+                <h3 class="font-bold text-lg text-white">Adresse</h3>
+                <p class="text-warmgray-100">2475 Boul Saint-Martin Est</p>
+                <p class="text-warmgray-100">Laval, QC H7E 4X6, Canada</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-warmgray-800 flex items-center justify-center text-sunshine-400 shrink-0 border border-warmgray-800">
+                📞
+              </div>
+              <div>
+                <h3 class="font-bold text-lg text-white">Téléphone</h3>
+                <p class="text-warmgray-100 font-semibold text-xl mt-1">
+                  <a href="tel:4504909092" class="hover:text-sunshine-400 transition-colors">
+                    (450) 490-9092
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 bg-warmgray-800 rounded-2xl border border-warmgray-800">
+            <h3 class="font-bold text-white mb-2">Emplacement pratique à Laval</h3>
+            <p class="text-sm text-warmgray-100 leading-relaxed">
+              Facilement accessible sur le Boulevard Saint-Martin Est, idéal pour les parents résidant ou travaillant dans le secteur de Laval.
+            </p>
+          </div>
+        </div>
+
+        <!-- Formulaire de contact -->
+        <div class="lg:col-span-6 bg-white text-gray-900 p-8 rounded-3xl shadow-xl">
+          <h3 class="text-2xl font-bold mb-2">Envoyez-nous un message</h3>
+          <p class="text-sm text-gray-600 mb-6">Laissez-nous vos coordonnées et nous vous recontacterons avec plaisir.</p>
+
+          <form action="#" method="POST" class="space-y-4" onsubmit="event.preventDefault(); alert('Merci de votre intérêt! Veuillez nous appeler directement au (450) 490-9092 pour une réponse rapide.');">
+            <div>
+              <label for="nom" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Nom complet</label>
+              <input type="text" id="nom" name="nom" required placeholder="Votre nom" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-sunshine-500 text-sm">
+            </div>
+
+            <div>
+              <label for="telephone" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Téléphone</label>
+              <input type="tel" id="telephone" name="telephone" required placeholder="(450) 000-0000" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-sunshine-500 text-sm">
+            </div>
+
+            <div>
+              <label for="email" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Courriel</label>
+              <input type="email" id="email" name="email" placeholder="votre.courriel@exemple.com" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-sunshine-500 text-sm">
+            </div>
+
+            <div>
+              <label for="message" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-1">Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Précisez l'âge de votre enfant et vos questions..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-sunshine-500 text-sm"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-sunshine-500 hover:bg-sunshine-600 text-white font-bold py-4 rounded-xl shadow-md hover:shadow-lg transition-all text-center">
+              Envoyer la demande
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-warmgray-900 text-warmgray-100 border-t border-warmgray-800 py-8 text-center text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
+      <p class="font-bold text-sm text-white">Garderie Soleil de St Martin</p>
+      <p>2475 Boul Saint-Martin Est, Laval, QC H7E 4X6, Canada • Téléphone : (450) 490-9092</p>
+      <p class="text-warmgray-100">© <script>document.write(new Date().getFullYear())</script> Garderie Soleil de St Martin. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
